@@ -20,11 +20,11 @@ function App() {
                         className='img-me'
                         src='/LogoBlue.svg'></img>
                     <p className='footer-text'>
-                        Lorem ipsum dolor sit amet consectetur. Vitae amet nisi
-                        massa tempor dui netus. Venenatis nunc netus gravida
-                        dictum. Pharetra laoreet ut molestie fringilla.
-                        Curabitur felis dignissim scelerisque pretium et tellus
-                        fermentum.
+                        Welcome to my little corner of the internet. I'm
+                        constantly creating, learning, and iterating, and this
+                        portfolio caputres the highlights. Built with a lot of
+                        late-night inspiration, it's a space where my ideas get
+                        to breathe. Feel free to reach out!
                     </p>
                 </div>
                 <div className='line'></div>
