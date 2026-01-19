@@ -1,0 +1,33 @@
+.content {
+    margin-bottom: 9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6f6f9;
+    width: 104%;
+    left: -8px;
+    position: relative;
+}
+@media screen and (min-width: 800px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        width: 102%;
+        left: -12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        left: -16px;
+    }
+}
