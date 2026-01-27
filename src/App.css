@@ -5,6 +5,7 @@
 body {
     background-color: #090d12;
     color: #ecedf5;
+    overflow-x: hidden;
 }
 .header {
     font-family: var(--font-family-display);

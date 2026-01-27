@@ -9,6 +9,13 @@
     left: -8px;
     position: relative;
 }
+.page-title {
+    font-family: var(--font-family-display);
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    color: #ecedf5;
+}
 @media screen and (min-width: 800px) {
     .content {
         display: grid;

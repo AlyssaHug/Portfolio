@@ -1,0 +1,28 @@
+.nav-logo {
+    width: 40px;
+    padding-left: 4px;
+}
+.nav-bar {
+    background-color: #070a0d;
+    z-index: 1000;
+    font-family: var(--font-family-display);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: fixed;
+    padding: 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav-items {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+.nav-link {
+    padding-right: 20px;
+    color: #8285bd;
+}
+.nav-link :active {
+    color: #edeef6;
+}

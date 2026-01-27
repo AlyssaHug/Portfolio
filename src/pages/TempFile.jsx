@@ -1,8 +1,7 @@
 import "./App.css";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
-import projects from "./pages/Projects/Projects.jsx";
+import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import Footer from "./components/footer/footer";
-import Projects from "./pages/Projects/Projects.jsx";
 
 function App() {
     return (
@@ -30,8 +29,8 @@ function App() {
                     />
 
                     <Route
-                        path='/Projects'
-                        element={<Projects />}
+                        path='/Portfolio'
+                        element={<Portfolio />}
                     />
                 </Routes>
             </BrowserRouter>
