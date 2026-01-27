@@ -12,7 +12,6 @@ function App() {
                         path='/'
                         element={
                             <>
-                                <Link to='/Portfolio'>Portfolio</Link>
                                 <div className='header'>
                                     <h1>
                                         Hi! I'm Alyssa.
