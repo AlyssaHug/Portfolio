@@ -2,38 +2,36 @@ import "./App.css";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import Footer from "./components/footer/footer";
+import NavBar from "./components/NavBar/NavBar.jsx";
+import Home from "./pages/Home/Home.jsx";
+import ProjectDetail from "./pages/ProjectDetail/ProjectDetail.jsx";
 
 function App() {
     return (
         <>
             <BrowserRouter>
+                <NavBar />
                 <Routes>
                     <Route
                         path='/'
-                        element={
-                            <>
-                                <div className='header'>
-                                    <h1>
-                                        Hi! I'm Alyssa.
-                                        <br />A UI/UX Designer.
-                                    </h1>
-                                    <p>
-                                        My site is currently under construction.
-                                        Working hard to have it updated soon!
-                                    </p>
-                                </div>
-                                <div className='content'></div>
-                            </>
-                        }
+                        element={<Home />}
                     />
-
                     <Route
-                        path='/Portfolio'
+                        path='/portfolio'
                         element={<Portfolio />}
                     />
+                    <Route
+                        path='/portfolio/:projectId'
+                        element={<ProjectDetail />}
+                    />
+                    <Route
+                        path='*'
+                        element={<div>404 – Page not found</div>}
+                    />
                 </Routes>
+
+                <Footer />
             </BrowserRouter>
-            <Footer />
         </>
     );
 }

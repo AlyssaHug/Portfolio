@@ -1,6 +1,7 @@
 import "./Portfolio.css";
-import ProjectCard from "../../components/footer/ProjectCard/card";
-import NavBar from "../../components/footer/NavBar/NavBar";
+import ProjectCard from "../../components/ProjectCard/card";
+import NavBar from "../../components/NavBar/NavBar";
+import projects from "../../data/projects.json";
 
 export default function Portfolio() {
     return (
@@ -10,38 +11,14 @@ export default function Portfolio() {
                 <h1 className='page-title'>Featured Work</h1>
             </header>
             <main className='content'>
-                <ProjectCard
-                    title='Travel Magazine'
-                    imgSrc='/TravelMag_Preview.png'
-                />
-                <ProjectCard
-                    title='Travel Magazine'
-                    imgSrc='/TravelMag_Preview.png'
-                />
-                <ProjectCard
-                    title='Travel Magazine'
-                    imgSrc='/TravelMag_Preview.png'
-                />
-                <ProjectCard
-                    title='Travel Magazine'
-                    imgSrc='/TravelMag_Preview.png'
-                />
-                <ProjectCard
-                    title='Travel Magazine'
-                    imgSrc='/TravelMag_Preview.png'
-                />
-                <ProjectCard
-                    title='Travel Magazine'
-                    imgSrc='/TravelMag_Preview.png'
-                />
-                <ProjectCard
-                    title='Travel Magazine'
-                    imgSrc='/TravelMag_Preview.png'
-                />
-                <ProjectCard
-                    title='Travel Magazine'
-                    imgSrc='/TravelMag_Preview.png'
-                />
+                {projects.map((project) => (
+                    <ProjectCard
+                        key={project.id}
+                        id={project.id}
+                        title={project.title}
+                        imgSrc={project.preview}
+                    />
+                ))}
             </main>
         </div>
     );
