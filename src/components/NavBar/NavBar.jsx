@@ -5,11 +5,13 @@ import "./NavBar.css";
 export default function NavBar() {
     return (
         <div className='nav-bar'>
-            <img
-                src='/LogoBlue.svg'
-                alt='Logo'
-                className='nav-logo'
-            />
+            <Link to='/'>
+                <img
+                    src='/LogoBlue.svg'
+                    alt='Logo - Return to Home'
+                    className='nav-logo'
+                />
+            </Link>
             <div className='nav-items'>
                 <Link
                     to='/Portfolio'

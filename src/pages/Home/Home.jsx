@@ -1,6 +1,8 @@
+import "./Home.css";
+
 export default function Home() {
     return (
-        <>
+        <div className='homepage'>
             <div className='header'>
                 <h1>
                     Hi! I'm Alyssa.
@@ -11,7 +13,7 @@ export default function Home() {
                     have it updated soon!
                 </p>
             </div>
-            <div className='content'></div>
-        </>
+            <div className='spacer'></div>
+        </div>
     );
 }

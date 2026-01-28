@@ -1,27 +1,40 @@
 [
     {
-        "id": "Revitea+",
+        "id": "revitea",
         "title": "Revitea+",
         "preview": "/Revitea/Preview.png",
         "heroImage": "/Revitea/Hero.png",
-        "description": "<p>Health-conscious consumers want a drink that’s healthier while giving them clean energy. The goal was to create a product that  was not only visually appealing and attractive from a shelf, but also has clean ingredients and natural flavors. The result is an energy drink line that is simple, yet appealing, highlighting its different flavors while being overall cohesive.</p>",
-        "role": "<p>Product Designer, Illustrator</p>",
+        "menuLabel": "Overview",
+
+        "description": "Health-conscious consumers want a drink that’s healthier while giving them clean energy. The goal was to create a product that  was not only visually appealing and attractive from a shelf, but also has clean ingredients and natural flavors. The result is an energy drink line that is simple, yet appealing, highlighting its different flavors while being overall cohesive.",
+        "role": "Product Designer, Illustrator",
         "sections": [
             {
                 "title": "Ideation - Matcha-based Energy",
+                "menuLabel": "Ideation",
                 "content": "<p>It started with ideating, researching, creating moodboards, and style guides figure out what direction to go. I looked at drinks currently on the market, both energy and tea-based drinks, to see what worked for other companies and what ways they were trying to differentiate themselves.</p>"
             },
             {
                 "title": "Creation - Revitea+",
-                "content": "<p>The goal was to create a drink that was sleek and spoke for itself, with 3 different flavors in the line-up. With the base flavor being Matcha, I wanted to ensure there were underlying tones from it carried throughout all cans, while still being unique from each other. <br/> With this, I chose 2 fonts for the base of the project, along with curated color palettes to be used both consistently across all cans and individually for each flavor.</p>"
+                "menuLabel": "Creation",
+
+                "content": "<p>The goal was to create a drink that was sleek and spoke for itself, with 3 different flavors in the line-up. With the base flavor being Matcha, I wanted to ensure there were underlying tones from it carried throughout all cans, while still being unique from each other. <br/> <br/>With this, I chose 2 fonts for the base of the project, along with curated color palettes to be used both consistently across all cans and individually for each flavor.</p>"
             },
             {
                 "title": "Iterations",
-                "Content": "<p>Combining the visuals carried through energy drinks vs. tea drinks took a couple tries, trying to create something matching the market while standing out. Because of this, there were a couple previous versions that didn’t make the cut. <br/> With palettes, fonts, and drink names, every part of this project had multiple renditions and combinations to ensure the best one suited was picked.</p>"
+                "menuLabel": "Iterations",
+
+                "content": "Combining the visuals carried through energy drinks vs. tea drinks took a couple tries, trying to create something matching the market while standing out. Because of this, there were a couple previous versions that didn’t make the cut. <br/><br/> With palettes, fonts, and drink names, every part of this project had multiple renditions and combinations to ensure the best one suited was picked."
             },
             {
                 "title": "Final Product",
-                "Content": "<p>The result was a 3 flavor line-up of matcha-based energy drinks. On the side of the can, are highlights showing its health-conscious promotion, with the nutrition information on the other. Each can is themed to its unique flavor while being cohesive as a full set, accented to reflect their contents.</p>"
+                "menuLabel": "Final Product",
+
+                "content": "<p>The result was a 3 flavor line-up of matcha-based energy drinks. On the side of the can, are highlights showing its health-conscious promotion, with the nutrition information on the other. Each can is themed to its unique flavor while being cohesive as a full set, accented to reflect their contents.</p>"
+            },
+            {
+                "title": "Check it out!",
+                "menuLabel": "Test it out"
             }
         ]
     }

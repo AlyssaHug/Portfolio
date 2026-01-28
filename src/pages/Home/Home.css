@@ -1,0 +1,29 @@
+.header {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 9.3rem;
+}
+.header p {
+    font-family: var(--font-family-body);
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        margin-bottom: 13rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .header {
+        margin-bottom: 13.8rem;
+    }
+}
+
+.homepage {
+    overflow-y: hidden;
+}
