@@ -1,0 +1,31 @@
+.hero-image {
+    width: 100vw;
+    margin-top: 1.5rem;
+}
+.project-content {
+    background-color: #e6f6f9;
+    color: #070a0d;
+}
+
+p,
+ul {
+    font-family: var(--font-family-body);
+}
+
+.meta {
+    display: flex;
+    align-items: baseline;
+    font-size: 14px;
+}
+
+.role {
+    margin-right: 0.5rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1,
+h2,
+.role {
+    font-family: var(--font-family-display);
+}

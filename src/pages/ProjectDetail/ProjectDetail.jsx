@@ -39,7 +39,8 @@ export default function ProjectDetail() {
                 <h1>{project.title}</h1>
                 <p className='short-desc'>{project.description}</p>
                 <div className='meta'>
-                    <span>Role: {project.role}</span>
+                    <span className='role'>Role: </span>
+                    <p> {project.role}</p>
                 </div>
             </header>
 
@@ -62,6 +63,12 @@ export default function ProjectDetail() {
                         </section>
                     );
                 })}
+            </div>
+            <div className='gallery-test'>
+                <h2>{project.end.title}</h2>
+                <div>
+                    <img src={project.end.image} />
+                </div>
             </div>
         </article>
     );

@@ -31,11 +31,12 @@
                 "menuLabel": "Final Product",
 
                 "content": "<p>The result was a 3 flavor line-up of matcha-based energy drinks. On the side of the can, are highlights showing its health-conscious promotion, with the nutrition information on the other. Each can is themed to its unique flavor while being cohesive as a full set, accented to reflect their contents.</p>"
-            },
-            {
-                "title": "Check it out!",
-                "menuLabel": "Test it out"
             }
-        ]
+        ],
+        "end": {
+            "title": "Check it Out!",
+            "menuLabel": "Test it out",
+            "image": "/Revitea/Final1.png"
+        }
     }
 ]
