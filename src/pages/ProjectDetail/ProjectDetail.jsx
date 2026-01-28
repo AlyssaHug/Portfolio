@@ -23,18 +23,31 @@ export default function ProjectDetail() {
                 alt={project.title}
                 className='hero-image'
             />
-            <header className='project-header'>
+            <header
+                className='project-header'
+                id='overview'>
                 <ul>
+                    {/* Always first */}
+                    <li>
+                        <a href='#overview'>Overview</a>
+                    </li>
+
+                    {/* Dynamic middle sections */}
                     {project.sections.map((section, index) => {
-                        const id = `section-${index + 1}`;
-                        const label = section.menuLabel || section.title; // ← magic line
+                        const sectionId = `section-${index + 1}`;
+                        const label = section.menuLabel || section.title;
 
                         return (
-                            <li key={index}>
-                                <a href={`#${id}`}>{label}</a>
+                            <li key={sectionId}>
+                                <a href={`#${sectionId}`}>{label}</a>
                             </li>
                         );
                     })}
+
+                    {/* Always last */}
+                    <li>
+                        <a href='#test'>Test it out!</a>
+                    </li>
                 </ul>
                 <h1>{project.title}</h1>
                 <p className='short-desc'>{project.description}</p>
@@ -64,7 +77,9 @@ export default function ProjectDetail() {
                     );
                 })}
             </div>
-            <div className='gallery-test'>
+            <div
+                className='gallery-test'
+                id='test'>
                 <h2>{project.end.title}</h2>
                 <div>
                     <img src={project.end.image} />
