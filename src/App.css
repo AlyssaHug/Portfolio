@@ -2,6 +2,10 @@
     --font-family-display: "Amaranth", sans-serif;
     --font-family-body: "Roboto", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
 body {
     background-color: #090d12;
     color: #ecedf5;

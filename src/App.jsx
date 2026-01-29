@@ -4,7 +4,7 @@ import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import Footer from "./components/footer/footer";
 import NavBar from "./components/NavBar/NavBar.jsx";
 import Home from "./pages/Home/Home.jsx";
-import ProjectDetail from "./pages/ProjectDetail/ProjectDetail.jsx";
+import ProjectDetailRouter from "./pages/ProjectDetailRouter.jsx";
 
 function App() {
     return (
@@ -21,8 +21,8 @@ function App() {
                         element={<Portfolio />}
                     />
                     <Route
-                        path='/portfolio/:projectId'
-                        element={<ProjectDetail />}
+                        path='/portfolio/:slug'
+                        element={<ProjectDetailRouter />}
                     />
                     <Route
                         path='*'

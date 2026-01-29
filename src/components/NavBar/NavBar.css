@@ -22,9 +22,15 @@
 .nav-link {
     padding-right: 20px;
     color: #8285bd;
+    text-decoration: none;
+    transition: color 0.25s ease;
 }
-.nav-link :active {
+.nav-link:hover {
+    color: #54c5d7;
+}
+.nav-link.active {
     color: #edeef6;
+    font-weight: bold;
 }
 @media screen and (min-width: 800px) {
     .nav-logo {

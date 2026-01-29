@@ -17,6 +17,74 @@
     color: #ecedf5;
     font-size: 80px;
 }
+
+.filter-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.filter-container::-webkit-scrollbar {
+    height: 0; /* thin horizontal scrollbar */
+}
+.filter-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin: 0.5rem auto 1.5rem;
+}
+.filter-btn {
+    padding: 0.5rem 1rem;
+    font-family: var(--font-family-body);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: #44489c;
+    border: 2px solid #44489c;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.filter-btn:hover {
+    background-color: #44489c;
+    color: #ecedf5;
+    transform: scale(1.05);
+}
+
+.filter-btn.active {
+    background-color: #33bacf;
+    color: #ecedf5;
+    border-color: #33bacf;
+    font-weight: 600;
+}
+
+/* Per-category active colors – match your tag colors */
+.filter-btn[data-category="all"].active {
+    background-color: #33bacf; /* gray for All */
+    border-color: #33bacf;
+}
+
+.filter-btn[data-category="graphic-design"].active {
+    background-color: #7da75b; /* green */
+    border-color: #7da75b;
+}
+
+.filter-btn[data-category="ui-ux-design"].active {
+    background-color: #f4a261; /* orange */
+    border-color: #f4a261;
+}
+
+.filter-btn[data-category="front-end"].active {
+    background-color: #c084fc; /* purple */
+    border-color: #c084fc;
+}
+
+.filter-btn[data-category="product-design"].active {
+    background-color: #ff6b6b; /* red */
+    border-color: #ff6b6b;
+}
+
 @media screen and (min-width: 800px) {
     .content {
         display: grid;
@@ -29,6 +97,14 @@
     }
     .page-title {
         font-size: 80px;
+    }
+    .filter-btn {
+        font-size: 1.2rem;
+    }
+    .filter-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 

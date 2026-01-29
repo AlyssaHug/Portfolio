@@ -1,34 +1,40 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Portfolio from "../../pages/Portfolio/Portfolio";
 import "./NavBar.css";
 
 export default function NavBar() {
     return (
         <div className='nav-bar'>
-            <Link to='/'>
+            <NavLink to='/'>
                 <img
                     src='/LogoBlue.svg'
                     alt='Logo - Return to Home'
                     className='nav-logo'
                 />
-            </Link>
+            </NavLink>
             <div className='nav-items'>
-                <Link
+                <NavLink
                     to='/Portfolio'
-                    className='nav-link'>
+                    className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
                     Portfolio
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                     to='/About'
-                    className='nav-link'>
+                    className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
                     About
-                </Link>
+                </NavLink>
 
-                <Link
+                <NavLink
                     to='/Contact'
-                    className='nav-link'>
+                    className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
                     Get in touch!
-                </Link>
+                </NavLink>
             </div>
         </div>
     );
