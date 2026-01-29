@@ -111,6 +111,68 @@ export default function Revitea() {
                         consistently across all cans and individually for each
                         flavor.
                     </p>
+                    <div className='styles'>
+                        <div className='palettes'>
+                            <div className='palette'>
+                                <div
+                                    className='color-swatch'
+                                    style={{ backgroundColor: "#F2E8CF" }}>
+                                    #F2E8CF
+                                </div>
+                                <div
+                                    className='color-swatch swatch2'
+                                    style={{ backgroundColor: "#386641" }}>
+                                    #386641
+                                </div>
+                            </div>
+                            <div className='palette'>
+                                <div
+                                    className='color-swatch'
+                                    style={{ backgroundColor: "#F1DADD" }}>
+                                    #F1DADD
+                                </div>
+                                <div
+                                    className='color-swatch swatch2'
+                                    style={{ backgroundColor: "#CE6876" }}>
+                                    #CE6876
+                                </div>
+                            </div>
+                            <div className='palette'>
+                                <div
+                                    className='color-swatch'
+                                    style={{ backgroundColor: "#CADEE5" }}>
+                                    #CADEE5
+                                </div>
+                                <div
+                                    className='color-swatch swatch2'
+                                    style={{ backgroundColor: "#426996" }}>
+                                    #426996
+                                </div>
+                            </div>
+                            <div className='palette'>
+                                <div
+                                    className='color-swatch'
+                                    style={{ backgroundColor: "#D2C8E8" }}>
+                                    #D2C8E8
+                                </div>
+                                <div
+                                    className='color-swatch swatch2'
+                                    style={{ backgroundColor: "#816EAF" }}>
+                                    #816EAF
+                                </div>
+                            </div>
+                        </div>
+                        <div className='fonts'>
+                            <div className='font'>
+                                <h1 className='font-name federo'>Federo</h1>
+                                <p className='font-sample federo'>Aa</p>
+                            </div>
+                            <div className='font'>
+                                <h1 className='font-name fugaz'>Fugaz One</h1>
+                                <p className='font-sample fugaz'>Aa</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section
                     id='iterations'

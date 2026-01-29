@@ -8,8 +8,9 @@
     width: 104%;
     left: -2%;
     position: relative;
+    padding-top: 3rem;
 }
-
+/*=====Header Styles=====*/
 p,
 ul {
     font-family: var(--font-family-body);
@@ -62,6 +63,7 @@ h2,
     margin: 0;
     padding-bottom: 0.4rem;
 }
+/*=====Section Styles=====*/
 .short-desc,
 .section-desc {
     margin: 0;
@@ -78,14 +80,76 @@ h2,
 }
 .main-section {
     padding: 0 1.5rem;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     max-width: 85vw;
 }
 .section-title {
     font-size: 1.5rem;
     margin: 0;
-    padding: 2rem 0 0.5rem 0;
+    padding: 1rem 0 0.5rem 0;
 }
+
+/*=====Palette Styles=====*/
+.palettes {
+    font-family: var(--font-family-body);
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+.color-swatch {
+    width: 60px;
+    height: 80px;
+    color: #071512;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 0.1rem 0.5rem;
+}
+.swatch2 {
+    color: #ecedf5;
+}
+.palette {
+    display: flex;
+    gap: 0.2rem;
+}
+
+/*=====Font Styles=====*/
+.federo {
+    font-family: "Federo";
+}
+.fugaz {
+    font-family: "Fugaz one";
+}
+.font-name {
+    font-size: 1.5rem;
+    margin: 0;
+    text-wrap: nowrap;
+}
+.font-sample {
+    font-size: 52px;
+    margin: 0;
+    line-height: 90%;
+}
+.font {
+    text-align: center;
+}
+.fonts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+/*=====Styles sections=====*/
+.styles {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/*=====Tablet Query=====*/
 @media screen and (min-width: 800px) {
     .project-header {
         padding: 1rem 4rem;
@@ -107,7 +171,6 @@ h2,
     }
     .section-title {
         font-size: 2rem;
-        padding-top: 3rem;
     }
     .section-desc {
         font-size: 14px;
@@ -118,6 +181,8 @@ h2,
         padding-bottom: 2rem;
     }
 }
+
+/*=====Desktop Query=====*/
 @media screen and (min-width: 1200px) {
     .project-header {
         padding: 1rem 4rem;
@@ -144,5 +209,12 @@ h2,
     }
     li {
         padding-top: 1.05rem;
+    }
+    .section-title {
+        font-size: 52px;
+    }
+    .section-desc {
+        font-size: 18px;
+        width: 72%;
     }
 }
