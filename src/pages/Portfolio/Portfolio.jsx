@@ -46,6 +46,7 @@ const galleryItems = [
         image: "/Posters/Preview.png",
         description:
             "A series of posters inspired by retro computer graphics and Hayley Williams 3rd solo album.",
+        slug: "posters",
     },
     {
         id: 6,
@@ -53,6 +54,7 @@ const galleryItems = [
         categories: ["Front-end", "UI/UX Design"],
         image: "/MoolahMate/Preview.png",
         description: "A gamified budgeting app to help",
+        slug: "moolahmate",
     },
 ];
 

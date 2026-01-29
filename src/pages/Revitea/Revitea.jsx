@@ -173,6 +173,29 @@ export default function Revitea() {
                             </div>
                         </div>
                     </div>
+                    <div className='creation-images'>
+                        <img
+                            src='/Revitea/Name Variation.png'
+                            alt='Name variations'
+                            className='variation'
+                        />
+                        <img
+                            src='/Revitea/strawberry.svg'
+                            alt='Strawberry can art'
+                            className='can-svg'
+                        />
+
+                        <img
+                            src='/Revitea/blueberry.svg'
+                            alt='Blueberry can art'
+                            className='can-svg'
+                        />
+                        <img
+                            src='/Revitea/lavender.svg'
+                            alt='Lavender can art'
+                            className='can-svg'
+                        />
+                    </div>
                 </section>
                 <section
                     id='iterations'
@@ -190,6 +213,25 @@ export default function Revitea() {
                         this project had multiple renditions and combinations to
                         ensure the best one suited was picked.
                     </p>
+                    <div className='iteration-images'>
+                        <img
+                            src='/Revitea/initial.svg'
+                            alt='Initial mockup of label'
+                            className='process-img'
+                        />
+                        <p className='eq'>=</p>
+                        <img
+                            src='/Revitea/attempt.svg'
+                            alt='Second version of label'
+                            className='process-img'
+                        />
+                        <p className='eq'>=</p>
+                        <img
+                            src='/Revitea/finalLabel.svg'
+                            alt='Final label design'
+                            className='process-img'
+                        />
+                    </div>
                 </section>
                 <section
                     id='final'

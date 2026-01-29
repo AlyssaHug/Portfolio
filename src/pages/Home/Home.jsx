@@ -9,8 +9,9 @@ export default function Home() {
                     <br />A UI/UX Designer.
                 </h1>
                 <p>
-                    My site is currently under construction. Working hard to
-                    have it updated soon!
+                    My site is currently under construction. <br />
+                    Feel free to click around and explore, just be mindful I'm
+                    still working hard to complete parts of the site!
                 </p>
             </div>
             <div className='spacer'></div>
