@@ -245,6 +245,23 @@ export default function Revitea() {
                         unique flavor while being cohesive as a full set,
                         accented to reflect their contents.
                     </p>
+                    <div className='img-container'>
+                        <img
+                            src='/Revitea/final01.png'
+                            alt='Final version of Strawberry flavour'
+                            className='final-img'
+                        />
+                        <img
+                            src='/Revitea/final02.png'
+                            alt='Final version of Blueberry flavour'
+                            className='final-img'
+                        />
+                        <img
+                            src='/Revitea/final03.png'
+                            alt='Final version of Lavender flavour'
+                            className='final-img'
+                        />
+                    </div>
                 </section>
             </div>
             <section

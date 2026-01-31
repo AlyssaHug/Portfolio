@@ -5,7 +5,9 @@ import "./NavBar.css";
 export default function NavBar() {
     return (
         <div className='nav-bar'>
-            <NavLink to='/'>
+            <NavLink
+                to='/'
+                className='link-img'>
                 <img
                     src='/LogoBlue.svg'
                     alt='Logo - Return to Home'

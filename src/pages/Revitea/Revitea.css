@@ -5,9 +5,6 @@
 .project-content {
     background-color: #e6f6f9;
     color: #070a0d;
-    width: 104%;
-    left: -2%;
-    position: relative;
     padding-top: 3rem;
 }
 /*=====Header Styles=====*/
@@ -34,6 +31,7 @@ ul {
     padding-left: 0;
     padding-top: 0.3rem;
     white-space: nowrap;
+    transition: all 0.3s ease;
 }
 li {
     padding: 0.25em 0;
@@ -41,6 +39,10 @@ li {
 
 .link {
     color: #8285bd;
+    transition: color 0.25s ease;
+}
+.link:hover {
+    color: #54c5d7;
 }
 .link.active {
     color: #ecedf5;
@@ -172,7 +174,8 @@ h2,
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
-.iteration-images::-webkit-scrollbar {
+.iteration-images::-webkit-scrollbar,
+.img-container::-webkit-scrollbar {
     height: 0;
 }
 .process-img {
@@ -183,6 +186,19 @@ h2,
 .eq {
     font-size: 5rem;
     margin: 0 0.5rem;
+}
+
+/*=====Final product=====*/
+.final-img {
+    width: 80%;
+    border-radius: 24px;
+    margin: 0.5rem 0.5rem 4rem;
+}
+.img-container {
+    display: flex;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /*=====Swatch sizing for better visibility=====*/
@@ -261,6 +277,13 @@ h2,
     .process-img {
         width: 30%;
         padding: 0;
+    }
+
+    /*=====Final product=====*/
+    .final-img {
+        width: 50%;
+
+        margin: 0.5rem 1rem 5rem 0;
     }
 }
 
@@ -343,5 +366,14 @@ h2,
     .process-img {
         width: 30%;
         padding: 0;
+    }
+
+    /*=====Final product=====*/
+    .final-img {
+        width: 32%;
+        margin-bottom: 7rem;
+    }
+    .img-container {
+        justify-content: center;
     }
 }

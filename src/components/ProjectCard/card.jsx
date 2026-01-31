@@ -1,29 +1,40 @@
 import "./card.css";
 import { Link } from "react-router-dom";
 
-export default function ProjectCard({ brief, slug, title, imgSrc, tags = [] }) {
+export default function ProjectCard({
+    id,
+    title,
+    categories,
+    image,
+    description,
+    slug,
+}) {
     return (
         <Link
+            key={id}
             to={`/Portfolio/${slug}`}
-            className='card-link'>
+            className='project-card-link'>
             <div className='project-card'>
                 <img
-                    className='project-img'
-                    src={imgSrc}
+                    src={image}
                     alt={title}
+                    className='project-img'
+                    loading='lazy'
                 />
-                <h3 className='title'>{title}</h3>
-                <div className='hover-overlay'>
-                    <p className='brief'>{brief}</p>
-
+                <div className='card-text'>
+                    <h3 className='title'>{title}</h3>
+                    <p className='brief'>{description}</p>
+                </div>
+                <div className='item-info'>
                     <div className='category-tags'>
                         {categories.map((cat) => (
                             <span
                                 key={cat}
                                 className={`category-tag ${cat
-                                    .toLowerCase()
-                                    .replace(/\s+/g, "-")
-                                    .replace("/", "-")}`}>
+                                    .toLowerCase() // ← add this
+                                    .replace(/\s+/g, "-") // spaces → hyphen
+                                    .replace("/", "-")}`} // keep for safety
+                            >
                                 {cat.toUpperCase().replace("/", "/")}
                             </span>
                         ))}

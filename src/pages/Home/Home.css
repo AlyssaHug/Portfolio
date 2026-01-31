@@ -1,29 +1,74 @@
-.header {
-    margin-top: 6rem;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 9.3rem;
+.homepage {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.header p {
+
+.header {
+    margin: 8rem auto 5rem;
+    font-size: 6rem;
+    line-height: 95%;
+}
+.disclaimer {
     font-family: var(--font-family-body);
     font-size: 1rem;
+    text-align: center;
+    margin: auto 1rem 5rem;
+}
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-logo {
+    width: 20%;
+}
+.last-name {
+    margin-left: 4rem;
+}
+.main {
+    background-color: #e6f6f9;
+    color: #070a0d;
+}
+.intro {
+    padding: 4rem 1rem;
+    font-family: var(--font-family-display);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto 1rem;
+    text-align: center;
 }
 
 @media screen and (min-width: 700px) {
     .header {
-        margin-bottom: 13rem;
+        font-size: 8.5rem;
+    }
+    .disclaimer {
+        font-size: 20px;
+        margin: 2rem 5rem 6rem;
+    }
+    .intro {
+        font-size: 2.5rem;
+        margin: auto 4rem;
     }
 }
 
 @media screen and (min-width: 1100px) {
-    h1 {
-        font-size: 4rem;
-    }
     .header {
-        margin-bottom: 13.8rem;
+        font-size: 12rem;
+        margin-top: 7rem;
     }
-}
+    .last-name {
+        margin-left: 12rem;
+    }
+    .disclaimer {
+        margin-top: 0;
+    }
+    .intro {
+        margin: 6rem 14rem;
 
-.homepage {
-    overflow-y: hidden;
+        font-size: 3.8rem;
+    }
 }

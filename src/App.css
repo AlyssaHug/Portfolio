@@ -10,6 +10,7 @@ body {
     background-color: #090d12;
     color: #ecedf5;
     overflow-x: hidden;
+    margin: 0;
 }
 .header {
     font-family: var(--font-family-display);

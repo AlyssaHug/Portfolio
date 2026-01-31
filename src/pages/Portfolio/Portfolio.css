@@ -4,9 +4,6 @@
     flex-direction: column;
     align-items: center;
     background-color: #e6f6f9;
-    width: 104%;
-    left: -8px;
-    position: relative;
     padding-bottom: 4rem;
 }
 .page-title {
@@ -92,8 +89,6 @@
         gap: 16px;
         justify-content: center;
         align-items: center;
-        width: 102%;
-        left: -12px;
     }
     .page-title {
         font-size: 80px;
@@ -115,7 +110,6 @@
         gap: 16px;
         justify-content: center;
         align-items: center;
-        left: -16px;
     }
     .page-title {
         font-size: 140px;
