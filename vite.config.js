@@ -5,4 +5,21 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
     plugins: [react()],
     base: "/",
+
+    build: {
+        rollupOptions: {
+            output: {
+                // ────────────────────────────────────────────────
+                // This is the key part: manual chunking
+                // ────────────────────────────────────────────────
+                manualChunks: {
+                    "three-vendor": [
+                        "three",
+                        "@react-three/fiber",
+                        "@react-three/drei",
+                    ],
+                },
+            },
+        },
+    },
 });
