@@ -302,7 +302,7 @@ export default function Revitea() {
                                 </Stage>
                                 <OrbitControls
                                     makeDefault
-                                    enableZoom={true}
+                                    enableZoom={false}
                                 />
                             </Suspense>
                         </Canvas>
@@ -322,7 +322,7 @@ export default function Revitea() {
                                 </Stage>
                                 <OrbitControls
                                     makeDefault
-                                    enableZoom={true}
+                                    enableZoom={false}
                                 />
                             </Suspense>
                         </Canvas>
@@ -342,7 +342,7 @@ export default function Revitea() {
                                 </Stage>
                                 <OrbitControls
                                     makeDefault
-                                    enableZoom={true}
+                                    enableZoom={false}
                                 />
                             </Suspense>
                         </Canvas>
