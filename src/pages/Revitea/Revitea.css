@@ -200,6 +200,24 @@ h2,
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+/*====Can models====*/
+
+.can-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1400px;
+    padding: 0 1rem;
+}
+/*=====Mobile size for can models====*/
+@media screen and (max-width: 799px) {
+    .can-wrapper.blueberry,
+    .can-wrapper.lavender {
+        display: none;
+    }
+}
 
 /*=====Swatch sizing for better visibility=====*/
 @media screen and (min-width: 600px) {
