@@ -30,13 +30,11 @@ export default function NavBar() {
                     About
                 </NavLink>
 
-                <NavLink
-                    to='/Contact'
-                    className={({ isActive }) =>
-                        isActive ? "nav-link active" : "nav-link"
-                    }>
+                <a
+                    href='mailto:alyssathuggins@gmail.com'
+                    className='nav-link'>
                     Get in touch!
-                </NavLink>
+                </a>
             </div>
         </div>
     );

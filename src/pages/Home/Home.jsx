@@ -1,6 +1,18 @@
 import "./Home.css";
+import ProjectCard from "../../components/ProjectCard/card";
+import projects from "../../Data/projects.json";
+import { Link } from "react-router-dom";
 
 export default function Home() {
+    const allCategories = [
+        "all",
+        ...new Set(projects.flatMap((item) => item.categories)),
+    ].sort((a, b) => {
+        if (a === "all") return -1; // always first
+        if (b === "all") return 1;
+        return a.localeCompare(b);
+    });
+
     return (
         <div className='homepage'>
             <div className='header-text'>
@@ -26,6 +38,49 @@ export default function Home() {
                     Hi, I'm Alyssa! A detailed designer with a passion for
                     creating digital products that feel alive
                 </p>
+                <div className='feature-section'>
+                    <div className='section-text'>
+                        <h2 className='section-title'>Highlights</h2>
+                        {projects.length > 3 && (
+                            <div className='view-all-wrapper'>
+                                <Link
+                                    to='/Portfolio'
+                                    className='view-all-btn'>
+                                    View All Projects
+                                </Link>
+                            </div>
+                        )}
+                    </div>
+                    <div className='projects-container'>
+                        {projects.slice(0, 3).map(
+                            (
+                                project, // ← slice(0,3) = first 3 items
+                            ) => (
+                                <ProjectCard
+                                    key={project.id}
+                                    id={project.id}
+                                    title={project.title}
+                                    categories={project.categories}
+                                    image={project.image}
+                                    description={project.description}
+                                    slug={project.slug}
+                                />
+                            ),
+                        )}
+                    </div>
+                </div>
+                <div className='contact-section'>
+                    <div className='contact-header'>
+                        <span className='first-line'>Feel like</span>
+
+                        <span className='last-line'>Collaborating?</span>
+                    </div>
+                    <a
+                        className='contact-btn'
+                        href='mailto:alyssathuggins@gmail.com'>
+                        Get in Touch!
+                    </a>
+                </div>
             </div>
         </div>
     );
