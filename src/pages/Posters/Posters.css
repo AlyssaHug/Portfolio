@@ -61,7 +61,11 @@
     display: flex;
     justify-content: space-between;
 }
+.process-img {
+    width: 60%;
 
+    padding: 0;
+}
 /*=====Final product=====*/
 .final-poster {
     height: 65vh;
