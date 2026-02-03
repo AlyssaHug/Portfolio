@@ -119,29 +119,18 @@ h2,
 }
 
 /*=====Font Styles=====*/
-.federo {
-    font-family: "Federo";
-}
-.fugaz {
-    font-family: "Fugaz one";
-}
-.font-name {
-    font-size: 1.5rem;
-    margin: 0;
-    text-wrap: nowrap;
-}
-.font-sample {
-    font-size: 52px;
-    margin: 0;
-    line-height: 90%;
-}
+
 .font {
     text-align: center;
+    width: 6rem;
 }
 .fonts {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+.fugaz {
+    width: 7rem;
 }
 /*=====Styles sections=====*/
 .styles {
@@ -283,6 +272,7 @@ h2,
     .styles {
         margin: 0 auto;
     }
+
     /*=====iteration section=====*/
     .iteration-images {
         display: flex;
@@ -364,13 +354,13 @@ h2,
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        align-items: center;
     }
-    .font-name {
-        font-size: 48px;
+    .font {
+        width: 10rem;
     }
-    .font-sample {
-        font-size: 92px;
-        line-height: 140%;
+    .fugaz {
+        width: 13rem;
     }
     .styles {
         gap: 2rem;

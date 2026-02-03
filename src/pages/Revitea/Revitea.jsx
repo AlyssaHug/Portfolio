@@ -164,14 +164,17 @@ export default function Revitea() {
                             </div>
                         </div>
                         <div className='fonts'>
-                            <div className='font'>
-                                <h1 className='font-name federo'>Federo</h1>
-                                <p className='font-sample federo'>Aa</p>
-                            </div>
-                            <div className='font'>
-                                <h1 className='font-name fugaz'>Fugaz One</h1>
-                                <p className='font-sample fugaz'>Aa</p>
-                            </div>
+                            <img
+                                className='font federo'
+                                src='/Revitea/federo.svg'
+                                alt='Federo - Display font sample'
+                            />
+
+                            <img
+                                className='font fugaz'
+                                src='/Revitea/fugaz.svg'
+                                alt='Fugaz One - Body font sample'
+                            />
                         </div>
                     </div>
                     <div className='creation-images'>
