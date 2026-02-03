@@ -26,7 +26,7 @@
     {
         "id": 4,
         "title": "Revitea+",
-        "categories": ["Product Design", "Graphic Design"],
+        "categories": ["Graphic Design"],
         "image": "/Revitea/Preview.png",
         "description": "Clean matcha-based energy.",
         "slug": "revitea"
@@ -35,7 +35,6 @@
         "id": 5,
         "title": "Poster Series",
         "categories": ["Graphic Design"],
-
         "image": "/Posters/Preview.png",
         "description": "A series of posters inspired by retro computer graphics and Hayley Williams 3rd solo album.",
         "slug": "posters"

@@ -1,6 +1,5 @@
 import "./Portfolio.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import projects from "../../Data/projects.json";
 import ProjectCard from "../../components/ProjectCard/card";
 

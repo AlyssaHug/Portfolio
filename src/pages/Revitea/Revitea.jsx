@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Revitea.css";
 import Cans from "../../components/cans/cans";
 
