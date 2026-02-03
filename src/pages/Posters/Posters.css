@@ -1,4 +1,7 @@
 /*=====Palette Styles=====*/
+.styles {
+    display: flex;
+}
 .palettes {
     font-family: var(--font-family-body);
     font-size: 11px;
@@ -28,11 +31,15 @@
 
 /*=====Font Styles=====*/
 
-.fonts {
+.poster-fonts {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
     align-items: center;
+}
+.poster-font {
+    text-align: center;
+    width: 6rem;
 }
 
 /*=====can art======*/
@@ -74,7 +81,7 @@
     .palettes {
         gap: 1rem;
     }
-    .fonts {
+    .poster-fonts {
         flex-direction: row;
     }
     .styles {
@@ -99,12 +106,13 @@
     }
     .styles {
         margin: 0 auto;
-        gap: 1rem;
+        gap: 3rem;
+        display: flex;
     }
-    .font {
+    .poster-font {
         width: 9.5rem;
     }
-    .fonts {
+    .poster-fonts {
         flex-direction: row;
         gap: 0;
     }
@@ -125,7 +133,7 @@
     /*=====iteration section=====*/
 
     .process-img {
-        width: 40vw;
+        width: 35vw;
     }
 }
 
@@ -148,13 +156,13 @@
     .palette {
         gap: 1rem;
     }
-    .fonts {
+    .poster-fonts {
         display: flex;
         flex-direction: row;
         gap: 2rem;
         align-items: center;
     }
-    .font {
+    .poster-font {
         width: 12rem;
     }
     .support {
@@ -163,6 +171,7 @@
 
     .styles {
         gap: 4rem;
+        display: flex;
     }
     .creation-images {
         margin: 1.5rem auto 6rem;

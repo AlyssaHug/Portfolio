@@ -141,15 +141,15 @@ export default function Posters() {
                                 </div>
                             </div>
                         </div>
-                        <div className='fonts'>
+                        <div className='poster-fonts'>
                             <img
-                                className='font'
+                                className='poster-font'
                                 src='/Posters/Minecraftia.svg'
                                 alt='Minecraftia - Main font sample'
                             />
 
                             <img
-                                className='font support'
+                                className='poster-font support'
                                 src='/Posters/Supporting.svg'
                                 alt='Lyric font samples'
                             />

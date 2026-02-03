@@ -216,7 +216,7 @@ export default function Revitea() {
                         this project had multiple renditions and combinations to
                         ensure the best one suited was picked.
                     </p>
-                    <div className='label-images'>
+                    <div className='iteration-images'>
                         <img
                             src='/Revitea/initial.svg'
                             alt='Initial mockup of label'
