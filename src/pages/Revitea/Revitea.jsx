@@ -216,23 +216,23 @@ export default function Revitea() {
                         this project had multiple renditions and combinations to
                         ensure the best one suited was picked.
                     </p>
-                    <div className='iteration-images'>
+                    <div className='label-images'>
                         <img
                             src='/Revitea/initial.svg'
                             alt='Initial mockup of label'
-                            className='process-img'
+                            className='label-img'
                         />
                         <p className='eq'>=</p>
                         <img
                             src='/Revitea/attempt.svg'
                             alt='Second version of label'
-                            className='process-img'
+                            className='label-img'
                         />
                         <p className='eq'>=</p>
                         <img
                             src='/Revitea/finalLabel.svg'
                             alt='Final label design'
-                            className='process-img'
+                            className='label-img'
                         />
                     </div>
                 </section>
