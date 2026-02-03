@@ -34,6 +34,11 @@ export default function Cans() {
                             preset='soft'>
                             <Strawberry />
                         </Stage>
+                        <directionalLight
+                            position={[-0.5, 0, 1]}
+                            intensity={0.8}
+                            color='#ffffff'
+                        />
                         <OrbitControls
                             makeDefault
                             enableZoom={false}
@@ -54,6 +59,11 @@ export default function Cans() {
                             preset='soft'>
                             <Blueberry />
                         </Stage>
+                        <directionalLight
+                            position={[-0.5, 0, 1]}
+                            intensity={0.8}
+                            color='#ffffff'
+                        />
                         <OrbitControls
                             makeDefault
                             enableZoom={false}
@@ -71,9 +81,14 @@ export default function Cans() {
                             intensity={0.5}
                             adjustCamera={0.9}
                             centerTo={0}
-                            preset='soft'>
+                            preset='rembrandt'>
                             <Lavender />
                         </Stage>
+                        <directionalLight
+                            position={[-0.5, 0, 1]}
+                            intensity={0.8}
+                            color='#ffffff'
+                        />
                         <OrbitControls
                             makeDefault
                             enableZoom={false}
