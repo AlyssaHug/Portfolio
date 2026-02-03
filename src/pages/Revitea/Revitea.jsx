@@ -111,8 +111,8 @@ export default function Revitea() {
                         consistently across all cans and individually for each
                         flavor.
                     </p>
-                    <div className='styles'>
-                        <div className='palettes'>
+                    <div className='revitea-styles'>
+                        <div className='palette-grid'>
                             <div className='palette'>
                                 <div
                                     className='color-swatch'
@@ -162,21 +162,21 @@ export default function Revitea() {
                                 </div>
                             </div>
                         </div>
-                        <div className='fonts'>
+                        <div className='revitea-fonts'>
                             <img
-                                className='font federo'
+                                className='revitea-font federo'
                                 src='/Revitea/federo.svg'
                                 alt='Federo - Display font sample'
                             />
 
                             <img
-                                className='font fugaz'
+                                className='revitea-font fugaz'
                                 src='/Revitea/fugaz.svg'
                                 alt='Fugaz One - Body font sample'
                             />
                         </div>
                     </div>
-                    <div className='creation-images'>
+                    <div className='revitea-creations'>
                         <img
                             src='/Revitea/Name Variation.png'
                             alt='Name variations'

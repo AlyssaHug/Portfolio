@@ -1,96 +1,3 @@
-.hero-image {
-    width: 100vw;
-    margin-top: 1.5rem;
-}
-.project-content {
-    background-color: #e6f6f9;
-    color: #070a0d;
-    padding-top: 3rem;
-}
-/*=====Header Styles=====*/
-p,
-ul {
-    font-family: var(--font-family-body);
-}
-
-.meta {
-    display: flex;
-    align-items: baseline;
-    font-size: 14px;
-}
-
-.role {
-    margin-right: 0.5rem;
-    font-weight: bold;
-    font-size: 20px;
-}
-.links {
-    list-style-type: none;
-    text-align: right;
-    margin: 0;
-    padding-left: 0;
-    padding-top: 0.3rem;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-}
-li {
-    padding: 0.25em 0;
-}
-
-.link {
-    color: #8285bd;
-    transition: color 0.25s ease;
-}
-.link:hover {
-    color: #54c5d7;
-}
-.link.active {
-    color: #ecedf5;
-}
-
-h1,
-h2,
-.role {
-    font-family: var(--font-family-display);
-}
-.project-header {
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem;
-    justify-content: center;
-    margin: 3rem auto;
-    max-width: 500px;
-}
-.project-title {
-    margin: 0;
-    padding-bottom: 0.4rem;
-}
-/*=====Section Styles=====*/
-.short-desc,
-.section-desc {
-    margin: 0;
-    font-size: 12px;
-}
-.section-desc {
-    padding-bottom: 1rem;
-}
-.section-bannerImg {
-    width: 85vw;
-    display: flex;
-    margin: 0 auto;
-    padding-bottom: 1rem;
-}
-.main-section {
-    padding: 0 1.5rem;
-    margin: 0 auto 1rem;
-    max-width: 85vw;
-}
-.section-title {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 1rem 0 0.5rem 0;
-}
-
 /*=====Palette Styles=====*/
 .palettes {
     font-family: var(--font-family-body);
@@ -128,11 +35,6 @@ h2,
     align-items: center;
 }
 
-/*=====Styles sections=====*/
-.styles {
-    display: flex;
-    justify-content: center;
-}
 /*=====can art======*/
 
 .creation-images {
@@ -153,50 +55,13 @@ h2,
     justify-content: space-between;
 }
 
-/*=====Iteration Section=====*/
-.iteration-images {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4rem;
-
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-.iteration-images::-webkit-scrollbar,
-.img-container::-webkit-scrollbar {
-    height: 0;
-}
-.process-img {
-    width: 60%;
-
-    padding: 0;
-}
-.eq {
-    font-size: 5rem;
-    margin: 0 0.5rem;
-}
-
 /*=====Final product=====*/
 .final-poster {
     height: 65vh;
     margin: 0 0.5rem 4rem;
 }
-.img-container {
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-/*====Poster Stack====*/
 
-.can-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0;
-    justify-content: center;
-    margin: 2rem auto;
-    max-width: 1400px;
-    padding: 0 1rem;
-}
+/*====Poster Stack====*/
 
 /*=====Swatch sizing for better visibility=====*/
 @media screen and (min-width: 600px) {
@@ -209,39 +74,15 @@ h2,
     .palettes {
         gap: 1rem;
     }
+    .fonts {
+        flex-direction: row;
+    }
+    .styles {
+        gap: 0;
+    }
 }
 /*=====Tablet Query=====*/
 @media screen and (min-width: 800px) {
-    .project-header {
-        padding: 1rem 4rem;
-        max-width: 800px;
-        margin: 4rem auto;
-    }
-    .project-title {
-        font-size: 2.5rem;
-    }
-    .short-desc {
-        font-size: 14px;
-        padding-bottom: 1.2rem;
-    }
-    .links {
-        padding-top: 0.2rem;
-    }
-    li {
-        padding-top: 0.38rem;
-    }
-    /*===Sections===*/
-    .section-title {
-        font-size: 2rem;
-    }
-    .section-desc {
-        font-size: 14px;
-        padding-top: 0.5rem;
-        line-height: 140%;
-    }
-    .section-bannerImg {
-        padding-bottom: 2rem;
-    }
     /*===Creation styles===*/
     .palettes {
         display: flex;
@@ -282,13 +123,7 @@ h2,
     }
 
     /*=====iteration section=====*/
-    .iteration-images {
-        grid-template-columns: 2fr 1fr;
-        align-items: center;
-        margin-bottom: 4rem;
-        overflow-x: visible;
-        justify-content: center;
-    }
+
     .process-img {
         width: 40vw;
     }
@@ -296,41 +131,6 @@ h2,
 
 /*=====Desktop Query=====*/
 @media screen and (min-width: 1200px) {
-    .project-header {
-        padding: 1rem 4rem;
-        max-width: 1000px;
-        margin: 25vh auto;
-    }
-    .project-title {
-        font-size: 6rem;
-    }
-    .short-desc {
-        font-size: 18px;
-        line-height: 150%;
-        padding-bottom: 1.2rem;
-    }
-    .meta {
-        font-size: 18px;
-    }
-    .role {
-        font-size: 28px;
-    }
-    .links {
-        padding-top: 1.2rem;
-        font-size: 20px;
-    }
-    li {
-        padding-top: 1.05rem;
-    }
-    /*===Sections===*/
-    .section-title {
-        font-size: 52px;
-    }
-    .section-desc {
-        font-size: 18px;
-        width: 72%;
-    }
-
     /*===Creation styles===*/
     .palettes {
         display: flex;
@@ -374,14 +174,5 @@ h2,
     .process-img {
         width: 30%;
         padding: 0;
-    }
-
-    /*=====Final product=====*/
-    .final-poster {
-        margin-bottom: 7rem;
-    }
-    .img-container {
-        justify-content: center;
-        gap: 5rem;
     }
 }
