@@ -2,6 +2,7 @@ import "./Home.css";
 import ProjectCard from "../../components/ProjectCard/card";
 import projects from "../../Data/projects.json";
 import { Link } from "react-router-dom";
+import Dither from "../../components/Dither/Dither";
 
 export default function Home() {
     const allCategories = [
@@ -15,23 +16,42 @@ export default function Home() {
 
     return (
         <div className='homepage'>
-            <div className='header-text'>
-                <div className='header'>
-                    <div className='first-name-container'>
-                        <img
-                            src='/LogoWhite.svg'
-                            alt='Logo of the letter A'
-                            className='name-logo'
-                        />
-                        <span className='first-name'>lyssa</span>
+            <div className='header-section'>
+                <div className='header-text'>
+                    <div className='header'>
+                        <div className='first-name-container'>
+                            <img
+                                src='/LogoWhite.svg'
+                                alt='Logo of the letter A'
+                                className='name-logo'
+                            />
+                            <span className='first-name'>lyssa</span>
+                        </div>
+                        <span className='last-name'>Huggins</span>
                     </div>
-                    <span className='last-name'>Huggins</span>
+                    <p className='disclaimer'>
+                        My site is currently under construction. <br />
+                        Feel free to click around and explore, just be mindful
+                        I'm still working hard to complete parts of the site!
+                    </p>
                 </div>
-                <p className='disclaimer'>
-                    My site is currently under construction. <br />
-                    Feel free to click around and explore, just be mindful I'm
-                    still working hard to complete parts of the site!
-                </p>
+                <div
+                    className='dither-background'
+                    style={{
+                        width: "100%",
+                        position: "relative",
+                    }}>
+                    <Dither
+                        waveColor={[0, 0.4, 0.5]}
+                        disableAnimation={false}
+                        enableMouseInteraction
+                        mouseRadius={0.3}
+                        colorNum={4}
+                        waveAmplitude={0.3}
+                        waveFrequency={3}
+                        waveSpeed={0.05}
+                    />
+                </div>
             </div>
             <div className='main'>
                 <p className='intro'>
@@ -70,16 +90,30 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='contact-section'>
-                    <div className='contact-header'>
-                        <span className='first-line'>Feel like</span>
-
-                        <span className='last-line'>Collaborating?</span>
+                    <div className='contact-background'>
+                        <Dither
+                            waveColor={[0, 0.4, 0.5]}
+                            disableAnimation={false}
+                            enableMouseInteraction
+                            mouseRadius={0.3}
+                            colorNum={4}
+                            waveAmplitude={0.3}
+                            waveFrequency={3}
+                            waveSpeed={0.05}
+                        />
                     </div>
-                    <a
-                        className='contact-btn'
-                        href='mailto:alyssathuggins@gmail.com'>
-                        Get in Touch!
-                    </a>
+                    <div className='contact-content'>
+                        <div className='contact-header'>
+                            <span className='first-line'>Feel like</span>
+
+                            <span className='last-line'>Collaborating?</span>
+                        </div>
+                        <a
+                            className='contact-btn'
+                            href='mailto:alyssathuggins@gmail.com'>
+                            Get in Touch!
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

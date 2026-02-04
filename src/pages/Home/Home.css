@@ -4,7 +4,24 @@
     flex-direction: column;
     justify-content: center;
 }
+.header-section {
+    position: relative; /* ← important: creates new positioning context */
+    width: 100%;
+    min-height: 60vh; /* or 500px, 80vh, etc. — give it breathing room */
+    overflow: hidden;
+    padding-top: 2rem;
+}
 
+.dither-background {
+    position: absolute !important; /* Override inline "relative" with !important */
+    inset: 0; /* Equivalent to top/right/bottom/left: 0 */
+    z-index: 1;
+}
+.dither-background .dither-container {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
 .header {
     margin: 8rem auto 5rem;
     font-size: 6rem;
@@ -16,11 +33,15 @@
     font-size: 1rem;
     text-align: center;
     margin: auto 1rem 5rem;
+    position: relative;
 }
 .header-text {
     display: flex;
+    position: relative;
+    z-index: 2;
     flex-direction: column;
     justify-content: center;
+    pointer-events: none;
 }
 
 .name-logo {
@@ -85,12 +106,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+}
+.contact-background {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+/* Force the canvas to fill the wrapper (safe override) */
+.contact-background .dither-container {
+    position: absolute !important;
+    inset: 0;
+}
+.contact-content {
+    position: relative;
+    z-index: 2;
+    pointer-events: none; /* ← lets mouse pass through to canvas */
+    width: 100%;
+    text-align: center;
+    padding: 4rem 1rem;
 }
 .contact-header {
     font-family: var(--font-family-display);
     font-weight: bold;
     font-size: 3.5rem;
     display: flex;
+    pointer-events: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -112,6 +154,7 @@
     border-radius: 24px;
     border: 3px solid #44499c;
     margin: 1rem auto 5rem;
+    pointer-events: auto;
 }
 
 @media screen and (min-width: 700px) {
