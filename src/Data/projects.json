@@ -4,13 +4,13 @@
         "title": "Tandem",
         "categories": ["Front-end", "UI/UX Design"],
         "image": "Tandem/Preview.png",
-        "description": "An app to help parents find childcare that matches their work schedule.",
+        "description": "An app to help tradesparent find childcare that matches their work schedule.",
         "slug": "tandem"
     },
     {
         "id": 2,
         "title": "Paramore E-Magazine",
-        "categories": ["Front-end", "UI/UX Design", "Graphic Design"],
+        "categories": ["Front-end", "Web Design", "UI/UX Design"],
         "image": "/EMagazine/Preview.png",
         "description": "An e-magazine covering the band, Paramore, and their journey through the years.",
         "slug": "paramore"
@@ -18,9 +18,9 @@
     {
         "id": 3,
         "title": "Bandit Breakout",
-        "categories": ["Front-end", "UI/UX Design", "Graphic Design"],
+        "categories": ["Front-end", "Web Design", "UI/UX Design"],
         "image": "Bandit/Preview.png",
-        "description": "A western themed board game built for web.",
+        "description": "A multiplayer online board game with a western theme.",
         "slug": "bandit"
     },
     {
@@ -36,7 +36,7 @@
         "title": "Poster Series",
         "categories": ["Graphic Design"],
         "image": "/Posters/Preview.png",
-        "description": "A series of posters inspired by retro computer graphics and Hayley Williams 3rd solo album.",
+        "description": "A series of posters inspired by retro computer interfaces and Hayley Williams 3rd solo album.",
         "slug": "posters"
     },
     {
@@ -44,7 +44,7 @@
         "title": "MoolahMate",
         "categories": ["Front-end", "UI/UX Design"],
         "image": "/MoolahMate/Preview.png",
-        "description": "A gamified budgeting app to help",
+        "description": "A gamified budgeting app to help students manage their finances.",
         "slug": "moolahmate"
     }
 ]

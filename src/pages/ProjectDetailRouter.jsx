@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Revitea from "./Revitea/Revitea";
 import Posters from "./Posters/Posters";
+import Moolahmate from "./Moolahmate/Moolahmate";
 
 export default function ProjectDetailRouter() {
     const { slug } = useParams();
@@ -11,6 +12,9 @@ export default function ProjectDetailRouter() {
 
         case "posters":
             return <Posters />;
+
+        case "moolahmate":
+            return <Moolahmate />;
 
         default:
             return (
