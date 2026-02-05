@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom";
 import "./Posters.css";
+import React, { useState } from "react";
+
+const posters = [
+    { src: "/Posters/ver01.png", alt: "Poster 1, based on the song Showbiz" },
+    { src: "/Posters/ver02.png", alt: "Poster 2, based on the song Glum" },
+    {
+        src: "/Posters/ver03.png",
+        alt: "Poster 3, based on the song Dream Girl in Shibuya",
+    },
+];
 
 export default function Posters() {
+    const [activeIndex, setActiveIndex] = useState(null); // null = natural stack
+    const rotations = [-10, 4, -7];
+
     return (
         <div className='project-detail-page'>
             <img
@@ -254,6 +267,38 @@ export default function Posters() {
                 id='models'
                 className='main-section'>
                 <h2 className='section-title'>Check it out!</h2>
+                <div className='poster-stack-container'>
+                    <div className='poster-stack'>
+                        {posters.map((poster, index) => {
+                            const isActive = activeIndex === index;
+                            // Base z-index: higher number = naturally more in front (reverse order)
+                            const baseZ = posters.length - index;
+                            const zIndex = isActive ? 100 : baseZ;
+
+                            return (
+                                <div
+                                    key={index}
+                                    className={`poster-card ${isActive ? "active" : ""}`}
+                                    style={{
+                                        "--rotate": `${rotations[index]}deg`, // safe & simple
+                                        "--tx": `${(index - (posters.length - 1) / 2) * 320}px`,
+                                        "--ty": `0px`,
+                                        zIndex,
+                                    }}
+                                    onClick={() =>
+                                        setActiveIndex(isActive ? null : index)
+                                    }>
+                                    <img
+                                        src={poster.src}
+                                        alt={poster.alt}
+                                        loading='lazy'
+                                        className='poster-img'
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
             </section>
         </div>
     );

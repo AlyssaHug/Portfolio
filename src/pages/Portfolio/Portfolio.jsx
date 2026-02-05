@@ -24,23 +24,27 @@ export default function Work() {
     return (
         <div>
             <div className='page-header'>
-                <h1 className='page-title'>Featured Work</h1>
-                <div className='filter-container'>
-                    <div className='filter-buttons'>
-                        {allCategories.map((category) => (
-                            <button
-                                key={category}
-                                className={`filter-btn ${activeFilter === category ? "active" : ""}`}
-                                data-category={category
-                                    .toLowerCase()
-                                    .replace(/\s+/g, "-")
-                                    .replace("/", "-")}
-                                onClick={() => setActiveFilter(category)}>
-                                {category === "all"
-                                    ? "All"
-                                    : category.toUpperCase().replace("/", "/")}
-                            </button>
-                        ))}
+                <div className='header-text'>
+                    <h1 className='page-title'>Featured Work</h1>
+                    <div className='filter-container'>
+                        <div className='filter-buttons'>
+                            {allCategories.map((category) => (
+                                <button
+                                    key={category}
+                                    className={`filter-btn ${activeFilter === category ? "active" : ""}`}
+                                    data-category={category
+                                        .toLowerCase()
+                                        .replace(/\s+/g, "-")
+                                        .replace("/", "-")}
+                                    onClick={() => setActiveFilter(category)}>
+                                    {category === "all"
+                                        ? "All"
+                                        : category
+                                              .toUpperCase()
+                                              .replace("/", "/")}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div
@@ -50,11 +54,11 @@ export default function Work() {
                         position: "relative",
                     }}>
                     <Dither
-                        waveColor={[0, 0.4, 0.5]}
+                        waveColor={[0.2, 0.35, 0.4]}
                         disableAnimation={false}
                         enableMouseInteraction
-                        mouseRadius={0.3}
-                        colorNum={4}
+                        mouseRadius={0.2}
+                        colorNum={10}
                         waveAmplitude={0.3}
                         waveFrequency={3}
                         waveSpeed={0.05}

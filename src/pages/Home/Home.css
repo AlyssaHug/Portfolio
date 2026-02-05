@@ -7,7 +7,6 @@
 .header-section {
     position: relative; /* ← important: creates new positioning context */
     width: 100%;
-    min-height: 60vh; /* or 500px, 80vh, etc. — give it breathing room */
     overflow: hidden;
     padding-top: 2rem;
 }

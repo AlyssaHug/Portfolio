@@ -14,14 +14,19 @@
     color: #ecedf5;
     font-size: 80px;
 }
-
+.page-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 2rem;
+}
 .filter-container {
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 .filter-container::-webkit-scrollbar {
-    height: 0; /* thin horizontal scrollbar */
+    height: 0;
 }
 .filter-buttons {
     display: flex;
@@ -41,6 +46,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     margin-left: 1rem;
+    pointer-events: auto;
 }
 
 .filter-btn:hover {
@@ -58,27 +64,27 @@
 
 /* Per-category active colors – match your tag colors */
 .filter-btn[data-category="all"].active {
-    background-color: #33bacf; /* gray for All */
+    background-color: #33bacf;
     border-color: #33bacf;
 }
 
 .filter-btn[data-category="graphic-design"].active {
-    background-color: #7da75b; /* green */
+    background-color: #7da75b;
     border-color: #7da75b;
 }
 
 .filter-btn[data-category="ui-ux-design"].active {
-    background-color: #f4a261; /* orange */
+    background-color: #f4a261;
     border-color: #f4a261;
 }
 
 .filter-btn[data-category="front-end"].active {
-    background-color: #c084fc; /* purple */
+    background-color: #c084fc;
     border-color: #c084fc;
 }
 
-.filter-btn[data-category="product-design"].active {
-    background-color: #ff6b6b; /* red */
+.filter-btn[data-category="web-design"].active {
+    background-color: #ff6b6b;
     border-color: #ff6b6b;
 }
 
