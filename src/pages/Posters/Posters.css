@@ -1,0 +1,191 @@
+/*=====Palette Styles=====*/
+.styles {
+    display: flex;
+}
+.palettes {
+    font-family: var(--font-family-body);
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.8rem;
+}
+.color-swatch {
+    width: 50px;
+    height: 100px;
+    color: #071512;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 0.1rem 0.2rem;
+}
+.swatch2 {
+    color: #ecedf5;
+}
+.palette {
+    display: flex;
+    gap: 0.2rem;
+}
+
+/*=====Font Styles=====*/
+
+.poster-fonts {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+.poster-font {
+    text-align: center;
+    width: 6rem;
+}
+
+/*=====can art======*/
+
+.creation-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0.8rem auto 4rem;
+}
+
+.swatch-menu {
+    width: 85vw;
+}
+.square {
+    width: 12vw;
+}
+.square-row {
+    display: flex;
+    justify-content: space-between;
+}
+.process-img {
+    width: 60%;
+
+    padding: 0;
+}
+/*=====Final product=====*/
+.final-poster {
+    height: 65vh;
+    margin: 0 0.5rem 4rem;
+}
+
+/*====Poster Stack====*/
+
+/*=====Swatch sizing for better visibility=====*/
+@media screen and (min-width: 600px) {
+    .color-swatch {
+        width: 60px;
+    }
+    .palette {
+        gap: 0.5rem;
+    }
+    .palettes {
+        gap: 1rem;
+    }
+    .poster-fonts {
+        flex-direction: row;
+    }
+    .styles {
+        gap: 0;
+    }
+}
+/*=====Tablet Query=====*/
+@media screen and (min-width: 800px) {
+    /*===Creation styles===*/
+    .palettes {
+        display: flex;
+        gap: 0.8rem;
+    }
+    .color-swatch {
+        width: 64px;
+        height: 140px;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 0.1rem 0.3rem;
+    }
+    .styles {
+        margin: 0 auto;
+        gap: 3rem;
+        display: flex;
+    }
+    .poster-font {
+        width: 9.5rem;
+    }
+    .poster-fonts {
+        flex-direction: row;
+        gap: 0;
+    }
+    .swatch-menu {
+        width: 40vw;
+    }
+
+    .creation-images {
+        flex-direction: row;
+    }
+    .square {
+        width: 8vw;
+    }
+    .square-row {
+        gap: 0.5rem;
+    }
+
+    /*=====iteration section=====*/
+
+    .process-img {
+        width: 35vw;
+    }
+}
+
+/*=====Desktop Query=====*/
+@media screen and (min-width: 1200px) {
+    /*===Creation styles===*/
+    .palettes {
+        display: flex;
+        gap: 2rem;
+        font-size: 16px;
+    }
+    .color-swatch {
+        width: 100px;
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 0.1rem 0.3rem;
+    }
+    .palette {
+        gap: 1rem;
+    }
+    .poster-fonts {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+    .poster-font {
+        width: 14rem;
+    }
+    .support {
+        width: 16rem;
+    }
+
+    .styles {
+        gap: 4rem;
+        display: flex;
+    }
+    .creation-images {
+        margin: 1.5rem auto 6rem;
+        gap: 2rem;
+    }
+
+    /*=====iteration section=====*/
+
+    .process-img {
+        width: 30%;
+        padding: 0;
+    }
+}
