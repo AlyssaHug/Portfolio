@@ -141,6 +141,9 @@
         width: 280px;
         height: 380px;
     }
+    .poster-card:not(.active):hover {
+        transform: none;
+    }
 }
 /*=====Swatch sizing for better visibility=====*/
 @media screen and (min-width: 600px) {
