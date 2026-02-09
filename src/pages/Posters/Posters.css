@@ -73,10 +73,9 @@
 }
 
 /*====Poster Stack====*/
-/* Poster Stack Container */
 .poster-stack-container {
     position: relative;
-    min-height: 700px; /* Give room for the stack + lift on active */
+    min-height: 700px;
     width: 100%;
     max-width: 1200px;
     perspective: 1500px;
@@ -86,20 +85,19 @@
 
 .poster-stack {
     position: relative;
-    width: 404px; /* Base card width – adjust to your poster aspect ratio */
-    height: 520px; /* Height should match your image proportions */
+    width: 404px;
+    height: 520px;
     margin: 0 auto;
-    display: flex; /* optional: helps center children */
-    align-items: center; /* ← new: vertically centers the whole stack in container */
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-/* Individual poster card */
 .poster-card {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%; /* Fill the container size */
+    width: 100%;
     height: 100%;
     transform: translate(-50%, -50%) rotate(var(--rotate)) translateX(var(--tx));
     transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
@@ -138,9 +136,10 @@
         min-height: 500px;
     }
     .poster-stack {
-        width: 280px;
+        width: 296px;
         height: 380px;
     }
+
     .poster-card:not(.active):hover {
         transform: none;
     }

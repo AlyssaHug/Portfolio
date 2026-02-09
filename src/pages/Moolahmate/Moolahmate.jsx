@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Moolahmate.css";
 
 export default function Moolahmate() {
@@ -6,7 +5,7 @@ export default function Moolahmate() {
         <div className='project-detail-page'>
             <img
                 src='/MoolahMate/Hero.png'
-                alt='Hayley Williams Poster'
+                alt='Multiple phones on a surface with different parts of the MoolaahMate app open.'
                 className='hero-image'
             />
             <header

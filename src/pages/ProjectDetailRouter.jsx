@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import Revitea from "./Revitea/Revitea";
 import Posters from "./Posters/Posters";
 import Moolahmate from "./Moolahmate/Moolahmate";
+import Tandem from "./Tandem/Tandem";
 
 export default function ProjectDetailRouter() {
     const { slug } = useParams();
@@ -16,6 +17,8 @@ export default function ProjectDetailRouter() {
         case "moolahmate":
             return <Moolahmate />;
 
+        case "tandem":
+            return <Tandem />;
         default:
             return (
                 <div style={{ padding: "6rem 2rem", textAlign: "center" }}>
