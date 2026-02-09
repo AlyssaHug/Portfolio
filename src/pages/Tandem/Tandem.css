@@ -33,7 +33,7 @@
 }
 
 .contents-nav,
-.case-flexx,
+.case-flex,
 .project-case-page {
     overflow: visible;
 }
@@ -131,6 +131,9 @@
     font-size: 1rem;
     padding: 0 1.5rem 0.5rem 2rem;
 }
+.active {
+    color: #ecedf5;
+}
 /*===Issue Styles===*/
 .issue-stats {
     display: grid;
@@ -173,6 +176,9 @@
 .userflow-img {
     width: 84vw;
 }
+.case-font {
+    width: 10vw;
+}
 /*===Iterations===*/
 .iteration-initial,
 .iteration-testing,
@@ -199,6 +205,10 @@
 }
 .hifi-list {
     display: none;
+    font-family: var(--font-family-display);
+    line-height: 150%;
+    font-size: 20px;
+    width: 35%;
 }
 /*===Promotion===*/
 
@@ -338,6 +348,12 @@
     .userflow-img {
         width: 68vw;
     }
+    .case-palette div {
+        height: 100%;
+    }
+    .case-font {
+        width: 12vw;
+    }
     /*===Iterations===*/
     .iteration-initial,
     .iteration-testing,
@@ -410,9 +426,11 @@
         font-size: 24px;
         margin: 0;
     }
+    .case-section {
+        margin-top: 3rem;
+    }
     .case-title {
         font-size: 52px;
-        padding-top: 3rem;
     }
 
     .role-desc,
@@ -441,5 +459,54 @@
     .stat-caption {
         font-size: 14px;
         margin-right: 0.2rem;
+    }
+    .title-container {
+        align-items: center;
+    }
+    /*===Research===*/
+    .case-code-btn {
+        font-size: 20px;
+        padding: 0.5rem 1.5rem;
+        margin-right: 0;
+    }
+    /*===The Process===*/
+    .userflow-img {
+        width: 56vw;
+    }
+    .case-font {
+        width: 13vw;
+    }
+    .case-support {
+        width: 10vw;
+    }
+    .process-styles {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    /*===Iterations===*/
+    .lofi-comparison {
+        display: flex;
+        gap: 4rem;
+    }
+    .lofi-img,
+    .hifi-img {
+        width: 13vw;
+    }
+
+    .hifi-list {
+        display: block;
+        margin: 3rem 0 auto 2rem;
+        line-height: 200%;
+    }
+    /*===Promotion===*/
+    .material-images,
+    .showcase-images {
+        gap: 2rem;
+    }
+    .material-img {
+        height: 40vh;
+    }
+    .showcase-img {
+        height: 38vh;
     }
 }

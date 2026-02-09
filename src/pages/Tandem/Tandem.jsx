@@ -1,7 +1,7 @@
 import "./Tandem.css";
 import { useState } from "react";
 
-import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 export default function Tandem() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,71 +22,71 @@ export default function Tandem() {
                     <aside className='desktop-content-container'>
                         <div className='desktop-links'>
                             <nav className='case-links'>
-                                <a
-                                    href='#overview'
+                                <NavHashLink
+                                    to='#overview'
                                     className='case-link'>
                                     Overview
-                                </a>
+                                </NavHashLink>
 
-                                <a
-                                    href='#role'
+                                <NavHashLink
+                                    to='#role'
                                     className='case-link'>
                                     My Role
-                                </a>
+                                </NavHashLink>
 
-                                <a
-                                    href='#issue'
+                                <NavHashLink
+                                    to='#issue'
                                     className='case-link'>
                                     The Issue
-                                </a>
+                                </NavHashLink>
 
-                                <a
-                                    href='#idea'
+                                <NavHashLink
+                                    to='#idea'
                                     className='case-link'>
                                     The Idea
-                                </a>
+                                </NavHashLink>
 
-                                <a
-                                    href='#research'
+                                <NavHashLink
+                                    to='#research'
                                     className='case-link'>
                                     Research
-                                </a>
+                                </NavHashLink>
 
-                                <a
+                                <NavHashLink
                                     href='#process'
                                     className='case-link'>
                                     The Process
-                                </a>
+                                </NavHashLink>
 
-                                <a
+                                <NavHashLink
                                     href='#iterations'
                                     className='case-link'>
                                     Iterations
-                                </a>
+                                </NavHashLink>
 
-                                <a
+                                <NavHashLink
                                     href='#coding'
                                     className='case-link'>
                                     Development
-                                </a>
+                                </NavHashLink>
 
-                                <a
-                                    href='#promotion'
+                                <NavHashLink
+                                    to='#promotion'
                                     className='case-link'>
                                     Promotion
-                                </a>
+                                </NavHashLink>
 
-                                <a
-                                    href='#reflect'
+                                <NavHashLink
+                                    to='#reflect'
                                     className='case-link'>
                                     Reflection
-                                </a>
+                                </NavHashLink>
 
-                                <a
-                                    href='#test'
+                                <NavHashLink
+                                    to='#test'
                                     className='case-link'>
                                     Test it out!
-                                </a>
+                                </NavHashLink>
                             </nav>
                         </div>
                     </aside>
@@ -298,7 +298,7 @@ export default function Tandem() {
                                     Research Insights
                                 </h2>
                                 <a
-                                    className='code-btn'
+                                    className='code-btn case-code-btn'
                                     target='_blank'
                                     href='https://docs.google.com/document/d/1q2iX2L2OvAhui6LYZeLVbo92AMHXwLF_mHFE8P5sgxE/edit?tab=t.0#heading=h.ckmm2i24taya'>
                                     View Report
@@ -365,53 +365,53 @@ export default function Tandem() {
                                             <div
                                                 className='color-swatch swatch2'
                                                 style={{
-                                                    backgroundColor: "#274B28",
+                                                    backgroundColor: "#00001b",
                                                 }}>
-                                                #274B28
+                                                #00001B
                                             </div>
-                                            <div
-                                                className='color-swatch'
-                                                style={{
-                                                    backgroundColor: "#83BE6C",
-                                                }}>
-                                                #83BE6C
-                                            </div>
-
-                                            <div
-                                                className='color-swatch'
-                                                style={{
-                                                    backgroundColor: "#F3EDEA",
-                                                }}>
-                                                #F3EDEA
-                                            </div>
-                                            <div
-                                                className='color-swatch'
-                                                style={{
-                                                    backgroundColor: "#B2D4E6",
-                                                }}>
-                                                #B2D4E6
-                                            </div>
-
                                             <div
                                                 className='color-swatch swatch2'
                                                 style={{
-                                                    backgroundColor: "#15243C",
+                                                    backgroundColor: "#3373cc",
                                                 }}>
-                                                #15243C
+                                                #3373CC
+                                            </div>
+
+                                            <div
+                                                className='color-swatch'
+                                                style={{
+                                                    backgroundColor: "#68D5FF",
+                                                }}>
+                                                #68D5FF
+                                            </div>
+                                            <div
+                                                className='color-swatch'
+                                                style={{
+                                                    backgroundColor: "#92F189",
+                                                }}>
+                                                #92F189
+                                            </div>
+
+                                            <div
+                                                className='color-swatch'
+                                                style={{
+                                                    backgroundColor: "#FFFFFF",
+                                                }}>
+                                                #FFFFFF
                                             </div>
                                         </div>
                                     </div>
                                     <div className='revitea-fonts '>
                                         <img
                                             className='revitea-font case-font'
-                                            src='/MoolahMate/quicksand.svg'
-                                            alt='Quicksand - Main font sample'
+                                            src='/Tandem/alan.svg'
+                                            alt='ALan Sans - Main font sample'
                                         />
 
                                         <img
-                                            className='revitea-font case-font'
-                                            src='/MoolahMate/libre.svg'
-                                            alt='Libre Franklin - body font sample'
+                                            className='revitea-font case-font case-support'
+                                            src='/Tandem/omnes.svg'
+                                            alt='Omnes - body font sample'
                                         />
                                     </div>
                                 </div>
@@ -549,7 +549,7 @@ export default function Tandem() {
                             <div className='title-container'>
                                 <h2 className='case-title'>Development</h2>
                                 <a
-                                    className='code-btn'
+                                    className='code-btn case-code-btn'
                                     target='_blank'
                                     href='https://github.com/IDSP-TRADECARE/Tandem'>
                                     View Source Code
