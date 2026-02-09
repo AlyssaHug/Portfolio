@@ -327,14 +327,12 @@ export default function Tandem() {
                         {/* The Process */}
                         <section
                             id='process'
-                            className='main-section'>
+                            className='case-section'>
                             <div className='process-flow'>
-                                <h2 className='section-title'>
-                                    Design Process
-                                </h2>
+                                <h2 className='case-title'>Design Process</h2>
 
                                 <h3 className='section-subheader'>User Flow</h3>
-                                <p className='section-desc'>
+                                <p className='case-desc'>
                                     With our research, we planned how our user
                                     flow would look, wanting it to be clear and
                                     straightforward. As we iterated our
@@ -361,9 +359,9 @@ export default function Tandem() {
                                     app. We also opted for simple and clear, yet
                                     effective fonts for easier readability.
                                 </p>
-                                <div className='styles'>
+                                <div className='styles case-styles'>
                                     <div className='palettes'>
-                                        <div className='palette'>
+                                        <div className='palette case-palette'>
                                             <div
                                                 className='color-swatch swatch2'
                                                 style={{
@@ -403,15 +401,15 @@ export default function Tandem() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='revitea-fonts'>
+                                    <div className='revitea-fonts '>
                                         <img
-                                            className='revitea-font quicksand'
+                                            className='revitea-font case-font'
                                             src='/MoolahMate/quicksand.svg'
                                             alt='Quicksand - Main font sample'
                                         />
 
                                         <img
-                                            className='revitea-font support'
+                                            className='revitea-font case-font'
                                             src='/MoolahMate/libre.svg'
                                             alt='Libre Franklin - body font sample'
                                         />
@@ -424,11 +422,11 @@ export default function Tandem() {
                             id='iterations'
                             className='section-dark'>
                             <div className='iteration-initial'>
-                                <h2 className='section-title'>Iterations</h2>
+                                <h2 className='case-title'>Iterations</h2>
                                 <h3 className='section-subheader'>
                                     Lo-fi & Mid-fi
                                 </h3>
-                                <p className='section-desc'>
+                                <p className='case-desc'>
                                     During our wireframe iterations, I focused
                                     on our schedule feature. Initially, with the
                                     app having a homepage, we kept it pretty
@@ -488,8 +486,7 @@ export default function Tandem() {
                                 <h3 className='section-subheader'>
                                     User Testing
                                 </h3>
-
-                                <p className='section-desc'>
+                                <p className='case-desc'>
                                     We conducted user testing before moving onto
                                     our hi-fi, making sure the direction we were
                                     going matched what our users were seeking.
@@ -501,7 +498,7 @@ export default function Tandem() {
 
                             <div className='iteration-final'>
                                 <h3 className='section-subheader'>Hi-Fi</h3>
-                                <p className='section-desc'>
+                                <p className='case-desc'>
                                     With our hi-fi screens, we implemented the
                                     feedback from our testing and made some
                                     extra changes by adjusting our palette. When

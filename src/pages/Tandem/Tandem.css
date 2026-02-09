@@ -49,8 +49,8 @@
     padding-bottom: 1rem;
 }
 .case-section {
-    padding: 0 1.5rem;
-    margin: 0 auto 1rem;
+    padding: 0 1.5rem 1rem;
+    margin: 0 3rem 1rem;
     max-width: 85vw;
 }
 /*===mobile contents button===*/
@@ -168,7 +168,12 @@
     width: 84vw;
 }
 /*===Iterations===*/
-
+.iteration-initial,
+.iteration-testing,
+.iteration-final {
+    padding: 0 1.5rem 1rem;
+    margin: 0 1rem;
+}
 .lofi-img,
 .hifi-img {
     width: 30vw;
@@ -254,9 +259,9 @@
     }
     .section-dark {
         position: relative;
-        padding-left: 23vw;
+        padding-left: 29vw;
         padding-right: 8rem;
-        left: -11.5rem;
+        left: -26vw;
     }
     .desktop-links,
     .case-links {
@@ -320,6 +325,17 @@
     .casesection-bannerImg {
         width: 68vw;
     }
+    /*===The Process===*/
+    .userflow-img {
+        width: 68vw;
+    }
+    /*===Iterations===*/
+    .iteration-initial,
+    .iteration-testing,
+    .iteration-final {
+        margin-left: 0;
+        padding-left: 0;
+    }
 }
 @media screen and (min-width: 800px) {
     .case-desc,
@@ -327,5 +343,15 @@
     .role-desc {
         font-size: 14px;
         line-height: 130%;
+    }
+    .case-styles {
+        gap: 1rem;
+    }
+    .case-palette {
+        gap: 8px;
+        width: 36vw;
+    }
+    .case-font {
+        width: 14vw;
     }
 }
