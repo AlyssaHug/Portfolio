@@ -192,7 +192,7 @@ export default function Tandem() {
                         id='overview'>
                         {/* Summary */}
                         <div className='header-text'>
-                            <h1 className='case-title'>Tandem</h1>
+                            <h1 className='project-title'>Tandem</h1>
                             <p className='case-summary'>
                                 Finding childcare can be a struggle, especially
                                 as a tradesworker with odd hours or scheduled
@@ -420,7 +420,7 @@ export default function Tandem() {
                         {/* Iterations */}
                         <section
                             id='iterations'
-                            className='section-dark'>
+                            className='case-dark'>
                             <div className='iteration-initial'>
                                 <h2 className='case-title'>Iterations</h2>
                                 <h3 className='section-subheader'>
@@ -545,9 +545,9 @@ export default function Tandem() {
                         {/* Development */}
                         <section
                             id='coding'
-                            className='main-section'>
+                            className='case-section'>
                             <div className='title-container'>
-                                <h2 className='section-title'>Development</h2>
+                                <h2 className='case-title'>Development</h2>
                                 <a
                                     className='code-btn'
                                     target='_blank'
@@ -555,7 +555,7 @@ export default function Tandem() {
                                     View Source Code
                                 </a>
                             </div>
-                            <p className='section-desc'>
+                            <p className='case-desc'>
                                 When developing the app, I focused on
                                 onboarding, specifically the forms. With the
                                 forms, there are options to either input your
@@ -569,11 +569,11 @@ export default function Tandem() {
                         {/* Promotion */}
                         <section
                             id='promotion'
-                            className='main-section'>
-                            <h2 className='section-title'>Promotion</h2>
+                            className='case-section'>
+                            <h2 className='case-title'>Promotion</h2>
                             <div className='promotion-materials'>
                                 <h3 className='section-subheader'>Materials</h3>
-                                <p className='section-desc'>
+                                <p className='case-desc'>
                                     For the apps’ promotion, we created both
                                     digital and printed materials. Digitally, we
                                     made a landing page showcasing Tandem’s core
@@ -607,7 +607,7 @@ export default function Tandem() {
                                 <h3 className='section-subheader'>
                                     App Showcase
                                 </h3>
-                                <p className='section-desc'>
+                                <p className='case-desc'>
                                     The project ended with showcasing our app as
                                     part of BCIT’s app showcase in December
                                     2025. With our video, printed materials, and
@@ -635,10 +635,10 @@ export default function Tandem() {
                         {/* Reflection */}
                         <section
                             id='reflect'
-                            className='main-section'>
-                            <h2 className='section-title'>Reflection</h2>
+                            className='case-section'>
+                            <h2 className='case-title'>Reflection</h2>
 
-                            <p className='section-desc'>
+                            <p className='case-desc'>
                                 The result was Tandem, not just an app, but a
                                 link connecting parents and lessening the burden
                                 of finding childcare. Through this journey, I
