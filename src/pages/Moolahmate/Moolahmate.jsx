@@ -43,7 +43,7 @@ export default function Moolahmate() {
                     </li>
                     <li>
                         <a
-                            href='#development'
+                            href='#coding'
                             className='link'>
                             Development
                         </a>
@@ -52,7 +52,7 @@ export default function Moolahmate() {
                         <a
                             href='#final'
                             className='link'>
-                            Final Product
+                            Result
                         </a>
                     </li>
                     <li>
@@ -214,7 +214,7 @@ export default function Moolahmate() {
                         <div className='process-img-container'>
                             <p className='caption'>Initial Mockup</p>
                             <img
-                                src='/MoolahMate/initial.png'
+                                src='/MoolahMate/Initial.png'
                                 alt='Initial mockup of goals page'
                                 className='process-img-moo'
                             />
@@ -248,8 +248,22 @@ export default function Moolahmate() {
                 <section
                     id='coding'
                     className='main-section'>
-                    <h2 className='section-title'>Development</h2>
-                    <p className='section-desc'></p>
+                    <div className='title-container'>
+                        <h2 className='section-title'>Development</h2>
+                        <a
+                            className='code-btn'
+                            target='_blank'
+                            href='https://github.com/AlyssaHug/Design02_App'>
+                            View Source Code
+                        </a>
+                    </div>
+                    <p className='section-desc'>
+                        When developing the app, I was in charge of the goals,
+                        rewards, and profile sections. I also checked in with
+                        team members to help when needed along with reviewing
+                        and merging the code to ensure no conflicts or bugs were
+                        present.
+                    </p>
                 </section>
                 <section
                     id='final'
@@ -263,29 +277,43 @@ export default function Moolahmate() {
                         has everything users need to track their spending while
                         reaching their monetary goals.
                     </p>
-                    <div className='img-container'>
+                    <div className='final-img-container'>
                         <img
-                            src='/Posters/ver01.png'
-                            alt='Final version of Strawberry flavour'
-                            className='final-poster'
+                            className='moomoosit'
+                            src='/MoolahMate/moomoosit.svg'
+                            alt='MooMoo sitting down'
                         />
-                        <img
-                            src='/Posters/ver02.png'
-                            alt='Final version of Blueberry flavour'
-                            className='final-poster'
-                        />
-                        <img
-                            src='/Posters/ver03.png'
-                            alt='Final version of Lavender flavour'
-                            className='final-poster'
-                        />
+                        <div className='img-container'>
+                            <img
+                                src='/MoolahMate/opening.png'
+                                alt='Start page for Moolahmate, with options to sign-in or sign-up'
+                                className='final-poster'
+                            />
+                            <img
+                                src='/MoolahMate/goal-recs.png'
+                                alt='Recommended goal screen, with 2 options based on recent purchases'
+                                className='final-poster'
+                            />
+                            <img
+                                src='/MoolahMate/moo-page.png'
+                                alt='The MooMoo page, with options to interact with MooMoo'
+                                className='final-poster'
+                            />
+                        </div>
                     </div>
                 </section>
             </div>
             <section
                 id='models'
-                className='main-section'>
+                className='main-section test-section'>
                 <h2 className='section-title'>Check it out!</h2>
+                <video
+                    className='demo-mobile'
+                    controls>
+                    <source
+                        src='/MoolahMate/demo.mp4'
+                        type='video/mp4'></source>
+                </video>
             </section>
         </div>
     );

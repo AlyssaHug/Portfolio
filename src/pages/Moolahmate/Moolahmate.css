@@ -47,12 +47,12 @@
 .section-dark {
     background-color: #090d12;
     color: #ecedf5;
-    padding: 0 2rem 0.1rem;
-    margin: 0 auto 1rem;
+    padding: 3rem 2rem 0.1rem;
+    margin: 0 auto 3rem;
 }
 .process-img-moo {
     width: 35vw;
-
+    border-radius: 16px;
     padding: 0;
 }
 .caption {
@@ -62,14 +62,47 @@
 .process-img-container {
     padding: 0 1rem;
 }
+/*=====Development=====*/
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.code-btn {
+    padding: 0.4rem 0.6rem;
+    height: fit-content;
+    font-family: var(--font-family-body);
+    border: 3px solid #004752;
+    font-size: 12px;
+    color: #004752;
+    font-weight: bold;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+.code-btn:hover {
+    color: #ecedf5;
+    background-color: #009ab1;
+    border: none;
+    transform: scale(1.05);
+}
 
 /*=====Final product=====*/
 .final-poster {
     height: 65vh;
     margin: 0 0.5rem 4rem;
 }
+.moomoosit {
+    display: none;
+}
 
-/*====Poster Stack====*/
+/*====Check out section====*/
+
+.demo-mobile {
+    border-radius: 32px;
+    width: 45vw;
+    margin: 1rem auto;
+}
 
 /*=====Swatch sizing for better visibility=====*/
 @media screen and (min-width: 600px) {
@@ -87,6 +120,19 @@
     }
     .styles {
         gap: 0;
+    }
+    .process-img-moo {
+        width: 25vw;
+
+        padding: 0;
+    }
+    /*===demo===*/
+    .test-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .demo-mobile {
+        width: 30vw;
     }
 }
 /*=====Tablet Query=====*/
@@ -149,6 +195,19 @@
     .process-img-container {
         padding: 0 0.8rem;
     }
+    /*===development===*/
+    .code-btn {
+        font-size: 16px;
+    }
+    /*=====Final product=====*/
+    .moomoosit {
+        display: block;
+        width: 30vw;
+    }
+    .final-img-container {
+        display: flex;
+        gap: 16px;
+    }
 }
 
 /*=====Desktop Query=====*/
@@ -205,5 +264,21 @@
     }
     .process-img-container {
         padding: 0 2rem;
+    }
+    /*===development===*/
+    .code-btn {
+        border: 4px solid #004752;
+        margin-right: 10rem;
+    }
+    /*=====Final product=====*/
+    .moomoosit {
+        width: 25vw;
+    }
+    /*===demo===*/
+    .test-section {
+        margin: 3rem 8rem 3rem;
+    }
+    .demo-mobile {
+        width: 20vw;
     }
 }

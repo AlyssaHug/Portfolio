@@ -45,7 +45,7 @@ export default function Revitea() {
                         <a
                             href='#final'
                             className='link'>
-                            Final Product
+                            Result
                         </a>
                     </li>
                     <li>
