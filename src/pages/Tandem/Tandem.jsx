@@ -68,6 +68,9 @@ export default function Tandem() {
                     {/* desktop table of contents */}
                     <aside className='desktop-content-container'>
                         <div className='desktop-links'>
+                            <h3 className='contents-desktop-header'>
+                                Contents
+                            </h3>
                             <nav className='case-links'>
                                 <a
                                     href='#overview'
@@ -707,13 +710,22 @@ export default function Tandem() {
                     {/* Check it out! */}
                     <section
                         id='test'
-                        className='main-section test-section'>
-                        <h2 className='section-title'>Check it out!</h2>
+                        className='case-test'>
+                        <div className='test-text'>
+                            <h2 className='case-title'>Check it out!</h2>
+                            <h3 className='test-cta'>Wanna try it yourself?</h3>
+                            <a
+                                className='case-code-btn code-btn'
+                                href='https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F'
+                                target='_blank'>
+                                Visit site!
+                            </a>
+                        </div>
                         <video
                             className='demo-mobile'
                             controls>
                             <source
-                                src='/MoolahMate/demo.mp4'
+                                src='/Tandem/demo.mp4'
                                 type='video/mp4'></source>
                         </video>
                     </section>

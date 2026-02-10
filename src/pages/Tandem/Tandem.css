@@ -41,6 +41,7 @@
 .case-title {
     margin: 0;
     padding-bottom: 0.4rem;
+    text-wrap: nowrap;
 }
 
 .case-desc {
@@ -48,7 +49,8 @@
     font-size: 12px;
     padding-bottom: 1rem;
 }
-.case-section {
+.case-section,
+.case-test {
     padding: 0 1.5rem 1rem;
     margin: 0 3rem 1rem;
     max-width: 85vw;
@@ -136,13 +138,21 @@
     color: #8285bd;
     transition: all 0.25s ease;
     font-size: 18px;
+    margin-right: 1rem;
+    padding-left: 0.5rem;
 }
 .case-link:hover {
     color: #54c5d7;
 }
 .case-link.active {
-    color: #edeef6;
+    color: #c5c7e0;
     font-weight: bold;
+    border-radius: 8px;
+    border-left: 2px solid #54c5d7;
+}
+.contents-desktop-header {
+    margin: 1rem 0 0 1.5rem;
+    font-size: 22px;
 }
 /*===Issue Styles===*/
 .issue-stats {
@@ -241,6 +251,11 @@
     height: 30vh;
     margin-bottom: 3rem;
 }
+/*===Check it out!===*/
+.test-cta {
+    font-family: var(--font-family-display);
+    font-size: 16px;
+}
 /*===visible mobile menu and hide desktop menu===*/
 @media screen and (max-width: 699px) {
     .desktop-content-container {
@@ -295,15 +310,15 @@
     .desktop-links,
     .case-links {
         display: block;
-        padding: 0.5rem 0 0.5rem 0.4rem;
+        padding: 0.5rem 0 0.5rem 0;
         background-color: #101820;
         border-radius: 24px;
         font-family: var(--font-family-display);
     }
 
-    .case-links a {
+    .case-link {
         display: block;
-        padding: 0.5rem 0;
+        padding: 0.5rem 0.5rem;
     }
 
     .menu-btn-container {
@@ -372,6 +387,13 @@
         font-size: 12px;
         margin-bottom: 0.3rem;
     }
+    /*===Check it out!===*/
+    .case-test {
+        margin: 2rem 0 auto 0;
+    }
+    .code-btn {
+        font-size: 14px;
+    }
 }
 @media screen and (min-width: 800px) {
     .contents-nav {
@@ -395,6 +417,14 @@
     }
 }
 @media screen and (min-width: 1200px) {
+    /*===table of contents===*/
+    .case-link {
+        margin-left: 0.8rem;
+    }
+    .desktop-links {
+        width: 120%;
+    }
+
     .case-page-content {
         width: 60vw;
     }
@@ -510,5 +540,16 @@
     }
     .showcase-img {
         height: 38vh;
+    }
+    /*===Check it out!===*/
+    .case-test {
+        display: flex;
+        margin: 3rem auto 3rem 8vw;
+        gap: 8rem;
+    }
+
+    .test-cta {
+        font-size: 24px;
+        padding: 2rem 0 1rem 0;
     }
 }
