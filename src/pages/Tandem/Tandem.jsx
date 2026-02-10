@@ -531,9 +531,17 @@ export default function Tandem() {
                                 </div>
                             </div>
                             <div className='iteration-testing'>
-                                <h3 className='section-subheader'>
-                                    User Testing
-                                </h3>
+                                <div className='title-container'>
+                                    <h2 className='section-subheader'>
+                                        User Testing
+                                    </h2>
+                                    <a
+                                        className='code-btn case-code-btn'
+                                        target='_blank'
+                                        href='https://docs.google.com/document/d/1GI7hbHmCOMoOPl5raU56DoE3Czq-sEFLe-LUqUbMc1o/edit?usp=sharing'>
+                                        View Report
+                                    </a>
+                                </div>
                                 <p className='case-desc'>
                                     We conducted user testing before moving onto
                                     our hi-fi, making sure the direction we were
