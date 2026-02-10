@@ -1,5 +1,5 @@
 import "./Tandem.css";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import { NavHashLink } from "react-router-hash-link";
 
@@ -8,6 +8,53 @@ export default function Tandem() {
 
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
+
+    const [activeId, setActiveId] = useState("overview");
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const intersectingSections = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .map((entry) => entry.target);
+
+                console.log(
+                    "Intersecting section IDs:",
+                    intersectingSections.map((sec) => sec.id),
+                ); // ← DEBUG: Shows all visible sections
+
+                if (intersectingSections.length > 0) {
+                    // Sort by top position in viewport (smallest .top = highest on screen)
+                    intersectingSections.sort(
+                        (a, b) =>
+                            a.getBoundingClientRect().top -
+                            b.getBoundingClientRect().top,
+                    );
+
+                    const topId = intersectingSections[0].id;
+                    console.log("Topmost intersecting ID:", topId); // ← DEBUG: Shows which one was selected
+
+                    setActiveId(topId);
+                }
+            },
+            {
+                rootMargin: "-150px 0px -50% 0px", // ← Adjusted: Slightly larger top offset (for header) and bottom threshold (more lenient)
+                threshold: 0.05, // ← Adjusted: Lower to trigger on minimal overlap (helps short sections)
+            },
+        );
+
+        const sections = document.querySelectorAll("section[id], header[id]");
+        console.log(
+            "Observed section IDs:",
+            Array.from(sections).map((sec) => sec.id),
+        ); // ← DEBUG: Confirms all sections are found
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className='project-case-page'>
             <img
@@ -22,71 +69,71 @@ export default function Tandem() {
                     <aside className='desktop-content-container'>
                         <div className='desktop-links'>
                             <nav className='case-links'>
-                                <NavHashLink
-                                    to='#overview'
-                                    className='case-link'>
+                                <a
+                                    href='#overview'
+                                    className={`case-link ${activeId === "overview" ? "active" : ""}`}>
                                     Overview
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
-                                    to='#role'
-                                    className='case-link'>
+                                <a
+                                    href='#role'
+                                    className={`case-link ${activeId === "role" ? "active" : ""}`}>
                                     My Role
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
-                                    to='#issue'
-                                    className='case-link'>
+                                <a
+                                    href='#issue'
+                                    className={`case-link ${activeId === "issue" ? "active" : ""}`}>
                                     The Issue
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
-                                    to='#idea'
-                                    className='case-link'>
+                                <a
+                                    href='#idea'
+                                    className={`case-link ${activeId === "idea" ? "active" : ""}`}>
                                     The Idea
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
-                                    to='#research'
-                                    className='case-link'>
+                                <a
+                                    href='#research'
+                                    className={`case-link ${activeId === "research" ? "active" : ""}`}>
                                     Research
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
+                                <a
                                     href='#process'
-                                    className='case-link'>
+                                    className={`case-link ${activeId === "process" ? "active" : ""}`}>
                                     The Process
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
+                                <a
                                     href='#iterations'
-                                    className='case-link'>
+                                    className={`case-link ${activeId === "iterations" ? "active" : ""}`}>
                                     Iterations
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
+                                <a
                                     href='#coding'
-                                    className='case-link'>
+                                    className={`case-link ${activeId === "coding" ? "active" : ""}`}>
                                     Development
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
-                                    to='#promotion'
-                                    className='case-link'>
+                                <a
+                                    href='#promotion'
+                                    className={`case-link ${activeId === "promotion" ? "active" : ""}`}>
                                     Promotion
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
-                                    to='#reflect'
-                                    className='case-link'>
+                                <a
+                                    href='#reflect'
+                                    className={`case-link ${activeId === "reflect" ? "active" : ""}`}>
                                     Reflection
-                                </NavHashLink>
+                                </a>
 
-                                <NavHashLink
-                                    to='#test'
-                                    className='case-link'>
+                                <a
+                                    href='#test'
+                                    className={`case-link ${activeId === "test" ? "active" : ""}`}>
                                     Test it out!
-                                </NavHashLink>
+                                </a>
                             </nav>
                         </div>
                     </aside>
@@ -214,12 +261,10 @@ export default function Tandem() {
                             </div>
                         </div>
                         {/* My Role */}
-                        <section className='case-role'>
-                            <h2
-                                id='role'
-                                className='case-title'>
-                                My Role
-                            </h2>
+                        <section
+                            className='case-role'
+                            id='role'>
+                            <h2 className='case-title'>My Role</h2>
                             <p className='role-desc'>
                                 For this project, I was a UI/UX Designer and
                                 researcher, collecting data on our target
@@ -661,7 +706,7 @@ export default function Tandem() {
                     </div>
                     {/* Check it out! */}
                     <section
-                        id='models'
+                        id='test'
                         className='main-section test-section'>
                         <h2 className='section-title'>Check it out!</h2>
                         <video

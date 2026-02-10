@@ -131,8 +131,18 @@
     font-size: 1rem;
     padding: 0 1.5rem 0.5rem 2rem;
 }
-.active {
-    color: #ecedf5;
+
+.case-link {
+    color: #8285bd;
+    transition: all 0.25s ease;
+    font-size: 18px;
+}
+.case-link:hover {
+    color: #54c5d7;
+}
+.case-link.active {
+    color: #edeef6;
+    font-weight: bold;
 }
 /*===Issue Styles===*/
 .issue-stats {
@@ -289,14 +299,6 @@
         background-color: #101820;
         border-radius: 24px;
         font-family: var(--font-family-display);
-    }
-    .case-link {
-        transition: color 0.25s ease;
-        color: #8285bd;
-        font-size: 18px;
-    }
-    .case-link:hover {
-        color: #54c5d7;
     }
 
     .case-links a {
