@@ -1,0 +1,555 @@
+/*===General Page Styles===*/
+.case-title {
+    margin: 0;
+    padding-bottom: 0.4rem;
+}
+.case-summary,
+.role-desc {
+    margin: 0;
+    font-size: 12px;
+}
+.case-role {
+    margin-top: 2rem;
+}
+.section-subheader {
+    font-family: var(--font-family-display);
+    font-size: 16px;
+    margin: 0.2rem 0;
+}
+.iteration-caption {
+    font-size: 11px;
+    font-family: var(--font-family-display);
+    font-weight: bold;
+    margin: 0 auto 0.2rem;
+}
+.case-header {
+    padding: 0 1.5rem;
+    max-width: 85vw;
+    margin: 3rem auto;
+}
+.project-case-page {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.contents-nav,
+.case-flex,
+.project-case-page {
+    overflow: visible;
+}
+
+.case-title {
+    margin: 0;
+    padding-bottom: 0.4rem;
+    text-wrap: nowrap;
+}
+
+.case-desc {
+    margin: 0;
+    font-size: 12px;
+    padding-bottom: 1rem;
+}
+.case-section,
+.case-test {
+    padding: 0 1.5rem 1rem;
+    margin: 0 3rem 1rem;
+    max-width: 85vw;
+}
+.case-dark {
+    background-color: #090d12;
+    color: #ecedf5;
+    padding: 3rem 2rem 0.1rem;
+    margin: 0 auto 3rem;
+}
+/*===mobile contents button===*/
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+
+    background-color: #101820;
+}
+.menu-btn-container {
+    padding: 0.8rem;
+    background-color: #101820;
+    position: fixed;
+    top: 5.5rem;
+    left: 0.8rem;
+    z-index: 999;
+    border-radius: 40px;
+}
+
+.mobile-menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: #8285bd;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-btn[aria-expanded="true"] span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+.mobile-menu-btn[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+.mobile-menu-btn[aria-expanded="true"] span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/*===mobile contents menu===*/
+
+.mobile-casemenu {
+    display: none;
+    position: fixed;
+    top: 12%;
+    left: 0;
+    background-color: #101820;
+    border-radius: 0 20px 20px 0;
+
+    z-index: 990;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-casemenu.open {
+    display: flex;
+    opacity: 1;
+}
+.contents-header {
+    text-align: right;
+    margin: 0.2rem 0 1rem 2rem;
+    font-size: 18px;
+}
+.mobile-link {
+    list-style: none;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0 1.5rem 0.5rem 2rem;
+}
+
+.case-link {
+    color: #8285bd;
+    transition: all 0.25s ease;
+    font-size: 18px;
+    margin-right: 1rem;
+    padding-left: 0.5rem;
+}
+.case-link:hover {
+    color: #54c5d7;
+}
+.case-link.active {
+    color: #c5c7e0;
+    font-weight: bold;
+    border-radius: 8px;
+    border-left: 2px solid #54c5d7;
+}
+.contents-desktop-header {
+    margin: 1rem 0 0 1.5rem;
+    font-size: 22px;
+}
+/*===Issue Styles===*/
+.issue-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.issue-stat {
+    color: #ecedf5;
+    padding: 0.5rem;
+    border-radius: 24px;
+}
+.stat-number {
+    font-size: 52px;
+    margin: 0;
+}
+.stat-caption {
+    font-size: 10px;
+    text-align: right;
+    margin: 0;
+    padding: 0.2rem;
+    text-wrap: nowrap;
+}
+.left-stat {
+    background-color: #00788a;
+}
+.right-stat {
+    background-color: #30346f;
+}
+/*===The Idea===*/
+
+.casesection-bannerImg {
+    width: 85vw;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+/*===Design Process===*/
+
+.userflow-img {
+    width: 84vw;
+}
+.case-font {
+    width: 10vw;
+}
+/*===Iterations===*/
+.iteration-initial,
+.iteration-testing,
+.iteration-final {
+    padding: 0 1.5rem 1rem;
+    margin: 0 1rem;
+}
+.lofi-img,
+.hifi-img {
+    width: 30vw;
+}
+.lofi-images {
+    margin-bottom: 1.5rem;
+}
+.hifi-images {
+    margin-bottom: 3rem;
+}
+.lofi-homepage,
+.lofi-schedule,
+.hifi-img-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.hifi-list {
+    display: none;
+    font-family: var(--font-family-display);
+    line-height: 150%;
+    font-size: 20px;
+    width: 35%;
+}
+/*===Promotion===*/
+
+.material-images,
+.showcase-images {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.material-images::-webkit-scrollbar,
+.showcase-images::-webkit-scrollbar {
+    height: 0;
+}
+.material-img {
+    height: 30vh;
+    margin-bottom: 3rem;
+}
+.showcase-img {
+    height: 30vh;
+    margin-bottom: 3rem;
+}
+/*===Check it out!===*/
+.test-cta {
+    font-family: var(--font-family-display);
+    font-size: 16px;
+}
+/*===visible mobile menu and hide desktop menu===*/
+@media screen and (max-width: 699px) {
+    .desktop-content-container {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .case-summary,
+    .role-desc {
+        width: 90%;
+        line-height: 140%;
+    }
+    .role-desc {
+        margin-bottom: 2rem;
+    }
+    .case-flex {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        align-items: start;
+        min-height: 100vh;
+    }
+
+    .contents-nav {
+        position: sticky;
+        top: 6rem;
+        align-self: start;
+        height: fit-content;
+        z-index: 10;
+    }
+    .case-page-content {
+        width: 78vw;
+    }
+    .case-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 26vw;
+        left: -26vw;
+    }
+    .case-dark {
+        position: relative;
+        padding-left: 29vw;
+        padding-right: 8rem;
+        width: 64vw;
+        left: -26vw;
+    }
+    .desktop-links,
+    .case-links {
+        display: block;
+        padding: 0.5rem 0 0.5rem 0;
+        background-color: #101820;
+        border-radius: 24px;
+        font-family: var(--font-family-display);
+    }
+
+    .case-link {
+        display: block;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .menu-btn-container {
+        display: none;
+    }
+
+    .desktop-content-container {
+        display: block;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+    /*===section styles===*/
+    .case-title {
+        font-size: 32px;
+    }
+
+    .case-section {
+        width: 64vw;
+        margin-left: 0;
+    }
+    /*===Issue Styles===*/
+    .issue-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .issue-stat {
+        color: #ecedf5;
+        padding: 0.5rem;
+        border-radius: 24px;
+    }
+    .stat-number {
+        font-size: 64px;
+    }
+    .stat-caption {
+        font-size: 12px;
+        margin-right: 0.2rem;
+    }
+    /*===The Idea===*/
+    .casesection-bannerImg {
+        width: 68vw;
+    }
+    /*===The Process===*/
+    .userflow-img {
+        width: 68vw;
+    }
+    .case-palette div {
+        height: 100%;
+    }
+    .case-font {
+        width: 12vw;
+    }
+    /*===Iterations===*/
+    .iteration-initial,
+    .iteration-testing,
+    .iteration-final {
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+    .lofi-img,
+    .hifi-img {
+        width: 25vw;
+    }
+    .iteration-caption {
+        font-size: 12px;
+        margin-bottom: 0.3rem;
+    }
+    /*===Check it out!===*/
+    .case-test {
+        margin: 2rem 0 auto 0;
+    }
+    .code-btn {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .contents-nav {
+        left: 1.5rem;
+    }
+    .case-desc,
+    .case-summary,
+    .role-desc {
+        font-size: 14px;
+        line-height: 130%;
+    }
+    .case-styles {
+        gap: 1rem;
+    }
+    .case-palette {
+        gap: 8px;
+        width: 36vw;
+    }
+    .case-font {
+        width: 14vw;
+    }
+}
+@media screen and (min-width: 1200px) {
+    /*===table of contents===*/
+    .case-link {
+        margin-left: 0.8rem;
+    }
+    .desktop-links {
+        width: 120%;
+    }
+
+    .case-page-content {
+        width: 60vw;
+    }
+    .case-header {
+        width: 100%;
+        margin: 4rem 0 6rem 6vw;
+    }
+    .case-role {
+        margin-top: 4rem;
+    }
+
+    .case-summary {
+        font-size: 16px;
+        line-height: 140%;
+        width: 110%;
+    }
+    .case-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        padding-left: 26vw;
+        left: -20vw;
+        background-color: #e6f6f9;
+    }
+    .case-dark {
+        width: 70vw;
+        left: -27vw;
+    }
+    .section-subheader {
+        font-size: 24px;
+        margin: 0;
+    }
+    .case-section {
+        margin-top: 3rem;
+    }
+    .case-title {
+        font-size: 52px;
+    }
+
+    .role-desc,
+    .case-desc {
+        font-size: 16px;
+        line-height: 140%;
+        width: 100%;
+    }
+    .case-desc {
+        width: 76%;
+    }
+    /*===Issue Styles===*/
+    .issue-stats {
+        gap: 10rem;
+        margin-right: 2rem;
+    }
+    .issue-stat {
+        color: #ecedf5;
+        padding: 0.5rem;
+        border-radius: 24px;
+    }
+    .stat-number {
+        font-size: 92px;
+        padding-left: 1rem;
+    }
+    .stat-caption {
+        font-size: 14px;
+        margin-right: 0.2rem;
+    }
+    .title-container {
+        align-items: center;
+    }
+    /*===Research===*/
+    .case-code-btn {
+        font-size: 20px;
+        padding: 0.5rem 1.5rem;
+        margin-right: 0;
+    }
+    /*===The Process===*/
+    .userflow-img {
+        width: 56vw;
+    }
+    .case-font {
+        width: 13vw;
+    }
+    .case-support {
+        width: 10vw;
+    }
+    .process-styles {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    /*===Iterations===*/
+    .lofi-comparison {
+        display: flex;
+        gap: 4rem;
+    }
+    .lofi-img,
+    .hifi-img {
+        width: 13vw;
+    }
+
+    .hifi-list {
+        display: block;
+        margin: 3rem 0 auto 2rem;
+        line-height: 200%;
+    }
+    /*===Promotion===*/
+    .material-images,
+    .showcase-images {
+        gap: 2rem;
+    }
+    .material-img {
+        height: 40vh;
+    }
+    .showcase-img {
+        height: 38vh;
+    }
+    /*===Check it out!===*/
+    .case-test {
+        display: flex;
+        margin: 3rem auto 3rem 8vw;
+        gap: 8rem;
+    }
+
+    .test-cta {
+        font-size: 24px;
+        padding: 2rem 0 1rem 0;
+    }
+}

@@ -3,6 +3,7 @@ import Revitea from "./Revitea/Revitea";
 import Posters from "./Posters/Posters";
 import Moolahmate from "./Moolahmate/Moolahmate";
 import Tandem from "./Tandem/Tandem";
+import Paramore from "./Paramore/Paramore";
 
 export default function ProjectDetailRouter() {
     const { slug } = useParams();
@@ -19,6 +20,9 @@ export default function ProjectDetailRouter() {
 
         case "tandem":
             return <Tandem />;
+
+        case "paramore":
+            return <Paramore />;
         default:
             return (
                 <div style={{ padding: "6rem 2rem", textAlign: "center" }}>
