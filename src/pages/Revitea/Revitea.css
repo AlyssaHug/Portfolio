@@ -302,6 +302,7 @@ h2,
     }
     .project-title {
         font-size: 6rem;
+        text-wrap: nowrap;
     }
     .short-desc {
         font-size: 18px;

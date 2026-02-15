@@ -726,7 +726,7 @@ export default function Tandem() {
                                 className='case-code-btn code-btn'
                                 href='https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F'
                                 target='_blank'>
-                                Visit site!
+                                Try the app!
                             </a>
                         </div>
                         <video

@@ -84,7 +84,7 @@ export default function Paramore() {
 
                                 <a
                                     href='#challenge'
-                                    className={`case-link ${activeId === "issue" ? "active" : ""}`}>
+                                    className={`case-link ${activeId === "challenge" ? "active" : ""}`}>
                                     The Challenge
                                 </a>
 
@@ -460,118 +460,76 @@ export default function Paramore() {
                                     their future, and the ending screen, and
                                     drafted them in Photoshop.
                                 </p>
-                                <div className='lofi-comparison'>
-                                    <div className='lofi-homepage'>
-                                        <div className='lofi-images'>
-                                            <p className='iteration-caption'>
-                                                Lo-fi Homepage
-                                            </p>
-                                            <img
-                                                className='lofi-img'
-                                                src='/Tandem/initial-home.png'
-                                                alt='Initial lo-fi mockup of the homepage in greyscale.'
-                                            />
-                                        </div>
-                                        <div className='lofi-img'>
-                                            <p className='iteration-caption'>
-                                                Mid-fi Homepage
-                                            </p>
-                                            <img
-                                                className='lofi-img'
-                                                src='/Tandem/mid-home.png'
-                                                alt='Mid-fi iteration of homepage, in color with icons in the navbar.'
-                                            />
-                                        </div>
+                                <div className='band-mock'>
+                                    <div className='mock-band-top'>
+                                        <img
+                                            className='mock-img'
+                                            src='/EMagazine/bandMock.png'
+                                            alt='Initial lo-fi mockup of the band homepage.'
+                                        />
+
+                                        <img
+                                            className='mock-img'
+                                            src='/EMagazine/hayleyMock.png'
+                                            alt="Mock-up of Hayley's page."
+                                        />
                                     </div>
-                                    <div className='lofi-schedule'>
-                                        <div className='lofi-images'>
-                                            <p className='iteration-caption'>
-                                                Lo-fi Schedule
-                                            </p>
-                                            <img
-                                                className='lofi-img'
-                                                src='/Tandem/initial-weekly.png'
-                                                alt='Initial greyscale mockup of the schedule page'
-                                            />
-                                        </div>
-                                        <div className='lofi-images'>
-                                            <p className='iteration-caption'>
-                                                Mid-fi Schedule
-                                            </p>
-                                            <img
-                                                className='lofi-img'
-                                                src='/Tandem/mid-weekly.png'
-                                                alt='Mid-fi iteration of the schedule page, in color and a weekly/monthly toggle for the calendar'
-                                            />
-                                        </div>
+                                    <div className='mock-band-bottom'>
+                                        <img
+                                            className='mock-img'
+                                            src='/EMagazine/taylorMock.png'
+                                            alt="Mock-up of Taylor's page."
+                                        />
+
+                                        <img
+                                            className='mock-img'
+                                            src='/EMagazine/zacMock.png'
+                                            alt="Mock-up of Zac's page."
+                                        />
                                     </div>
                                 </div>
-                            </div>
-                            <div className='iteration-testing'>
-                                <div className='title-container'>
-                                    <h2 className='section-subheader'>
-                                        User Testing
-                                    </h2>
-                                    <a
-                                        className='code-btn case-code-btn'
-                                        target='_blank'
-                                        href='https://docs.google.com/document/d/1GI7hbHmCOMoOPl5raU56DoE3Czq-sEFLe-LUqUbMc1o/edit?usp=sharing'>
-                                        View Report
-                                    </a>
-                                </div>
-                                <p className='case-desc'>
-                                    We conducted user testing before moving onto
-                                    our hi-fi, making sure the direction we were
-                                    going matched what our users were seeking.
-                                    Through this we identified issues in our
-                                    onboarding and the sizing of small text, and
-                                    noted these for future iterations.
-                                </p>
                             </div>
 
                             <div className='iteration-final'>
-                                <h3 className='section-subheader'>Hi-Fi</h3>
+                                <h3 className='section-subheader'>
+                                    Final Design
+                                </h3>
                                 <p className='case-desc'>
-                                    With our hi-fi screens, we implemented the
-                                    feedback from our testing and made some
-                                    extra changes by adjusting our palette. When
-                                    adjusting, we also merged our homepage into
-                                    the schedule, both to give room for the
-                                    nanny share feature and to reduce
-                                    redundancy. The final design reflects our
-                                    core messaging and the final product.
+                                    With these mock-ups, we downloaded the built
+                                    assets and images into our project folder.
+                                    There were adjustments made as we developed
+                                    our final version to have better cohesion
+                                    within our site. With extra pops of color to
+                                    match each person and the albums, the result
+                                    was a detailed, engaging digital experience.
                                 </p>
-                                <div className='hifi-img-container'>
-                                    <div className='hifi-images'>
-                                        <p className='iteration-caption'>
-                                            Mid-fi Schedule
-                                        </p>
+                                <div className='band-mock'>
+                                    <div className='mock-band-top'>
                                         <img
-                                            className='hifi-img'
-                                            src='/Tandem/mid-weekly.png'
-                                            alt='Mid-fi iteration of the schedule page, in color and a weekly/monthly toggle for the calendar'
+                                            className='mock-img'
+                                            src='/EMagazine/band.png'
+                                            alt='Final version of the band homepage.'
+                                        />
+
+                                        <img
+                                            className='mock-img'
+                                            src='/EMagazine/hayleyPage.png'
+                                            alt="Final version of Hayley's page."
                                         />
                                     </div>
-                                    <div className='hifi-images'>
-                                        <p className='iteration-caption'>
-                                            Hi-fi Schedule
-                                        </p>
+                                    <div className='mock-band-bottom'>
                                         <img
-                                            className='hifi-img'
-                                            src='/Tandem/hifi-weekly.png'
-                                            alt='Final version of the schedule, which is now the apps homepage. With brighter colors and simplified cards'
+                                            className='mock-img'
+                                            src='/EMagazine/music.png'
+                                            alt='Album carousel on the homepage.'
+                                        />
+
+                                        <img
+                                            className='mock-img'
+                                            src='/EMagazine/future.png'
+                                            alt='The future page, talking about where they are now.'
                                         />
                                     </div>
-                                    <ul className='hifi-list'>
-                                        <li>Simplified day cards</li>
-                                        <li>Week shown along the top</li>
-                                        <li>
-                                            Current day highlight for clarity
-                                        </li>
-                                        <li>
-                                            Simplified weekly/monthly toggle
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </section>
@@ -584,72 +542,39 @@ export default function Paramore() {
                                 <a
                                     className='code-btn case-code-btn'
                                     target='_blank'
-                                    href='https://github.com/IDSP-TRADECARE/Tandem'>
+                                    href='https://github.com/AlyssaHug/Paramore'>
                                     View Source Code
                                 </a>
                             </div>
-                            <p className='case-desc'>
-                                When developing the app, I focused on
-                                onboarding, specifically the forms. With the
-                                forms, there are options to either input your
-                                information manually, or scan your ID to help
-                                auto-fill. Along with this section, I was also
-                                in-charge of merging and linking the onboarding
-                                section together, and profile section to it to
-                                ensure the information input was saved properly.
-                            </p>
-                        </section>
-                        {/* Promotion */}
-                        <section
-                            id='promotion'
-                            className='case-section'>
-                            <h2 className='case-title'>Promotion</h2>
-                            <div className='promotion-materials'>
-                                <h3 className='section-subheader'>Materials</h3>
+                            <div className='dev-interact'>
+                                <h3 className='section-subheader'>Base Code</h3>
                                 <p className='case-desc'>
-                                    For the apps’ promotion, we created both
-                                    digital and printed materials. Digitally, we
-                                    made a landing page showcasing Tandem’s core
-                                    features and value, a promotional video to
-                                    highlight our solution, as well as posting
-                                    on social media to engage with our audience.
-                                    For printed materials, brochures and
-                                    business cards were made, as well as branded
-                                    stickers to hand out.
+                                    When developing the magazine, implementing
+                                    the base content according to our style
+                                    guide was our priority. We set-up all our
+                                    page files and started by adding all
+                                    necessary elements, then applying css styles
+                                    both to universal elements and page-specific
+                                    items to ensure consistency. Throughout the
+                                    process, we sent videos and screenshots of
+                                    our work to ensure decisions were made
+                                    together.
                                 </p>
-                                <div className='material-images'>
-                                    <img
-                                        src='/Tandem/brochure.png'
-                                        alt='A photo of our brochure, highlighting out apps features'
-                                        className='material-img'
-                                    />
-                                    <img
-                                        src='/Tandem/film.png'
-                                        alt='A photo from when we were filming our promotional video'
-                                        className='material-img'
-                                    />
-
-                                    <img
-                                        src='/Tandem/card.png'
-                                        alt='One of the business cards made for our showcase'
-                                        className='material-img'
-                                    />
-                                </div>
                             </div>
-                            <div className='promotion-showcase'>
+                            <div className='dev-base'>
                                 <h3 className='section-subheader'>
-                                    App Showcase
+                                    Interactivity & Animation
                                 </h3>
                                 <p className='case-desc'>
-                                    The project ended with showcasing our app as
-                                    part of BCIT’s app showcase in December
-                                    2025. With our video, printed materials, and
-                                    live app demo, we clearly and effectively
-                                    positioned Tandem as the solution for
-                                    tradesparents. This event provided powerful
-                                    validation for us, reinforcing the app’s
-                                    real-world relevance in helping
-                                    tradesparents overcome childcare barriers.
+                                    Once the content was structured and the
+                                    pages were linked properly, we delved into
+                                    our interactivity plans. We implemented a
+                                    base with load-ins, hover states, and smooth
+                                    scrolling, then moved focus to the fun
+                                    stuff. We really wanted to ensure each page
+                                    had a fun element for users, so we added
+                                    interesting effects/hovers, and hid some
+                                    confetti behind buttons.
                                 </p>
                                 <div className='showcase-images'>
                                     <img
@@ -665,6 +590,7 @@ export default function Paramore() {
                                 </div>
                             </div>
                         </section>
+
                         {/* Reflection */}
                         <section
                             id='reflect'
@@ -672,23 +598,24 @@ export default function Paramore() {
                             <h2 className='case-title'>Reflection</h2>
 
                             <p className='case-desc'>
-                                The result was Tandem, not just an app, but a
-                                link connecting parents and lessening the burden
-                                of finding childcare. Through this journey, I
-                                was reminded that design rarely follows a
-                                straight line. It’s full of detours, with
-                                iterations and feedback loops that ultimately
-                                make the product stronger.
+                                The result was a Paramore E-Magazine, different
+                                from your typical information hub with
+                                personalization to its topic and hidden
+                                interactions. Through this journey, I learned
+                                how to work well under the pressure of
+                                deadlines, not letting it affect my quality of
+                                work.
                                 <br />
                                 <br />
-                                This was also my first time closely
-                                collaborating with developers, which came with
-                                some learning curves. I learned to communicate
-                                design decisions with better context and detail,
-                                to ground my recommendations in our user needs,
-                                and to iterate collaboratively when constraints
-                                emerged. These are skills that have made me a
-                                stronger, more versatile designer.
+                                Through this project, I was reminded how great
+                                design can come from close partnership rather
+                                than a solo venture. Working in a two-person
+                                team meant both taking on multiple roles, which
+                                created a fast iteration cycle that required
+                                constant compromise and check-in to ensure we
+                                were on the same page. These experiences have
+                                made me more adaptable and collaborative as a
+                                designer.
                             </p>
                         </section>
                     </div>
@@ -701,9 +628,9 @@ export default function Paramore() {
                             <h3 className='test-cta'>Wanna try it yourself?</h3>
                             <a
                                 className='case-code-btn code-btn'
-                                href='https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F'
+                                href='https://paramore-emagazine.vercel.app/'
                                 target='_blank'>
-                                Visit site!
+                                Visit the site!
                             </a>
                         </div>
                         <video
