@@ -1,7 +1,7 @@
-import "./Tandem.css";
+import "./Bandit.css";
 import { useState, useEffect, useRef } from "react";
 
-export default function Tandem() {
+export default function Bandit() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
@@ -56,8 +56,8 @@ export default function Tandem() {
     return (
         <div className='project-case-page'>
             <img
-                src='/Tandem/Hero.png'
-                alt='Photo with two phones with different screens from the Tandem app. One has the schedule homepage, and the other has the AI upload analszing screen.'
+                src='/Bandit/Hero.png'
+                alt='Photo of a desktop with the board game on screen.'
                 className='hero-image'
             />
             <div className='case-flex'>
@@ -240,18 +240,18 @@ export default function Tandem() {
                         id='overview'>
                         {/* Summary */}
                         <div className='header-text'>
-                            <h1 className='project-title'>Tandem</h1>
+                            <h1 className='project-title'>Bandit Breakout</h1>
                             <p className='case-summary'>
-                                Finding childcare can be a struggle, especially
-                                as a tradesworker with odd hours or scheduled
-                                weekends. The goal was to create an app not only
-                                helping parents find childcare that matches
-                                their work schedule, but provide budget friendly
-                                options that encourage community. The result was
-                                Tandem, a scheduling app that helps match you
-                                with nannies, allowing easier availability for
-                                odd shifts, and nanny sharing so parents can
-                                split the cost of care.
+                                Online multiplayer games are very competitive
+                                focused, with first person shooter games and
+                                fast-paced racing, there’s little option for
+                                something more laid back. The goal was to create
+                                a digital board game for friends to play
+                                casually or competitively, while engaging in
+                                story and events. The result was Bandit
+                                Breakout, an online game with a western theme
+                                and hand-drawn graphics, with multiple endings
+                                and routes that keep users coming back for more.
                             </p>
                             <div className='meta'>
                                 <span className='role'>Role: </span>

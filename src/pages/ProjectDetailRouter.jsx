@@ -4,6 +4,7 @@ import Posters from "./Posters/Posters";
 import Moolahmate from "./Moolahmate/Moolahmate";
 import Tandem from "./Tandem/Tandem";
 import Paramore from "./Paramore/Paramore";
+import Bandit from "./Bandit/Bandit";
 
 export default function ProjectDetailRouter() {
     const { slug } = useParams();
@@ -23,6 +24,9 @@ export default function ProjectDetailRouter() {
 
         case "paramore":
             return <Paramore />;
+
+        case "bandit":
+            return <Bandit />;
         default:
             return (
                 <div style={{ padding: "6rem 2rem", textAlign: "center" }}>
