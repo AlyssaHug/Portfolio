@@ -577,16 +577,26 @@ export default function Paramore() {
                                     confetti behind buttons.
                                 </p>
                                 <div className='showcase-images'>
-                                    <img
-                                        src='/Tandem/booth.png'
-                                        alt='The team at our booth during the showcase'
+                                    <video
                                         className='showcase-img'
-                                    />
-                                    <img
-                                        src='/Tandem/present.png'
-                                        alt='A photo of the team during our live demo presentation'
+                                        autoPlay
+                                        muted
+                                        loop
+                                        controls>
+                                        <source
+                                            src='/EMagazine/confetti.mp4'
+                                            type='video/mp4'></source>
+                                    </video>
+                                    <video
                                         className='showcase-img'
-                                    />
+                                        autoPlay
+                                        muted
+                                        loop
+                                        controls>
+                                        <source
+                                            src='/EMagazine/albums.mp4'
+                                            type='video/mp4'></source>
+                                    </video>
                                 </div>
                             </div>
                         </section>
@@ -622,7 +632,7 @@ export default function Paramore() {
                     {/* Check it out! */}
                     <section
                         id='test'
-                        className='case-test'>
+                        className='case-test case-desktop'>
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna try it yourself?</h3>
@@ -634,10 +644,10 @@ export default function Paramore() {
                             </a>
                         </div>
                         <video
-                            className='demo-mobile'
+                            className='demo-desktop'
                             controls>
                             <source
-                                src='/Tandem/demo.mp4'
+                                src='/EMagazine/demo.mp4'
                                 type='video/mp4'></source>
                         </video>
                     </section>

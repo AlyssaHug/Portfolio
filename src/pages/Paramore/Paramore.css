@@ -20,12 +20,21 @@
 .mock-band-bottom::-webkit-scrollbar {
     height: 0;
 }
+/*===Demo===*/
+
+.demo-desktop {
+    width: 70vw;
+    margin: 2rem 0;
+}
 @media screen and (min-width: 700px) {
     .mock-img {
         width: 50vw;
     }
     .band-mock {
         width: 65vw;
+    }
+    .demo-desktop {
+        width: 60vw;
     }
 }
 @media screen and (min-width: 1100px) {
@@ -34,5 +43,13 @@
     }
     .band-mock {
         width: 70vw;
+    }
+    .case-desktop {
+        gap: 2rem;
+        margin-left: 5rem;
+    }
+    .demo-desktop {
+        width: 45vw;
+        margin-top: 0.8rem;
     }
 }
