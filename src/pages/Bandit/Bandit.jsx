@@ -267,18 +267,17 @@ export default function Bandit() {
                             id='role'>
                             <h2 className='case-title'>My Role</h2>
                             <p className='role-desc'>
-                                For this project, I was a UI/UX Designer and
-                                researcher, collecting data on our target
-                                audience and ensuring we used it to inform our
-                                design decisions. As a designer, along with
-                                working on the app, I also later made
-                                promotional material in the form of business
-                                cards,matching our apps’ branding, for our app
-                                showcase. Once the app design was finalized, I
-                                transitioned to one of the frontend developers,
-                                coding the ID scan onboarding process along with
-                                reviewing and merging our onboarding system with
-                                our profile.
+                                For this project, I was a researcher and UI/UX
+                                Designer, collecting data on our user base and
+                                using it to inform our design decisions. As an
+                                illustrator, I helped create the assets for the
+                                items and backgrounds in the game, following the
+                                direction of the lead illustrator. I also
+                                iterated based on feedback from our users and
+                                other designers, ensuring alignment with our
+                                project. I also helped with our promotional
+                                materials, being the main developer for our
+                                landing page.
                             </p>
                         </section>
                     </header>
@@ -290,25 +289,25 @@ export default function Bandit() {
                             className='case-section'>
                             <h2 className='case-title'>The Issue</h2>
                             <p className='case-desc'>
-                                Daycares can be difficult to get into, with long
-                                waitlists and lack of flexible hours, which
-                                makes it hard for tradesparents to find
-                                childcare. Many are faced with the options to
-                                either call into work if their childcare falls
-                                through, or become a stay-at-home parent; which
-                                many can’t afford to do.
+                                There are many multiplayer online games out
+                                there, but most are overly competitive and
+                                restrictive, leaving few options for casual
+                                gamers who enjoy story driven content. Online
+                                board games are an option, but are often found
+                                repetitive, and no longer enjoyable after a
+                                couple playthroughs.
                             </p>
                             <div className='issue-stats'>
                                 <div className='issue-stat left-stat'>
-                                    <h2 className='stat-number'>63%</h2>
+                                    <h2 className='stat-number'>75%</h2>
                                     <p className='stat-caption'>
-                                        tradeswomen identify as parents
+                                        play board games online
                                     </p>
                                 </div>
                                 <div className='issue-stat right-stat'>
-                                    <h2 className='stat-number'>100%</h2>
+                                    <h2 className='stat-number'>67%</h2>
                                     <p className='stat-caption'>
-                                        struggle with childcare
+                                        like having varying difficulty
                                     </p>
                                 </div>
                             </div>
@@ -317,21 +316,21 @@ export default function Bandit() {
                         <section
                             id='idea'
                             className='case-section'>
-                            <h2 className='case-title'>The Idea - Tandem</h2>
+                            <h2 className='case-title'>
+                                The Idea - Bandit Breakout
+                            </h2>
                             <p className='case-desc'>
-                                Tandem is an app dedicated to helping parents
-                                find flexible, affordable childcare options.
-                                With AI schedule uploading, the app recommends
-                                which days need care based on your work
-                                schedule. It provides options for nannies,
-                                allowing parents more range in the hours they
-                                need. Knowing nannies can be pricier, the app
-                                also has the option to nanny share, where
-                                parents can share the cost of care.
+                                Bandit breakout is an online board game built
+                                for both casual and competitive play. With event
+                                spaces, decision tiles, and multiple endings,
+                                players can replay to discover it all. The game
+                                is a western, animal-themed board with hand
+                                drawn graphics, and item cards to give yourself
+                                a boost, or stall others.
                             </p>
                             <img
-                                src='/Tandem/Reference.png'
-                                alt='Reference images of other scheduling/childcare apps.'
+                                src='/Bandit/Reference.png'
+                                alt='Reference images of other online board/multiplayer games.'
                                 className='casesection-bannerImg'
                             />
                         </section>
@@ -346,28 +345,26 @@ export default function Bandit() {
                                 <a
                                     className='code-btn case-code-btn'
                                     target='_blank'
-                                    href='https://docs.google.com/document/d/1q2iX2L2OvAhui6LYZeLVbo92AMHXwLF_mHFE8P5sgxE/edit?tab=t.0#heading=h.ckmm2i24taya'>
+                                    href='https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing'>
                                     View Report
                                 </a>
                             </div>
                             <p className='case-desc'>
-                                Through interviews 8 with tradesparents, we
-                                realized just how far the issue went. With 63%
-                                working 40–59 hours a week, and 50% having a mix
-                                of advance and last-minute scheduling, parents
-                                are having to schedule reactively.
+                                Through interviews with 12 participants, we
+                                realized just how few options there were for
+                                players. With 67% spending 12+ hours a week
+                                playing games, and 75% like playing online board
+                                games with friends.
                                 <br />
                                 <br />
-                                60% rely on family or friends for childcare when
-                                their schedule changes last-minute, since
-                                finding reliable childcare is their biggest
-                                struggle, 50% say.
+                                67% prefer having the choice between casual or
+                                competitive play, as long as the rules and
+                                mechanics stay consistent, 50% say.
                                 <br />
                                 <br />
                                 We also conducted secondary research, through
-                                online forums and reddit posts, it helped
-                                highlight just how difficult of a position
-                                parents were in.
+                                online forums and reddit posts, along with
+                                investigating other games and their reviews.
                             </p>
                         </section>
                         {/* The Process */}
