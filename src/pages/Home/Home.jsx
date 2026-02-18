@@ -42,7 +42,7 @@ export default function Home() {
                         position: "relative",
                     }}>
                     <Dither
-                        waveColor={[0.2, 0.35, 0.4]}
+                        waveColor={[0.0, 0.3909, 0.4811]}
                         disableAnimation={false}
                         enableMouseInteraction
                         mouseRadius={0.2}
@@ -92,7 +92,7 @@ export default function Home() {
                 <div className='contact-section'>
                     <div className='contact-background'>
                         <Dither
-                            waveColor={[0.2, 0.35, 0.4]}
+                            waveColor={[0.0, 0.3909, 0.4811]}
                             disableAnimation={false}
                             enableMouseInteraction
                             mouseRadius={0.2}

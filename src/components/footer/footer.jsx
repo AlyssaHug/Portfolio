@@ -11,8 +11,8 @@ export default function Footer() {
                     Welcome to my little corner of the internet. I'm constantly
                     creating, learning, and iterating, and this portfolio
                     caputres the highlights. Built with a lot of late-night
-                    inspiration, it's a space where my ideas get to breathe.
-                    Feel free to reach out!
+                    inspiration (and coffee), it's a space where my ideas get to
+                    breathe. Feel free to reach out!
                 </p>
             </div>
             <div className='line'></div>

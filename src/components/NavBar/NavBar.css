@@ -133,7 +133,13 @@
     width: 75%;
     text-align: center;
 }
-
+.email-btn {
+    transition: all 0.2s ease-out;
+}
+.email-btn:hover {
+    background-color: #101820;
+    border: 2px solid #44499c;
+}
 @media screen and (max-width: 699px) {
     /* adjust breakpoint to taste */
     .desktop-nav {

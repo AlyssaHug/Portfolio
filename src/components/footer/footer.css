@@ -38,10 +38,17 @@ footer {
     font-size: 16px;
     margin-right: 0.5rem;
     cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+.social-btn:hover {
+    color: #44499c;
+    background-color: #a9abd1;
+    border: none;
 }
 a {
     text-decoration: none;
 }
+
 @media screen and (min-width: 700px) {
     .my-info {
         display: flex;

@@ -113,7 +113,6 @@
     z-index: 1;
 }
 
-/* Force the canvas to fill the wrapper (safe override) */
 .contact-background .dither-container {
     position: absolute !important;
     inset: 0;
@@ -121,8 +120,7 @@
 .contact-content {
     position: relative;
     z-index: 2;
-    pointer-events: none; /* ← lets mouse pass through to canvas */
-    width: 100%;
+    pointer-events: none;
     text-align: center;
     padding: 4rem 1rem;
 }
@@ -136,10 +134,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 1.5rem auto;
 }
 .first-line {
     margin-right: 14rem;
-    padding-top: 6rem;
 }
 .last-line {
     margin-left: 3rem;
@@ -154,6 +152,13 @@
     border: 3px solid #44499c;
     margin: 1rem auto 5rem;
     pointer-events: auto;
+    transition: all 0.2s ease-out;
+}
+.contact-btn:hover {
+    color: #44499c;
+    background-color: #a9abd1;
+    border: none;
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 700px) {

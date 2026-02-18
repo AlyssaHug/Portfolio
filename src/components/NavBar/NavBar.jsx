@@ -43,21 +43,21 @@ export default function NavBar() {
                         onClick={closeMenu}>
                         About
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         to='/Gallery'
                         className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
                         onClick={closeMenu}>
                         Gallery
-                    </NavLink>
+                    </NavLink> */}
                 </div>
 
                 {/* Desktop Contact Button - hidden on mobile */}
                 <div className='connect-btn desktop-nav'>
                     <a
                         href='mailto:alyssathuggins@gmail.com'
-                        className='nav-item'
+                        className='nav-item email-btn'
                         onClick={closeMenu}>
                         Get in touch!
                     </a>
@@ -95,7 +95,7 @@ export default function NavBar() {
                         onClick={closeMenu}>
                         About
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         to='/Gallery'
                         className={({ isActive }) =>
                             isActive
@@ -104,11 +104,11 @@ export default function NavBar() {
                         }
                         onClick={closeMenu}>
                         Gallery
-                    </NavLink>
+                    </NavLink> */}
 
                     <a
                         href='mailto:alyssathuggins@gmail.com'
-                        className='nav-item mobile-link'
+                        className='nav-item mobile-link email-btn'
                         onClick={closeMenu}>
                         Get in touch!
                     </a>
