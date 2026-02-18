@@ -1,0 +1,43 @@
+.lofi-board {
+    display: flex;
+    gap: 1rem;
+    width: 72vw;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.lofi-board::-webkit-scrollbar {
+    height: 0;
+}
+.lofi-bandit {
+    width: 60vw;
+}
+.bandit-final {
+    width: 64vw;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.showcase-bandit {
+    width: 40vh;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+}
+@media screen and (min-width: 700px) {
+    .lofi-bandit {
+        width: 40vw;
+    }
+    .lofi-board {
+        width: 64vw;
+    }
+    .showcase-bandit {
+        width: 50vh;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .lofi-bandit {
+        width: 30vw;
+    }
+    .showcase-bandit {
+        width: 64vh;
+    }
+}

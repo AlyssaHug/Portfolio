@@ -113,12 +113,6 @@ export default function Bandit() {
                                 </a>
 
                                 <a
-                                    href='#coding'
-                                    className={`case-link ${activeId === "coding" ? "active" : ""}`}>
-                                    Development
-                                </a>
-
-                                <a
                                     href='#promotion'
                                     className={`case-link ${activeId === "promotion" ? "active" : ""}`}>
                                     Promotion
@@ -203,13 +197,7 @@ export default function Bandit() {
                                     Iterations
                                 </a>
                             </li>
-                            <li>
-                                <a
-                                    href='#coding'
-                                    className='link'>
-                                    Development
-                                </a>
-                            </li>
+
                             <li>
                                 <a
                                     href='#promotion'
@@ -374,18 +362,19 @@ export default function Bandit() {
                             <div className='process-flow'>
                                 <h2 className='case-title'>Design Process</h2>
 
-                                <h3 className='section-subheader'>User Flow</h3>
+                                <h3 className='section-subheader'>Ruleset</h3>
                                 <p className='case-desc'>
-                                    With our research, we planned how our user
-                                    flow would look, wanting it to be clear and
-                                    straightforward. As we iterated our
-                                    wireframes, we adjusted our flow to ensure
-                                    parents could view and book through their
-                                    schedule seamlessly.
+                                    With our research, we planned how we wanted
+                                    our game to play and the rules needed. I
+                                    used these rules when designing the initial
+                                    board to ensure they were applicable to the
+                                    game. As we iterated, I adjusted our game
+                                    board to match the changing rules and new
+                                    actionable tiles.
                                 </p>
                                 <img
-                                    src='/Tandem/userflow.png'
-                                    alt='An image with notes linked by arrows showing how the app flows, from sign-in to booking.'
+                                    src='/Bandit/rules.png'
+                                    alt='The rules overlay listing the games health/combat rules on one sheet, and the board movement on the other.'
                                     className='userflow-img'
                                 />
                             </div>
@@ -394,13 +383,13 @@ export default function Bandit() {
                                     Style guide
                                 </h3>
                                 <p className='section-desc'>
-                                    Wanting to highlight trust, support, and
-                                    balance, we ensured that conveyed in our
-                                    apps branding and visuals. With blue and
-                                    green tones, we portray safety and security,
-                                    putting users at ease when navigating the
-                                    app. We also opted for simple and clear, yet
-                                    effective fonts for easier readability.
+                                    The theme for the game was western, so we
+                                    went for rustic, yet bright visuals. The
+                                    colors helped portray the theme in a
+                                    stylistic way, further pushed by the hand
+                                    drawn style that brought the game to life.
+                                    The fonts were chosen to be readable, while
+                                    also blending in with the game style.
                                 </p>
                                 <div className='styles case-styles'>
                                     <div className='palettes'>
@@ -408,53 +397,53 @@ export default function Bandit() {
                                             <div
                                                 className='color-swatch swatch2'
                                                 style={{
-                                                    backgroundColor: "#00001b",
+                                                    backgroundColor: "#401911",
                                                 }}>
-                                                #00001B
+                                                #401911
                                             </div>
                                             <div
                                                 className='color-swatch swatch2'
                                                 style={{
-                                                    backgroundColor: "#3373cc",
+                                                    backgroundColor: "#008F0E",
                                                 }}>
-                                                #3373CC
+                                                #008F0E
+                                            </div>
+
+                                            <div
+                                                className='color-swatch swatch2'
+                                                style={{
+                                                    backgroundColor: "#D75B1D",
+                                                }}>
+                                                #D75B1D
+                                            </div>
+                                            <div
+                                                className='color-swatch'
+                                                style={{
+                                                    backgroundColor: "#88D0E7",
+                                                }}>
+                                                #88D0E7
                                             </div>
 
                                             <div
                                                 className='color-swatch'
                                                 style={{
-                                                    backgroundColor: "#68D5FF",
+                                                    backgroundColor: "#F0E5BC",
                                                 }}>
-                                                #68D5FF
-                                            </div>
-                                            <div
-                                                className='color-swatch'
-                                                style={{
-                                                    backgroundColor: "#92F189",
-                                                }}>
-                                                #92F189
-                                            </div>
-
-                                            <div
-                                                className='color-swatch'
-                                                style={{
-                                                    backgroundColor: "#FFFFFF",
-                                                }}>
-                                                #FFFFFF
+                                                #F0E5BC
                                             </div>
                                         </div>
                                     </div>
                                     <div className='revitea-fonts '>
                                         <img
                                             className='revitea-font case-font'
-                                            src='/Tandem/alan.svg'
-                                            alt='ALan Sans - Main font sample'
+                                            src='/Bandit/western.svg'
+                                            alt='Western Bang Bang - Main font sample'
                                         />
 
                                         <img
                                             className='revitea-font case-font case-support'
-                                            src='/Tandem/omnes.svg'
-                                            alt='Omnes - body font sample'
+                                            src='/Bandit/wellfleet.svg'
+                                            alt='Wellfleet - body font sample'
                                         />
                                     </div>
                                 </div>
@@ -466,62 +455,27 @@ export default function Bandit() {
                             className='case-dark'>
                             <div className='iteration-initial'>
                                 <h2 className='case-title'>Iterations</h2>
-                                <h3 className='section-subheader'>
-                                    Lo-fi & Mid-fi
-                                </h3>
+                                <h3 className='section-subheader'>Lo-fi</h3>
                                 <p className='case-desc'>
-                                    During our wireframe iterations, I focused
-                                    on our schedule feature. Initially, with the
-                                    app having a homepage, we kept it pretty
-                                    simple, being an overview for the current
-                                    week/month. When making our mid-fi, we tried
-                                    adjusting our homepage to help differentiate
-                                    it from our schedule page.
+                                    Our initial game was made as a physical
+                                    paper board, with cut-out item cards and
+                                    character menus. This allowed us to ensure
+                                    the game’s core functions and rules played
+                                    well and would translate to digital.
                                 </p>
                                 <div className='lofi-comparison'>
-                                    <div className='lofi-homepage'>
-                                        <div className='lofi-images'>
-                                            <p className='iteration-caption'>
-                                                Lo-fi Homepage
-                                            </p>
-                                            <img
-                                                className='lofi-img'
-                                                src='/Tandem/initial-home.png'
-                                                alt='Initial lo-fi mockup of the homepage in greyscale.'
-                                            />
-                                        </div>
-                                        <div className='lofi-img'>
-                                            <p className='iteration-caption'>
-                                                Mid-fi Homepage
-                                            </p>
-                                            <img
-                                                className='lofi-img'
-                                                src='/Tandem/mid-home.png'
-                                                alt='Mid-fi iteration of homepage, in color with icons in the navbar.'
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className='lofi-schedule'>
-                                        <div className='lofi-images'>
-                                            <p className='iteration-caption'>
-                                                Lo-fi Schedule
-                                            </p>
-                                            <img
-                                                className='lofi-img'
-                                                src='/Tandem/initial-weekly.png'
-                                                alt='Initial greyscale mockup of the schedule page'
-                                            />
-                                        </div>
-                                        <div className='lofi-images'>
-                                            <p className='iteration-caption'>
-                                                Mid-fi Schedule
-                                            </p>
-                                            <img
-                                                className='lofi-img'
-                                                src='/Tandem/mid-weekly.png'
-                                                alt='Mid-fi iteration of the schedule page, in color and a weekly/monthly toggle for the calendar'
-                                            />
-                                        </div>
+                                    <div className='lofi-board'>
+                                        <img
+                                            className='lofi-bandit'
+                                            src='/Bandit/initial.png'
+                                            alt='Initial paper mock-up of the board'
+                                        />
+
+                                        <img
+                                            className='lofi-bandit'
+                                            src='/Bandit/midfi.png'
+                                            alt='Digital iteration of the paper board with finalized tile colors'
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -533,152 +487,89 @@ export default function Bandit() {
                                     <a
                                         className='code-btn case-code-btn'
                                         target='_blank'
-                                        href='https://docs.google.com/document/d/1GI7hbHmCOMoOPl5raU56DoE3Czq-sEFLe-LUqUbMc1o/edit?usp=sharing'>
+                                        href='https://docs.google.com/document/d/1nTi6eHf8bLRyAQud3w3LcmAbzzMeTkNsXYO-bLaqMzA/edit?usp=sharing'>
                                         View Report
                                     </a>
                                 </div>
                                 <p className='case-desc'>
-                                    We conducted user testing before moving onto
-                                    our hi-fi, making sure the direction we were
-                                    going matched what our users were seeking.
-                                    Through this we identified issues in our
-                                    onboarding and the sizing of small text, and
-                                    noted these for future iterations.
+                                    With this version, we conducted user
+                                    testing, making sure the direction we were
+                                    going matched what our players were wanting.
+                                    Through this, we identified issues in the
+                                    tile designs and map routes.
                                 </p>
                             </div>
 
                             <div className='iteration-final'>
-                                <h3 className='section-subheader'>Hi-Fi</h3>
+                                <h3 className='section-subheader'>
+                                    Final Version
+                                </h3>
                                 <p className='case-desc'>
-                                    With our hi-fi screens, we implemented the
-                                    feedback from our testing and made some
-                                    extra changes by adjusting our palette. When
-                                    adjusting, we also merged our homepage into
-                                    the schedule, both to give room for the
-                                    nanny share feature and to reduce
-                                    redundancy. The final design reflects our
-                                    core messaging and the final product.
+                                    Our final version was built using the
+                                    illustrations made, piecing them together in
+                                    Figma to finalize the screen layouts. We
+                                    implemented the feedback on the routes and
+                                    game tiles to make them more clear, along
+                                    with small changes for easier usability. The
+                                    final design reflects our initial goal for
+                                    the game, a stylistic and fun, yet easy to
+                                    understand multiplayer game.
                                 </p>
-                                <div className='hifi-img-container'>
-                                    <div className='hifi-images'>
-                                        <p className='iteration-caption'>
-                                            Mid-fi Schedule
-                                        </p>
-                                        <img
-                                            className='hifi-img'
-                                            src='/Tandem/mid-weekly.png'
-                                            alt='Mid-fi iteration of the schedule page, in color and a weekly/monthly toggle for the calendar'
-                                        />
-                                    </div>
-                                    <div className='hifi-images'>
-                                        <p className='iteration-caption'>
-                                            Hi-fi Schedule
-                                        </p>
-                                        <img
-                                            className='hifi-img'
-                                            src='/Tandem/hifi-weekly.png'
-                                            alt='Final version of the schedule, which is now the apps homepage. With brighter colors and simplified cards'
-                                        />
-                                    </div>
-                                    <ul className='hifi-list'>
-                                        <li>Simplified day cards</li>
-                                        <li>Week shown along the top</li>
-                                        <li>
-                                            Current day highlight for clarity
-                                        </li>
-                                        <li>
-                                            Simplified weekly/monthly toggle
-                                        </li>
-                                    </ul>
-                                </div>
+                                <img
+                                    src='/Bandit/final.png'
+                                    alt='Final version of the board with the background art and other assets.'
+                                    className='bandit-final'
+                                />
                             </div>
                         </section>
-                        {/* Development */}
-                        <section
-                            id='coding'
-                            className='case-section'>
-                            <div className='title-container'>
-                                <h2 className='case-title'>Development</h2>
-                                <a
-                                    className='code-btn case-code-btn'
-                                    target='_blank'
-                                    href='https://github.com/IDSP-TRADECARE/Tandem'>
-                                    View Source Code
-                                </a>
-                            </div>
-                            <p className='case-desc'>
-                                When developing the app, I focused on
-                                onboarding, specifically the forms. With the
-                                forms, there are options to either input your
-                                information manually, or scan your ID to help
-                                auto-fill. Along with this section, I was also
-                                in-charge of merging and linking the onboarding
-                                section together, and profile section to it to
-                                ensure the information input was saved properly.
-                            </p>
-                        </section>
+
                         {/* Promotion */}
                         <section
                             id='promotion'
                             className='case-section'>
                             <h2 className='case-title'>Promotion</h2>
                             <div className='promotion-materials'>
-                                <h3 className='section-subheader'>Materials</h3>
-                                <p className='case-desc'>
-                                    For the apps’ promotion, we created both
-                                    digital and printed materials. Digitally, we
-                                    made a landing page showcasing Tandem’s core
-                                    features and value, a promotional video to
-                                    highlight our solution, as well as posting
-                                    on social media to engage with our audience.
-                                    For printed materials, brochures and
-                                    business cards were made, as well as branded
-                                    stickers to hand out.
-                                </p>
-                                <div className='material-images'>
-                                    <img
-                                        src='/Tandem/brochure.png'
-                                        alt='A photo of our brochure, highlighting out apps features'
-                                        className='material-img'
-                                    />
-                                    <img
-                                        src='/Tandem/film.png'
-                                        alt='A photo from when we were filming our promotional video'
-                                        className='material-img'
-                                    />
-
-                                    <img
-                                        src='/Tandem/card.png'
-                                        alt='One of the business cards made for our showcase'
-                                        className='material-img'
-                                    />
+                                <div className='title-container'>
+                                    <h2 className='section-subheader'>
+                                        Digital
+                                    </h2>
+                                    <a
+                                        className='code-btn case-code-btn'
+                                        target='_blank'
+                                        href='https://bandit-breakout.vercel.app/'>
+                                        Visit website
+                                    </a>
                                 </div>
+                                <p className='case-desc'>
+                                    To help promote the game, we developed a
+                                    website to act as our game’s landing
+                                    page/official site. I was in charge of
+                                    developing the body content on the page,
+                                    highlighting our game’s features and
+                                    mechanics, as well as the team behind it.
+                                </p>
                             </div>
                             <div className='promotion-showcase'>
                                 <h3 className='section-subheader'>
-                                    App Showcase
+                                    Project Showcase
                                 </h3>
                                 <p className='case-desc'>
-                                    The project ended with showcasing our app as
-                                    part of BCIT’s app showcase in December
-                                    2025. With our video, printed materials, and
-                                    live app demo, we clearly and effectively
-                                    positioned Tandem as the solution for
-                                    tradesparents. This event provided powerful
-                                    validation for us, reinforcing the app’s
-                                    real-world relevance in helping
-                                    tradesparents overcome childcare barriers.
+                                    The project ended with showcasing the game
+                                    alongside other projects in May 2025. With
+                                    our promotional site and video, and our
+                                    pitch presentation, Bandit Breakout came out
+                                    on top!
                                 </p>
                                 <div className='showcase-images'>
                                     <img
-                                        src='/Tandem/booth.png'
-                                        alt='The team at our booth during the showcase'
-                                        className='showcase-img'
+                                        src='/Bandit/team.jpg'
+                                        alt='The team after winning the presentation.'
+                                        className='showcase-bandit'
                                     />
                                     <img
-                                        src='/Tandem/present.png'
-                                        alt='A photo of the team during our live demo presentation'
-                                        className='showcase-img'
+                                        src='/Bandit/group.jpg'
+                                        alt='A photo of the team wit hsome of our fellow classmates and teachers that guides us through this project.'
+                                        className='showcase-bandit'
                                     />
                                 </div>
                             </div>
@@ -690,45 +581,44 @@ export default function Bandit() {
                             <h2 className='case-title'>Reflection</h2>
 
                             <p className='case-desc'>
-                                The result was Tandem, not just an app, but a
-                                link connecting parents and lessening the burden
-                                of finding childcare. Through this journey, I
-                                was reminded that design rarely follows a
-                                straight line. It’s full of detours, with
-                                iterations and feedback loops that ultimately
-                                make the product stronger.
+                                The result was Bandit breakout, more than just
+                                another online board game, built to connect
+                                friends through story and gameplay. Through this
+                                journey, I learned how to prepare documents for
+                                developers and how to best communicate features
+                                to ensure the project's goal was achieved.
                                 <br />
                                 <br />
-                                This was also my first time closely
-                                collaborating with developers, which came with
-                                some learning curves. I learned to communicate
-                                design decisions with better context and detail,
-                                to ground my recommendations in our user needs,
-                                and to iterate collaboratively when constraints
-                                emerged. These are skills that have made me a
-                                stronger, more versatile designer.
+                                This project was my first time working in a
+                                larger team, involving developer hand-off.
+                                Through this, I learned how to organize assets
+                                and clearly explain design choices, and how to
+                                iterate based on development feasibility. This
+                                project allowed me to work in an amazing team,
+                                CommandZ, and this experience will forever stick
+                                with me.
                             </p>
                         </section>
                     </div>
                     {/* Check it out! */}
                     <section
                         id='test'
-                        className='case-test'>
+                        className='case-test case-desktop'>
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
-                            <h3 className='test-cta'>Wanna try it yourself?</h3>
+                            <h3 className='test-cta'>Wanna learn more?</h3>
                             <a
                                 className='case-code-btn code-btn'
-                                href='https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F'
+                                href='https://bandit-breakout.vercel.app/'
                                 target='_blank'>
-                                Try the app!
+                                Visit the site!
                             </a>
                         </div>
                         <video
-                            className='demo-mobile'
+                            className='demo-desktop'
                             controls>
                             <source
-                                src='/Tandem/demo.mp4'
+                                src='/Bandit/demo.mp4'
                                 type='video/mp4'></source>
                         </video>
                     </section>
