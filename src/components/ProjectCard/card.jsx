@@ -19,7 +19,7 @@ export default function ProjectCard({
                 loading='lazy'
             />
             <div className='card-text'>
-                <h3 className='title'>{title}</h3>
+                <h3 className='project-title'>{title}</h3>
                 <p className='brief'>{description}</p>
             </div>
             <div className='item-info'>

@@ -64,28 +64,28 @@
 
 /* Per-category active colors – match your tag colors */
 .filter-btn[data-category="all"].active {
-    background-color: #33bacf;
-    border-color: #33bacf;
+    background-color: #1ac799;
+    border-color: #1ac799;
 }
 
 .filter-btn[data-category="graphic-design"].active {
-    background-color: #7da75b;
-    border-color: #7da75b;
+    background-color: #56bb3d;
+    border-color: #56bb3d;
 }
 
 .filter-btn[data-category="ui-ux-design"].active {
-    background-color: #f4a261;
-    border-color: #f4a261;
+    background-color: #ab61f4;
+    border-color: #ab61f4;
 }
 
 .filter-btn[data-category="front-end"].active {
-    background-color: #c084fc;
-    border-color: #c084fc;
+    background-color: #60d9fa;
+    border-color: #60d9fa;
 }
 
 .filter-btn[data-category="web-design"].active {
-    background-color: #ff6b6b;
-    border-color: #ff6b6b;
+    background-color: #3a44ff;
+    border-color: #3a44ff;
 }
 
 @media screen and (min-width: 800px) {
