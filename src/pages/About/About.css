@@ -3,6 +3,19 @@
     text-align: center;
     margin: 5rem 4rem;
 }
+.about-header {
+    margin: 0;
+    font-size: 2rem;
+}
+.about-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.about-desc {
+    font-size: 12px;
+    line-height: 140%;
+}
 .quote {
     margin: 0;
     padding: 2rem;
@@ -12,10 +25,33 @@
         font-size: 14vw;
         margin: 6rem 4rem;
     }
+    .about-content {
+        flex-direction: row-reverse;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .about-image {
+        flex: 1;
+    }
+
+    .about-header {
+        font-size: 2.5rem;
+    }
+    .about-desc {
+        font-size: 14px;
+        line-height: 120%;
+    }
 }
 @media screen and (min-width: 1100px) {
+    .about-content {
+        padding-top: 6rem;
+    }
     .title {
         font-size: 12vw;
         margin: 8rem 4rem;
+    }
+    .about-text {
+        margin-right: 20vw;
+        justify-content: left;
     }
 }

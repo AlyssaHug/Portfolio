@@ -1,5 +1,5 @@
 import Dither from "../../components/Dither/Dither";
-
+import ScrollText from "../../components/ScrollText/ScrollText";
 import "./About.css";
 
 export default function About() {
@@ -28,13 +28,32 @@ export default function About() {
                 </div>
             </div>
             <div className='main main-about'>
-                <img
-                    src='/'
-                    alt='/'
+                <div className='about-content'>
+                    <div className='about-text'>
+                        <h1 className='about-header'>Hey, I'm Alyssa!</h1>
+                        <p className='about-desc'>
+                            A multidisciplinary designer and front-end developer
+                            based in Vancouver, BC. I’ve always loved anything
+                            creative, and enjoy drawing and sewing in my free
+                            time! I love taking my creativity and technical
+                            skills and applying them to provide a new
+                            perspective. When I'm not at my computer working,
+                            you can typically find me with my cats, listening to
+                            music, or grabbing another coffee. I love breathing
+                            life into every project I take on.
+                        </p>
+                    </div>
+                    <img
+                        className='about-image'
+                        src='/'
+                        alt='/'
+                    />
+                </div>
+                <ScrollText
+                    text='Illustrator     •     Photoshop     •     InDesign     •     Figma     •     VS Code     •     Github     •     Vercel     •     React     •     Vite     •     HTML5     •     CSS3     •     Javascript'
+                    direction='right'
+                    speed={20}
                 />
-                <h1 className='about-header'>Hey, I'm Alyssa!</h1>
-                <p></p>
-                <div className='about-section'></div>
                 <div className='contact-section'>
                     <div className='contact-background'>
                         <Dither
