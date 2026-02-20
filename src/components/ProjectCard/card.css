@@ -26,7 +26,7 @@
     transition: transform 0.45s ease;
 }
 
-.project-title {
+.projectCard-title {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -41,7 +41,7 @@
     margin-top: 0.2rem;
     width: 80%;
 }
-.card-text {
+.project-text {
     margin-left: 1.2rem;
 }
 
