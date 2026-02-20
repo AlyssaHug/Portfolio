@@ -45,8 +45,8 @@ export default function About() {
                     </div>
                     <img
                         className='about-image'
-                        src='/'
-                        alt='/'
+                        src='/Me.png'
+                        alt='A photo of myself.'
                     />
                 </div>
                 <ScrollText
