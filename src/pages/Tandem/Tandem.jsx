@@ -1,5 +1,6 @@
 import "./Tandem.css";
 import { useState, useEffect, useRef } from "react";
+import { CodeButton } from "../../components/Button/Button";
 
 export default function Tandem() {
     const [isOpen, setIsOpen] = useState(false);
@@ -343,12 +344,10 @@ export default function Tandem() {
                                 <h2 className='case-title'>
                                     Research Insights
                                 </h2>
-                                <a
-                                    className='code-btn case-code-btn'
-                                    target='_blank'
-                                    href='https://docs.google.com/document/d/1q2iX2L2OvAhui6LYZeLVbo92AMHXwLF_mHFE8P5sgxE/edit?tab=t.0#heading=h.ckmm2i24taya'>
-                                    View Report
-                                </a>
+                                <CodeButton
+                                    text='View Report'
+                                    href='https://docs.google.com/document/d/1q2iX2L2OvAhui6LYZeLVbo92AMHXwLF_mHFE8P5sgxE/edit?tab=t.0#heading=h.ckmm2i24taya'
+                                />
                             </div>
                             <p className='case-desc'>
                                 Through interviews 8 with tradesparents, we
@@ -533,12 +532,10 @@ export default function Tandem() {
                                     <h2 className='section-subheader'>
                                         User Testing
                                     </h2>
-                                    <a
-                                        className='code-btn case-code-btn'
-                                        target='_blank'
-                                        href='https://docs.google.com/document/d/1GI7hbHmCOMoOPl5raU56DoE3Czq-sEFLe-LUqUbMc1o/edit?usp=sharing'>
-                                        View Report
-                                    </a>
+                                    <CodeButton
+                                        text='View Report'
+                                        href='https://docs.google.com/document/d/1GI7hbHmCOMoOPl5raU56DoE3Czq-sEFLe-LUqUbMc1o/edit?usp=sharing'
+                                    />
                                 </div>
                                 <p className='case-desc'>
                                     We conducted user testing before moving onto
@@ -602,12 +599,10 @@ export default function Tandem() {
                             className='case-section'>
                             <div className='title-container'>
                                 <h2 className='case-title'>Development</h2>
-                                <a
-                                    className='code-btn case-code-btn'
-                                    target='_blank'
-                                    href='https://github.com/IDSP-TRADECARE/Tandem'>
-                                    View Source Code
-                                </a>
+                                <CodeButton
+                                    text='View Report'
+                                    href='https://github.com/IDSP-TRADECARE/Tandem'
+                                />
                             </div>
                             <p className='case-desc'>
                                 When developing the app, I focused on
@@ -720,12 +715,10 @@ export default function Tandem() {
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna try it yourself?</h3>
-                            <a
-                                className='case-code-btn code-btn'
+                            <CodeButton
+                                text='Try the app!'
                                 href='https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F'
-                                target='_blank'>
-                                Try the app!
-                            </a>
+                            />
                         </div>
                         <video
                             className='demo-mobile'

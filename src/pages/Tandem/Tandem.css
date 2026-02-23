@@ -52,7 +52,7 @@
 .case-section,
 .case-test {
     padding: 0 1.5rem 1rem;
-    margin: 0 3rem 1rem;
+    margin: 0 1rem 1rem;
     max-width: 85vw;
 }
 .case-dark {
@@ -185,7 +185,7 @@
 /*===The Idea===*/
 
 .casesection-bannerImg {
-    width: 85vw;
+    width: 82vw;
     display: flex;
     margin: 0 auto;
     padding-bottom: 1rem;
@@ -194,7 +194,7 @@
 /*===Design Process===*/
 
 .userflow-img {
-    width: 84vw;
+    width: 80vw;
 }
 .case-font {
     width: 10vw;

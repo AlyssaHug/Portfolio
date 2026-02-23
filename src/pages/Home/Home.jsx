@@ -1,8 +1,8 @@
 import "./Home.css";
 import ProjectCard from "../../components/ProjectCard/card";
 import projects from "../../Data/projects.json";
-import { Link } from "react-router-dom";
 import Dither from "../../components/Dither/Dither";
+import Button from "../../components/Button/Button";
 
 export default function Home() {
     const allCategories = [
@@ -29,11 +29,6 @@ export default function Home() {
                         </div>
                         <span className='last-name'>Huggins</span>
                     </div>
-                    <p className='disclaimer'>
-                        My site is currently under construction. <br />
-                        Feel free to click around and explore, just be mindful
-                        I'm still working hard to complete parts of the site!
-                    </p>
                 </div>
                 <div
                     className='dither-background'
@@ -61,15 +56,10 @@ export default function Home() {
                 <div className='feature-section'>
                     <div className='section-text'>
                         <h2 className='section-title'>Highlights</h2>
-                        {projects.length > 3 && (
-                            <div className='view-all-wrapper'>
-                                <Link
-                                    to='/Portfolio'
-                                    className='view-all-btn'>
-                                    View All Projects
-                                </Link>
-                            </div>
-                        )}
+                        <Button
+                            link='/Portfolio'
+                            text='View all Projects'
+                        />
                     </div>
                     <div className='projects-container'>
                         {projects.slice(0, 3).map(

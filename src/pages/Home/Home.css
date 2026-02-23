@@ -22,18 +22,11 @@
     left: 0;
 }
 .header {
-    margin: 8rem auto 5rem;
+    margin: 8rem auto 10rem;
     font-size: 6rem;
     line-height: 95%;
 }
 
-.disclaimer {
-    font-family: var(--font-family-body);
-    font-size: 1rem;
-    text-align: center;
-    margin: auto 1rem 5rem;
-    position: relative;
-}
 .header-text {
     display: flex;
     position: relative;
@@ -76,23 +69,6 @@
     align-items: baseline;
     justify-content: space-between;
     margin: auto 1rem;
-}
-.view-all-btn {
-    color: #004752;
-    font-family: var(--font-family-display);
-    font-size: 16px;
-    padding: 0.3rem 0.6rem;
-    border: 3px solid #004752;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.view-all-btn:hover {
-    background-color: #009ab1;
-    color: #ecedf5;
-    border: none;
-    transform: scale(1.05);
 }
 
 .feature-section {
@@ -137,7 +113,7 @@
     margin: 1.5rem auto;
 }
 .first-line {
-    margin-right: 14rem;
+    margin-right: 12rem;
 }
 .last-line {
     margin-left: 3rem;
@@ -164,11 +140,9 @@
 @media screen and (min-width: 700px) {
     .header {
         font-size: 8.5rem;
+        margin-bottom: 6rem;
     }
-    .disclaimer {
-        font-size: 20px;
-        margin: 2rem 5rem 6rem;
-    }
+
     .intro {
         font-size: 2.5rem;
         margin: auto 4rem;
@@ -193,9 +167,7 @@
     .last-name {
         margin-left: 12rem;
     }
-    .disclaimer {
-        margin-top: 0;
-    }
+
     .intro {
         margin: 6rem 14rem;
 
@@ -207,11 +179,7 @@
     .section-text {
         margin: auto 9rem;
     }
-    .view-all-btn {
-        font-size: 24px;
-        border-radius: 24px;
-        padding: auto 1.5rem;
-    }
+
     .contact-header {
         font-size: 8rem;
     }

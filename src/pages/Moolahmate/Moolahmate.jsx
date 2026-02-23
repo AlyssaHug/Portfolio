@@ -1,4 +1,5 @@
 import "./Moolahmate.css";
+import { CodeButton } from "../../components/Button/Button";
 
 export default function Moolahmate() {
     return (
@@ -249,12 +250,10 @@ export default function Moolahmate() {
                     className='main-section'>
                     <div className='title-container'>
                         <h2 className='section-title'>Development</h2>
-                        <a
-                            className='code-btn'
-                            target='_blank'
-                            href='https://github.com/AlyssaHug/Design02_App'>
-                            View Source Code
-                        </a>
+                        <CodeButton
+                            text='View source code'
+                            href='https://github.com/AlyssaHug/Design02_App'
+                        />
                     </div>
                     <p className='section-desc'>
                         When developing the app, I was in charge of the goals,

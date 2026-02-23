@@ -1,5 +1,6 @@
 import "./Paramore.css";
 import { useState, useEffect, useRef } from "react";
+import { CodeButton } from "../../components/Button/Button";
 
 export default function Paramore() {
     const [isOpen, setIsOpen] = useState(false);
@@ -539,12 +540,10 @@ export default function Paramore() {
                             className='case-section'>
                             <div className='title-container'>
                                 <h2 className='case-title'>Development</h2>
-                                <a
-                                    className='code-btn case-code-btn'
-                                    target='_blank'
-                                    href='https://github.com/AlyssaHug/Paramore'>
-                                    View Source Code
-                                </a>
+                                <CodeButton
+                                    text='View source code'
+                                    href='https://github.com/AlyssaHug/Paramore'
+                                />
                             </div>
                             <div className='dev-interact'>
                                 <h3 className='section-subheader'>Base Code</h3>
@@ -636,12 +635,10 @@ export default function Paramore() {
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna try it yourself?</h3>
-                            <a
-                                className='case-code-btn code-btn'
+                            <CodeButton
+                                text='Visit the site!'
                                 href='https://paramore-emagazine.vercel.app/'
-                                target='_blank'>
-                                Visit the site!
-                            </a>
+                            />
                         </div>
                         <video
                             className='demo-desktop'

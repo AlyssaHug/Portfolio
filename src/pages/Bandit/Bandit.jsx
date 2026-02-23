@@ -1,6 +1,6 @@
 import "./Bandit.css";
 import { useState, useEffect, useRef } from "react";
-
+import { CodeButton } from "../../components/Button/Button";
 export default function Bandit() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -330,12 +330,10 @@ export default function Bandit() {
                                 <h2 className='case-title'>
                                     Research Insights
                                 </h2>
-                                <a
-                                    className='code-btn case-code-btn'
-                                    target='_blank'
-                                    href='https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing'>
-                                    View Report
-                                </a>
+                                <CodeButton
+                                    text='View Report'
+                                    href='https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing'
+                                />
                             </div>
                             <p className='case-desc'>
                                 Through interviews with 12 participants, we
@@ -484,12 +482,10 @@ export default function Bandit() {
                                     <h2 className='section-subheader'>
                                         User Testing
                                     </h2>
-                                    <a
-                                        className='code-btn case-code-btn'
-                                        target='_blank'
-                                        href='https://docs.google.com/document/d/1nTi6eHf8bLRyAQud3w3LcmAbzzMeTkNsXYO-bLaqMzA/edit?usp=sharing'>
-                                        View Report
-                                    </a>
+                                    <CodeButton
+                                        text='View Report'
+                                        href='https://docs.google.com/document/d/1nTi6eHf8bLRyAQud3w3LcmAbzzMeTkNsXYO-bLaqMzA/edit?usp=sharing'
+                                    />
                                 </div>
                                 <p className='case-desc'>
                                     With this version, we conducted user
@@ -533,12 +529,10 @@ export default function Bandit() {
                                     <h2 className='section-subheader'>
                                         Digital
                                     </h2>
-                                    <a
-                                        className='code-btn case-code-btn'
-                                        target='_blank'
-                                        href='https://bandit-breakout.vercel.app/'>
-                                        Visit website
-                                    </a>
+                                    <CodeButton
+                                        text='Visit website'
+                                        href='https://bandit-breakout.vercel.app/'
+                                    />
                                 </div>
                                 <p className='case-desc'>
                                     To help promote the game, we developed a
@@ -607,12 +601,10 @@ export default function Bandit() {
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna learn more?</h3>
-                            <a
-                                className='case-code-btn code-btn'
+                            <CodeButton
+                                text='Visit the site!'
                                 href='https://bandit-breakout.vercel.app/'
-                                target='_blank'>
-                                Visit the site!
-                            </a>
+                            />
                         </div>
                         <video
                             className='demo-desktop'
