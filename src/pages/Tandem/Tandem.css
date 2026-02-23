@@ -27,14 +27,9 @@
     max-width: 85vw;
     margin: 3rem auto;
 }
-.project-case-page {
-    min-height: 100vh;
-    overflow-x: hidden;
-}
 
 .contents-nav,
-.case-flex,
-.project-case-page {
+.case-flex {
     overflow: visible;
 }
 
@@ -391,9 +386,6 @@
     .case-test {
         margin: 2rem 0 auto 0;
     }
-    .code-btn {
-        font-size: 14px;
-    }
 }
 @media screen and (min-width: 800px) {
     .contents-nav {
@@ -414,6 +406,15 @@
     }
     .case-font {
         width: 14vw;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .case-content {
+        width: 90vw;
+    }
+    .case-dark {
+        width: 68vw;
+        padding-right: 10rem;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -495,12 +496,7 @@
     .title-container {
         align-items: center;
     }
-    /*===Research===*/
-    .case-code-btn {
-        font-size: 20px;
-        padding: 0.5rem 1.5rem;
-        margin-right: 0;
-    }
+
     /*===The Process===*/
     .userflow-img {
         width: 56vw;

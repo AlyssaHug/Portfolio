@@ -54,11 +54,13 @@ export default function Bandit() {
     }, []);
 
     return (
-        <div className='project-case-page'>
+        <>
             <img
                 src='/Bandit/Hero.png'
                 alt='Photo of a desktop with the board game on screen.'
                 className='hero-image'
+                loading='eager'
+                decoding='async'
             />
             <div className='case-flex'>
                 {/* Navigation */}
@@ -320,6 +322,8 @@ export default function Bandit() {
                                 src='/Bandit/Reference.png'
                                 alt='Reference images of other online board/multiplayer games.'
                                 className='casesection-bannerImg'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </section>
                         {/* Research */}
@@ -374,6 +378,8 @@ export default function Bandit() {
                                     src='/Bandit/rules.png'
                                     alt='The rules overlay listing the games health/combat rules on one sheet, and the board movement on the other.'
                                     className='userflow-img'
+                                    loading='lazy'
+                                    decoding='async'
                                 />
                             </div>
                             <div className='process-styles'>
@@ -467,12 +473,16 @@ export default function Bandit() {
                                             className='lofi-bandit'
                                             src='/Bandit/initial.png'
                                             alt='Initial paper mock-up of the board'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
 
                                         <img
                                             className='lofi-bandit'
                                             src='/Bandit/midfi.png'
                                             alt='Digital iteration of the paper board with finalized tile colors'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                 </div>
@@ -515,6 +525,8 @@ export default function Bandit() {
                                     src='/Bandit/final.png'
                                     alt='Final version of the board with the background art and other assets.'
                                     className='bandit-final'
+                                    loading='lazy'
+                                    decoding='async'
                                 />
                             </div>
                         </section>
@@ -559,11 +571,15 @@ export default function Bandit() {
                                         src='/Bandit/team.jpg'
                                         alt='The team after winning the presentation.'
                                         className='showcase-bandit'
+                                        loading='lazy'
+                                        decoding='async'
                                     />
                                     <img
                                         src='/Bandit/group.jpg'
                                         alt='A photo of the team wit hsome of our fellow classmates and teachers that guides us through this project.'
                                         className='showcase-bandit'
+                                        loading='lazy'
+                                        decoding='async'
                                     />
                                 </div>
                             </div>
@@ -616,6 +632,6 @@ export default function Bandit() {
                     </section>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

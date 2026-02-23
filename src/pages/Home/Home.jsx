@@ -24,6 +24,8 @@ export default function Home() {
                                 src='/LogoWhite.svg'
                                 alt='Logo of the letter A'
                                 className='name-logo'
+                                loading='eager'
+                                decoding='async'
                             />
                             <span className='first-name'>lyssa</span>
                         </div>

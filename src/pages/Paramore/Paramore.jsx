@@ -55,11 +55,13 @@ export default function Paramore() {
     }, []);
 
     return (
-        <div className='project-case-page'>
+        <>
             <img
                 src='/EMagazine/Hero.png'
-                alt='Photo with two phones with different screens from the Tandem app. One has the schedule homepage, and the other has the AI upload analszing screen.'
+                alt='A picture of a laptop with the homepage of the e-magazine open.'
                 className='hero-image'
+                loading='lazy'
+                decoding='async'
             />
             <div className='case-flex'>
                 {/* Navigation */}
@@ -307,6 +309,8 @@ export default function Paramore() {
                                 src='/EMagazine/Reference.png'
                                 alt="Reference images of Paramore's online sites and branding."
                                 className='casesection-bannerImg'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </section>
                         {/* Research */}
@@ -431,12 +435,16 @@ export default function Paramore() {
                                             className='revitea-font case-font'
                                             src='/EMagazine/Benniter.svg'
                                             alt='Benniter Trial Sans - Main font sample'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
 
                                         <img
                                             className='revitea-font case-font case-support'
                                             src='/EMagazine/Noto.svg'
                                             alt='Noto Sans - body font sample'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                 </div>
@@ -467,12 +475,16 @@ export default function Paramore() {
                                             className='mock-img'
                                             src='/EMagazine/bandMock.png'
                                             alt='Initial lo-fi mockup of the band homepage.'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
 
                                         <img
                                             className='mock-img'
                                             src='/EMagazine/hayleyMock.png'
                                             alt="Mock-up of Hayley's page."
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                     <div className='mock-band-bottom'>
@@ -480,12 +492,16 @@ export default function Paramore() {
                                             className='mock-img'
                                             src='/EMagazine/taylorMock.png'
                                             alt="Mock-up of Taylor's page."
+                                            loading='lazy'
+                                            decoding='async'
                                         />
 
                                         <img
                                             className='mock-img'
                                             src='/EMagazine/zacMock.png'
                                             alt="Mock-up of Zac's page."
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                 </div>
@@ -510,12 +526,16 @@ export default function Paramore() {
                                             className='mock-img'
                                             src='/EMagazine/band.png'
                                             alt='Final version of the band homepage.'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
 
                                         <img
                                             className='mock-img'
                                             src='/EMagazine/hayleyPage.png'
                                             alt="Final version of Hayley's page."
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                     <div className='mock-band-bottom'>
@@ -523,12 +543,16 @@ export default function Paramore() {
                                             className='mock-img'
                                             src='/EMagazine/music.png'
                                             alt='Album carousel on the homepage.'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
 
                                         <img
                                             className='mock-img'
                                             src='/EMagazine/future.png'
                                             alt='The future page, talking about where they are now.'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                 </div>
@@ -650,6 +674,6 @@ export default function Paramore() {
                     </section>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
