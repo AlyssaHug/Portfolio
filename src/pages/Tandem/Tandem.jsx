@@ -754,6 +754,8 @@ export default function Tandem() {
                         </div>
                         <video
                             className='demo-mobile'
+                            autoPlay
+                            muted
                             controls>
                             <source
                                 src='/Tandem/demo.mp4'

@@ -338,6 +338,8 @@ export default function Moolahmate() {
                 <h2 className='section-title'>Check it out!</h2>
                 <video
                     className='demo-mobile'
+                    autoPlay
+                    muted
                     controls>
                     <source
                         src='/MoolahMate/demo.mp4'

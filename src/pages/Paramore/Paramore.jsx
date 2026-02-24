@@ -666,6 +666,8 @@ export default function Paramore() {
                         </div>
                         <video
                             className='demo-desktop'
+                            autoPlay
+                            muted
                             controls>
                             <source
                                 src='/EMagazine/demo.mp4'
