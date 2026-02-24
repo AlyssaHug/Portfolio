@@ -68,25 +68,6 @@
     justify-content: space-between;
     align-items: center;
 }
-.code-btn {
-    padding: 0.4rem 0.6rem;
-    height: fit-content;
-    font-family: var(--font-family-body);
-    border: 3px solid #004752;
-    font-size: 12px;
-    color: #004752;
-    font-weight: bold;
-    border-radius: 24px;
-    cursor: pointer;
-    background-color: none;
-    transition: all 0.2s ease-out;
-}
-.code-btn:hover {
-    color: #ecedf5;
-    background-color: #009ab1;
-    border: none;
-    transform: scale(1.05);
-}
 
 /*=====Final product=====*/
 .final-poster {
@@ -196,10 +177,7 @@
     .process-img-container {
         padding: 0 0.8rem;
     }
-    /*===development===*/
-    .code-btn {
-        font-size: 16px;
-    }
+
     /*=====Final product=====*/
     .moomoosit {
         display: block;
@@ -266,11 +244,7 @@
     .process-img-container {
         padding: 0 2rem;
     }
-    /*===development===*/
-    .code-btn {
-        border: 4px solid #004752;
-        margin-right: 10rem;
-    }
+
     /*=====Final product=====*/
     .moomoosit {
         width: 25vw;

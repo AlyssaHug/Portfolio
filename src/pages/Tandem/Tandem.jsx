@@ -1,5 +1,6 @@
 import "./Tandem.css";
 import { useState, useEffect, useRef } from "react";
+import { CodeButton } from "../../components/Button/Button";
 
 export default function Tandem() {
     const [isOpen, setIsOpen] = useState(false);
@@ -54,11 +55,13 @@ export default function Tandem() {
     }, []);
 
     return (
-        <div className='project-case-page'>
+        <>
             <img
                 src='/Tandem/Hero.png'
                 alt='Photo with two phones with different screens from the Tandem app. One has the schedule homepage, and the other has the AI upload analszing screen.'
                 className='hero-image'
+                loading='eager'
+                decoding='async'
             />
             <div className='case-flex'>
                 {/* Navigation */}
@@ -333,6 +336,8 @@ export default function Tandem() {
                                 src='/Tandem/Reference.png'
                                 alt='Reference images of other scheduling/childcare apps.'
                                 className='casesection-bannerImg'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </section>
                         {/* Research */}
@@ -343,12 +348,10 @@ export default function Tandem() {
                                 <h2 className='case-title'>
                                     Research Insights
                                 </h2>
-                                <a
-                                    className='code-btn case-code-btn'
-                                    target='_blank'
-                                    href='https://docs.google.com/document/d/1q2iX2L2OvAhui6LYZeLVbo92AMHXwLF_mHFE8P5sgxE/edit?tab=t.0#heading=h.ckmm2i24taya'>
-                                    View Report
-                                </a>
+                                <CodeButton
+                                    text='View Report'
+                                    href='https://docs.google.com/document/d/1q2iX2L2OvAhui6LYZeLVbo92AMHXwLF_mHFE8P5sgxE/edit?tab=t.0#heading=h.ckmm2i24taya'
+                                />
                             </div>
                             <p className='case-desc'>
                                 Through interviews 8 with tradesparents, we
@@ -390,6 +393,8 @@ export default function Tandem() {
                                     src='/Tandem/userflow.png'
                                     alt='An image with notes linked by arrows showing how the app flows, from sign-in to booking.'
                                     className='userflow-img'
+                                    loading='lazy'
+                                    decoding='async'
                                 />
                             </div>
                             <div className='process-styles'>
@@ -452,12 +457,16 @@ export default function Tandem() {
                                             className='revitea-font case-font'
                                             src='/Tandem/alan.svg'
                                             alt='ALan Sans - Main font sample'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
 
                                         <img
                                             className='revitea-font case-font case-support'
                                             src='/Tandem/omnes.svg'
                                             alt='Omnes - body font sample'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                 </div>
@@ -491,6 +500,8 @@ export default function Tandem() {
                                                 className='lofi-img'
                                                 src='/Tandem/initial-home.png'
                                                 alt='Initial lo-fi mockup of the homepage in greyscale.'
+                                                loading='lazy'
+                                                decoding='async'
                                             />
                                         </div>
                                         <div className='lofi-img'>
@@ -501,6 +512,8 @@ export default function Tandem() {
                                                 className='lofi-img'
                                                 src='/Tandem/mid-home.png'
                                                 alt='Mid-fi iteration of homepage, in color with icons in the navbar.'
+                                                loading='lazy'
+                                                decoding='async'
                                             />
                                         </div>
                                     </div>
@@ -513,6 +526,8 @@ export default function Tandem() {
                                                 className='lofi-img'
                                                 src='/Tandem/initial-weekly.png'
                                                 alt='Initial greyscale mockup of the schedule page'
+                                                loading='lazy'
+                                                decoding='async'
                                             />
                                         </div>
                                         <div className='lofi-images'>
@@ -523,6 +538,8 @@ export default function Tandem() {
                                                 className='lofi-img'
                                                 src='/Tandem/mid-weekly.png'
                                                 alt='Mid-fi iteration of the schedule page, in color and a weekly/monthly toggle for the calendar'
+                                                loading='lazy'
+                                                decoding='async'
                                             />
                                         </div>
                                     </div>
@@ -533,12 +550,10 @@ export default function Tandem() {
                                     <h2 className='section-subheader'>
                                         User Testing
                                     </h2>
-                                    <a
-                                        className='code-btn case-code-btn'
-                                        target='_blank'
-                                        href='https://docs.google.com/document/d/1GI7hbHmCOMoOPl5raU56DoE3Czq-sEFLe-LUqUbMc1o/edit?usp=sharing'>
-                                        View Report
-                                    </a>
+                                    <CodeButton
+                                        text='View Report'
+                                        href='https://docs.google.com/document/d/1GI7hbHmCOMoOPl5raU56DoE3Czq-sEFLe-LUqUbMc1o/edit?usp=sharing'
+                                    />
                                 </div>
                                 <p className='case-desc'>
                                     We conducted user testing before moving onto
@@ -571,6 +586,8 @@ export default function Tandem() {
                                             className='hifi-img'
                                             src='/Tandem/mid-weekly.png'
                                             alt='Mid-fi iteration of the schedule page, in color and a weekly/monthly toggle for the calendar'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                     <div className='hifi-images'>
@@ -581,6 +598,8 @@ export default function Tandem() {
                                             className='hifi-img'
                                             src='/Tandem/hifi-weekly.png'
                                             alt='Final version of the schedule, which is now the apps homepage. With brighter colors and simplified cards'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                     <ul className='hifi-list'>
@@ -602,12 +621,10 @@ export default function Tandem() {
                             className='case-section'>
                             <div className='title-container'>
                                 <h2 className='case-title'>Development</h2>
-                                <a
-                                    className='code-btn case-code-btn'
-                                    target='_blank'
-                                    href='https://github.com/IDSP-TRADECARE/Tandem'>
-                                    View Source Code
-                                </a>
+                                <CodeButton
+                                    text='View Report'
+                                    href='https://github.com/IDSP-TRADECARE/Tandem'
+                                />
                             </div>
                             <p className='case-desc'>
                                 When developing the app, I focused on
@@ -641,17 +658,23 @@ export default function Tandem() {
                                 <div className='material-images'>
                                     <img
                                         src='/Tandem/brochure.png'
+                                        loading='lazy'
+                                        decoding='async'
                                         alt='A photo of our brochure, highlighting out apps features'
                                         className='material-img'
                                     />
                                     <img
                                         src='/Tandem/film.png'
+                                        loading='lazy'
+                                        decoding='async'
                                         alt='A photo from when we were filming our promotional video'
                                         className='material-img'
                                     />
 
                                     <img
                                         src='/Tandem/card.png'
+                                        loading='lazy'
+                                        decoding='async'
                                         alt='One of the business cards made for our showcase'
                                         className='material-img'
                                     />
@@ -677,11 +700,15 @@ export default function Tandem() {
                                         src='/Tandem/booth.png'
                                         alt='The team at our booth during the showcase'
                                         className='showcase-img'
+                                        loading='lazy'
+                                        decoding='async'
                                     />
                                     <img
                                         src='/Tandem/present.png'
                                         alt='A photo of the team during our live demo presentation'
                                         className='showcase-img'
+                                        loading='lazy'
+                                        decoding='async'
                                     />
                                 </div>
                             </div>
@@ -720,15 +747,15 @@ export default function Tandem() {
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna try it yourself?</h3>
-                            <a
-                                className='case-code-btn code-btn'
+                            <CodeButton
+                                text='Try the app!'
                                 href='https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F'
-                                target='_blank'>
-                                Try the app!
-                            </a>
+                            />
                         </div>
                         <video
                             className='demo-mobile'
+                            autoPlay
+                            muted
                             controls>
                             <source
                                 src='/Tandem/demo.mp4'
@@ -737,6 +764,6 @@ export default function Tandem() {
                     </section>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

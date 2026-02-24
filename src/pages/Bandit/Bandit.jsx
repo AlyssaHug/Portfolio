@@ -1,6 +1,6 @@
 import "./Bandit.css";
 import { useState, useEffect, useRef } from "react";
-
+import { CodeButton } from "../../components/Button/Button";
 export default function Bandit() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -54,11 +54,13 @@ export default function Bandit() {
     }, []);
 
     return (
-        <div className='project-case-page'>
+        <>
             <img
                 src='/Bandit/Hero.png'
                 alt='Photo of a desktop with the board game on screen.'
                 className='hero-image'
+                loading='eager'
+                decoding='async'
             />
             <div className='case-flex'>
                 {/* Navigation */}
@@ -320,6 +322,8 @@ export default function Bandit() {
                                 src='/Bandit/Reference.png'
                                 alt='Reference images of other online board/multiplayer games.'
                                 className='casesection-bannerImg'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </section>
                         {/* Research */}
@@ -330,12 +334,10 @@ export default function Bandit() {
                                 <h2 className='case-title'>
                                     Research Insights
                                 </h2>
-                                <a
-                                    className='code-btn case-code-btn'
-                                    target='_blank'
-                                    href='https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing'>
-                                    View Report
-                                </a>
+                                <CodeButton
+                                    text='View Report'
+                                    href='https://docs.google.com/document/d/12Z3Hw660hhzNR4QW1Gg4uPothI71lgKRqduENTvWCV4/edit?usp=sharing'
+                                />
                             </div>
                             <p className='case-desc'>
                                 Through interviews with 12 participants, we
@@ -376,6 +378,8 @@ export default function Bandit() {
                                     src='/Bandit/rules.png'
                                     alt='The rules overlay listing the games health/combat rules on one sheet, and the board movement on the other.'
                                     className='userflow-img'
+                                    loading='lazy'
+                                    decoding='async'
                                 />
                             </div>
                             <div className='process-styles'>
@@ -469,12 +473,16 @@ export default function Bandit() {
                                             className='lofi-bandit'
                                             src='/Bandit/initial.png'
                                             alt='Initial paper mock-up of the board'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
 
                                         <img
                                             className='lofi-bandit'
                                             src='/Bandit/midfi.png'
                                             alt='Digital iteration of the paper board with finalized tile colors'
+                                            loading='lazy'
+                                            decoding='async'
                                         />
                                     </div>
                                 </div>
@@ -484,12 +492,10 @@ export default function Bandit() {
                                     <h2 className='section-subheader'>
                                         User Testing
                                     </h2>
-                                    <a
-                                        className='code-btn case-code-btn'
-                                        target='_blank'
-                                        href='https://docs.google.com/document/d/1nTi6eHf8bLRyAQud3w3LcmAbzzMeTkNsXYO-bLaqMzA/edit?usp=sharing'>
-                                        View Report
-                                    </a>
+                                    <CodeButton
+                                        text='View Report'
+                                        href='https://docs.google.com/document/d/1nTi6eHf8bLRyAQud3w3LcmAbzzMeTkNsXYO-bLaqMzA/edit?usp=sharing'
+                                    />
                                 </div>
                                 <p className='case-desc'>
                                     With this version, we conducted user
@@ -519,6 +525,8 @@ export default function Bandit() {
                                     src='/Bandit/final.png'
                                     alt='Final version of the board with the background art and other assets.'
                                     className='bandit-final'
+                                    loading='lazy'
+                                    decoding='async'
                                 />
                             </div>
                         </section>
@@ -533,12 +541,10 @@ export default function Bandit() {
                                     <h2 className='section-subheader'>
                                         Digital
                                     </h2>
-                                    <a
-                                        className='code-btn case-code-btn'
-                                        target='_blank'
-                                        href='https://bandit-breakout.vercel.app/'>
-                                        Visit website
-                                    </a>
+                                    <CodeButton
+                                        text='Visit website'
+                                        href='https://bandit-breakout.vercel.app/'
+                                    />
                                 </div>
                                 <p className='case-desc'>
                                     To help promote the game, we developed a
@@ -565,11 +571,15 @@ export default function Bandit() {
                                         src='/Bandit/team.jpg'
                                         alt='The team after winning the presentation.'
                                         className='showcase-bandit'
+                                        loading='lazy'
+                                        decoding='async'
                                     />
                                     <img
                                         src='/Bandit/group.jpg'
                                         alt='A photo of the team wit hsome of our fellow classmates and teachers that guides us through this project.'
                                         className='showcase-bandit'
+                                        loading='lazy'
+                                        decoding='async'
                                     />
                                 </div>
                             </div>
@@ -607,12 +617,10 @@ export default function Bandit() {
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna learn more?</h3>
-                            <a
-                                className='case-code-btn code-btn'
+                            <CodeButton
+                                text='Visit the site!'
                                 href='https://bandit-breakout.vercel.app/'
-                                target='_blank'>
-                                Visit the site!
-                            </a>
+                            />
                         </div>
                         <video
                             className='demo-desktop'
@@ -624,6 +632,6 @@ export default function Bandit() {
                     </section>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

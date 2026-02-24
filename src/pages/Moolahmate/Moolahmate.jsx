@@ -1,12 +1,15 @@
 import "./Moolahmate.css";
+import { CodeButton } from "../../components/Button/Button";
 
 export default function Moolahmate() {
     return (
-        <div className='project-detail-page'>
+        <>
             <img
                 src='/MoolahMate/Hero.png'
                 alt='Multiple phones on a surface with different parts of the MoolaahMate app open.'
                 className='hero-image'
+                loading='eager'
+                decoding='async'
             />
             <header
                 className='project-header'
@@ -99,6 +102,7 @@ export default function Moolahmate() {
                     <img
                         className='section-bannerImg'
                         src='/MoolahMate/Reference.png'
+                        decoding='async'
                     />
                 </section>
                 <section
@@ -152,12 +156,16 @@ export default function Moolahmate() {
                         </div>
                         <div className='revitea-fonts'>
                             <img
+                                loading='lazy'
+                                decoding='async'
                                 className='revitea-font quicksand'
                                 src='/MoolahMate/quicksand.svg'
                                 alt='Quicksand - Main font sample'
                             />
 
                             <img
+                                loading='lazy'
+                                decoding='async'
                                 className='revitea-font support'
                                 src='/MoolahMate/libre.svg'
                                 alt='Libre Franklin - body font sample'
@@ -169,24 +177,32 @@ export default function Moolahmate() {
                             src='/MoolahMate/Calendar.svg'
                             alt='Calendar from the expense page'
                             className='variation calendar'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <div className='nav-svg'>
                             <img
                                 src='/MoolahMate/nav-light.svg'
                                 alt='Default navbar'
                                 className='nav'
+                                loading='lazy'
+                                decoding='async'
                             />
 
                             <img
                                 src='/MoolahMate/nav-dark.svg'
                                 alt='Navbar in dark mode'
                                 className='nav'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </div>
                         <img
                             src='/MoolahMate/moomoo.svg'
                             alt='Cow mascot with a coin on its back'
                             className='variation moomoo'
+                            loading='lazy'
+                            decoding='async'
                         />
                     </div>
                 </section>
@@ -216,6 +232,8 @@ export default function Moolahmate() {
                                 src='/MoolahMate/Initial.png'
                                 alt='Initial mockup of goals page'
                                 className='process-img-moo'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </div>
                         <div className='process-img-container'>
@@ -224,6 +242,8 @@ export default function Moolahmate() {
                                 src='/MoolahMate/ver01.png'
                                 alt='first iteration - lofi'
                                 className='process-img-moo'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </div>
                         <div className='process-img-container'>
@@ -232,6 +252,8 @@ export default function Moolahmate() {
                                 src='/MoolahMate/ver02.png'
                                 alt='Second iteration - midfi'
                                 className='process-img-moo'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </div>
                         <div className='process-img-container'>
@@ -240,6 +262,8 @@ export default function Moolahmate() {
                                 src='/MoolahMate/ver03.png'
                                 alt='final iteration - Hifi'
                                 className='process-img-moo'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </div>
                     </div>
@@ -249,12 +273,10 @@ export default function Moolahmate() {
                     className='main-section'>
                     <div className='title-container'>
                         <h2 className='section-title'>Development</h2>
-                        <a
-                            className='code-btn'
-                            target='_blank'
-                            href='https://github.com/AlyssaHug/Design02_App'>
-                            View Source Code
-                        </a>
+                        <CodeButton
+                            text='View source code'
+                            href='https://github.com/AlyssaHug/Design02_App'
+                        />
                     </div>
                     <p className='section-desc'>
                         When developing the app, I was in charge of the goals,
@@ -281,22 +303,30 @@ export default function Moolahmate() {
                             className='moomoosit'
                             src='/MoolahMate/moomoosit.svg'
                             alt='MooMoo sitting down'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <div className='img-container'>
                             <img
                                 src='/MoolahMate/opening.png'
                                 alt='Start page for Moolahmate, with options to sign-in or sign-up'
                                 className='final-poster'
+                                loading='lazy'
+                                decoding='async'
                             />
                             <img
                                 src='/MoolahMate/goal-recs.png'
                                 alt='Recommended goal screen, with 2 options based on recent purchases'
                                 className='final-poster'
+                                loading='lazy'
+                                decoding='async'
                             />
                             <img
                                 src='/MoolahMate/moo-page.png'
                                 alt='The MooMoo page, with options to interact with MooMoo'
                                 className='final-poster'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </div>
                     </div>
@@ -308,12 +338,14 @@ export default function Moolahmate() {
                 <h2 className='section-title'>Check it out!</h2>
                 <video
                     className='demo-mobile'
+                    autoPlay
+                    muted
                     controls>
                     <source
                         src='/MoolahMate/demo.mp4'
                         type='video/mp4'></source>
                 </video>
             </section>
-        </div>
+        </>
     );
 }

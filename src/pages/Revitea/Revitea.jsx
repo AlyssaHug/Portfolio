@@ -3,11 +3,13 @@ import Cans from "../../components/cans/cans";
 
 export default function Revitea() {
     return (
-        <div className='project-detail-page'>
+        <>
             <img
                 src='/Revitea/Hero.png'
                 alt='Revitea+'
                 className='hero-image'
+                loading='eager'
+                decoding='async'
             />
             <header
                 className='project-header'
@@ -92,6 +94,8 @@ export default function Revitea() {
                     <img
                         className='section-bannerImg'
                         src='/Revitea/Reference.png'
+                        loading='lazy'
+                        decoding='async'
                     />
                 </section>
                 <section
@@ -167,12 +171,16 @@ export default function Revitea() {
                                 className='revitea-font federo'
                                 src='/Revitea/federo.svg'
                                 alt='Federo - Display font sample'
+                                loading='lazy'
+                                decoding='async'
                             />
 
                             <img
                                 className='revitea-font fugaz'
                                 src='/Revitea/fugaz.svg'
                                 alt='Fugaz One - Body font sample'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </div>
                     </div>
@@ -221,18 +229,24 @@ export default function Revitea() {
                             src='/Revitea/initial.svg'
                             alt='Initial mockup of label'
                             className='label-img'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <p className='eq'>=</p>
                         <img
                             src='/Revitea/attempt.svg'
                             alt='Second version of label'
                             className='label-img'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <p className='eq'>=</p>
                         <img
                             src='/Revitea/finalLabel.svg'
                             alt='Final label design'
                             className='label-img'
+                            loading='lazy'
+                            decoding='async'
                         />
                     </div>
                 </section>
@@ -253,16 +267,22 @@ export default function Revitea() {
                             src='/Revitea/final01.png'
                             alt='Final version of Strawberry flavour'
                             className='final-img'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <img
                             src='/Revitea/final02.png'
                             alt='Final version of Blueberry flavour'
                             className='final-img'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <img
                             src='/Revitea/final03.png'
                             alt='Final version of Lavender flavour'
                             className='final-img'
+                            loading='lazy'
+                            decoding='async'
                         />
                     </div>
                 </section>
@@ -273,6 +293,6 @@ export default function Revitea() {
                 <h2 className='section-title'>Check it out!</h2>
                 <Cans />
             </section>
-        </div>
+        </>
     );
 }

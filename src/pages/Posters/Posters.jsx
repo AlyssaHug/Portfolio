@@ -16,11 +16,13 @@ export default function Posters() {
     const rotations = [-10, 4, -7];
 
     return (
-        <div className='project-detail-page'>
+        <>
             <img
                 src='/Posters/Hero.png'
                 alt='Hayley Williams Poster'
                 className='hero-image'
+                loading='lazy'
+                decoding='async'
             />
             <header
                 className='project-header'
@@ -105,6 +107,8 @@ export default function Posters() {
                     <img
                         className='section-bannerImg'
                         src='/Posters/Reference.png'
+                        loading='lazy'
+                        decoding='async'
                     />
                 </section>
                 <section
@@ -159,12 +163,16 @@ export default function Posters() {
                                 className='poster-font'
                                 src='/Posters/Minecraftia.svg'
                                 alt='Minecraftia - Main font sample'
+                                loading='lazy'
+                                decoding='async'
                             />
 
                             <img
                                 className='poster-font support'
                                 src='/Posters/Supporting.svg'
                                 alt='Lyric font samples'
+                                loading='lazy'
+                                decoding='async'
                             />
                         </div>
                     </div>
@@ -223,12 +231,16 @@ export default function Posters() {
                             src='/Posters/initial.png'
                             alt='Initial mockup of poster'
                             className='process-img'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <p className='eq'>=</p>
                         <img
                             src='/Posters/ver01.png'
                             alt='New version of the poster'
                             className='process-img'
+                            loading='lazy'
+                            decoding='async'
                         />
                     </div>
                 </section>
@@ -249,16 +261,22 @@ export default function Posters() {
                             src='/Posters/ver01.png'
                             alt='Final version of Strawberry flavour'
                             className='final-poster'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <img
                             src='/Posters/ver02.png'
                             alt='Final version of Blueberry flavour'
                             className='final-poster'
+                            loading='lazy'
+                            decoding='async'
                         />
                         <img
                             src='/Posters/ver03.png'
                             alt='Final version of Lavender flavour'
                             className='final-poster'
+                            loading='lazy'
+                            decoding='async'
                         />
                     </div>
                 </section>
@@ -292,6 +310,7 @@ export default function Posters() {
                                         src={poster.src}
                                         alt={poster.alt}
                                         loading='lazy'
+                                        decoding='async'
                                         className='poster-img'
                                     />
                                 </div>
@@ -300,6 +319,6 @@ export default function Posters() {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     );
 }

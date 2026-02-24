@@ -17,6 +17,7 @@ export default function ProjectCard({
                 alt={title}
                 className='project-img'
                 loading='lazy'
+                decoding='async'
             />
             <div className='project-text'>
                 <h3 className='projectCard-title'>{title}</h3>

@@ -19,7 +19,8 @@ export default function NavBar() {
                     onClick={closeMenu}>
                     <img
                         src='/LogoBlue.svg'
-                        alt='Logo - Return to Home'
+                        loading='eager'
+                        decoding='async'
                         className='nav-logo'
                     />
                     <p className='nav-name'>lyssa Huggins</p>

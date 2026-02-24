@@ -6,7 +6,10 @@ export default function Footer() {
             <div className='my-info'>
                 <img
                     className='img-me'
-                    src='/LogoBlue.svg'></img>
+                    src='/LogoBlue.svg'
+                    loading='lazy'
+                    decoding='async'
+                />
                 <p className='footer-text'>
                     Welcome to my little corner of the internet. I'm constantly
                     creating, learning, and iterating, and this portfolio

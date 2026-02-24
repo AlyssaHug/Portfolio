@@ -47,6 +47,8 @@ export default function About() {
                         className='about-image'
                         src='/Me.png'
                         alt='A photo of myself.'
+                        loading='lazy'
+                        decoding='async'
                     />
                 </div>
                 <ScrollText
