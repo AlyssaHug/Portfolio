@@ -1,30 +1,27 @@
 .modal-overlay {
-    position: fixed;
-    inset: 0;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 50;
+    z-index: 9999 !important; /* very high priority */
+    margin: 0 !important;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
+/* Also force the inner content if needed */
 .modal-content {
-    background: #0f0f0f;
-    width: 100%;
     max-width: 420px;
+    width: 100%;
+    background: #0f0f0f;
     border-radius: 1.5rem;
-    overflow: hidden;
 }
 
 .modal-art {
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    width: 30vw;
 }
 
 .modal-art img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 

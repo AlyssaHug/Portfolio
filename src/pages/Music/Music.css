@@ -53,28 +53,6 @@
     transition: transform 0.5s ease;
 }
 
-.album-cover {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    display: block;
-}
-
-.album-info {
-    margin-top: 1.5rem;
-    text-align: center;
-}
-
-.album-artist {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.album-title {
-    color: #9ca3af;
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
-}
 @media screen and (min-width: 700px) {
     .music-header {
         font-size: 5rem;

@@ -1,11 +1,9 @@
-// src/components/AlbumModal.jsx
 import { useEffect } from "react";
-import { usePlayer } from "../../PlayerContext"; // adjust path if your folder structure is different
+import { usePlayer } from "../../PlayerContext";
 
 export default function AlbumModal({ album, onClose }) {
     const { playAlbum } = usePlayer();
 
-    // Lock body scroll + Esc key to close
     useEffect(() => {
         if (!album) return;
 
@@ -73,15 +71,11 @@ export default function AlbumModal({ album, onClose }) {
                     <button
                         onClick={() => {
                             playAlbum(album);
-                            onClose(); // closes modal after starting playback — remove this line if you prefer to keep it open
+                            onClose();
                         }}
                         className='play-button'>
                         Play Album
                     </button>
-
-                    <p className='close-hint'>
-                        Click outside or press Esc to close
-                    </p>
                 </div>
             </div>
         </div>
