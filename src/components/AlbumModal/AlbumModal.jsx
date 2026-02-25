@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { usePlayer } from "../../PlayerContext";
+import "./AlbumModal.css";
 
 export default function AlbumModal({ album, onClose }) {
     const { playAlbum } = usePlayer();
@@ -54,7 +55,7 @@ export default function AlbumModal({ album, onClose }) {
                                     style={{
                                         display: "flex",
                                         alignItems: "center",
-                                        gap: "1rem",
+                                        marginRight: "1.5rem",
                                     }}>
                                     <span className='track-number'>
                                         {(i + 1).toString().padStart(2, "0")}
@@ -76,6 +77,10 @@ export default function AlbumModal({ album, onClose }) {
                         className='play-button'>
                         Play Album
                     </button>
+
+                    <p className='close-hint'>
+                        Click outside or press Esc to close
+                    </p>
                 </div>
             </div>
         </div>
