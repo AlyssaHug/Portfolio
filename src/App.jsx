@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/About.jsx";
 import ProjectDetailRouter from "./pages/ProjectDetailRouter.jsx";
 import TopScroll from "./components/TopScroll.jsx";
+import Music from "./pages/Music/Music.jsx";
 
 function App() {
     return (
@@ -30,6 +31,10 @@ function App() {
                     <Route
                         path='/about'
                         element={<About />}
+                    />
+                    <Route
+                        path='/music'
+                        element={<Music />}
                     />
                     <Route
                         path='*'

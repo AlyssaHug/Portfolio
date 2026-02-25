@@ -1,0 +1,102 @@
+.music-header {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 5rem auto 5rem;
+    font-family: var(--font-family-display);
+}
+.music-content {
+    background-color: #e6f6f9;
+    color: #070a0d;
+    display: flex;
+    justify-content: center;
+}
+.album-container {
+    margin: 1rem auto;
+}
+.album {
+    width: 30vw;
+}
+
+.album-grid-container {
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+    background: #0a0a0a;
+}
+
+.album-grid-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: 0.15em;
+    color: white;
+}
+
+.album-grid {
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.album-card {
+    cursor: pointer;
+}
+
+.album-card:hover .album-cover-wrapper {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.album-cover-wrapper {
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s ease;
+}
+
+.album-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.album-info {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.album-artist {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.album-title {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+@media screen and (min-width: 700px) {
+    .music-header {
+        font-size: 5rem;
+        margin: 6rem auto 7rem;
+    }
+    .album-container {
+        margin: 3rem auto;
+    }
+    .album {
+        width: 28vw;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .music-header {
+        font-size: 8rem;
+        margin: 7rem auto 8rem;
+    }
+    .album-container {
+        margin: 5rem auto;
+    }
+    .album {
+        width: 20vw;
+    }
+}

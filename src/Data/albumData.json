@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "artist": "GLASS ANIMALS",
+        "title": "How to Be a Human Being",
+        "cover": "/Music/glass-animals.png",
+        "tracks": [
+            { "name": "Youth", " src": "/audio/youth.mp3" },
+            {
+                "name": "The Other Side of Paradise",
+                "src": "/audio/other-side-of-paradise.mp3"
+            },
+            { "name": "Agnes", "src": "/audio/agnes.mp3" }
+        ]
+    }
+]

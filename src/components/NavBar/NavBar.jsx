@@ -44,14 +44,14 @@ export default function NavBar() {
                         onClick={closeMenu}>
                         About
                     </NavLink>
-                    {/* <NavLink
-                        to='/Gallery'
+                    <NavLink
+                        to='/Music'
                         className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
                         onClick={closeMenu}>
-                        Gallery
-                    </NavLink> */}
+                        Music
+                    </NavLink>
                 </div>
 
                 {/* Desktop Contact Button - hidden on mobile */}
