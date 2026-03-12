@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePlayer } from "../../PlayerContext";
 import "./AlbumModal.css";
 
 export default function AlbumModal({ album, onClose }) {
     const { playAlbum } = usePlayer();
+    const [trackDurations, setTrackDurations] = useState({});
 
     useEffect(() => {
         if (!album) return;
@@ -11,12 +12,35 @@ export default function AlbumModal({ album, onClose }) {
         document.body.style.overflow = "hidden";
 
         const handleEsc = (e) => {
-            if (e.key === "Escape") {
-                onClose();
-            }
+            if (e.key === "Escape") onClose();
         };
 
         window.addEventListener("keydown", handleEsc);
+
+        const loadDurations = async () => {
+            const durations = {};
+            console.log(
+                "Album tracks:",
+                album.tracks.map((t) => ({
+                    name: t.name,
+                    url: t.url,
+                })),
+            );
+            await Promise.all(
+                album.tracks.map(async (track, i) => {
+                    try {
+                        const dur = await getAudioDuration(track.url);
+                        durations[i] = dur;
+                    } catch {
+                        durations[i] = 0;
+                    }
+                }),
+            );
+
+            setTrackDurations(durations);
+        };
+
+        loadDurations();
 
         return () => {
             document.body.style.overflow = "";
@@ -25,6 +49,13 @@ export default function AlbumModal({ album, onClose }) {
     }, [album, onClose]);
 
     if (!album) return null;
+
+    const formatDuration = (seconds) => {
+        if (!seconds || seconds === 0) return "—:--";
+        const min = Math.floor(seconds / 60);
+        const sec = Math.floor(seconds % 60);
+        return `${min}:${sec.toString().padStart(2, "0")}`;
+    };
 
     return (
         <div
@@ -64,7 +95,9 @@ export default function AlbumModal({ album, onClose }) {
                                         {track.name}
                                     </span>
                                 </div>
-                                <span className='track-duration'>—:--</span>
+                                <span className='track-duration'>
+                                    {formatDuration(trackDurations[i])}
+                                </span>
                             </div>
                         ))}
                     </div>
@@ -85,4 +118,33 @@ export default function AlbumModal({ album, onClose }) {
             </div>
         </div>
     );
+}
+function getAudioDuration(url) {
+    return new Promise((resolve) => {
+        if (!url) {
+            console.warn("No URL provided for track");
+            resolve(0);
+            return;
+        }
+
+        console.log("Trying to load duration from:", url);
+
+        const audio = new Audio();
+        audio.preload = "metadata";
+
+        audio.onloadedmetadata = () => {
+            console.log("Success → duration:", audio.duration, "seconds");
+            resolve(audio.duration);
+        };
+
+        audio.onerror = (e) => {
+            console.error("Audio error:", e);
+            console.warn("Failed URL was:", url);
+            resolve(0);
+        };
+
+        audio.onloadeddata = () => console.log("Some data loaded for", url);
+
+        audio.src = url;
+    });
 }

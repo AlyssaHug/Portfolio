@@ -35,13 +35,17 @@ export function PlayerProvider({ children }) {
         const audio = audioRef.current;
         if (!audio || !currentAlbum) return;
 
-        audio.src = currentAlbum.tracks[currentTrackIndex].src;
+        const track = currentAlbum.tracks[currentTrackIndex];
+        console.log("Setting audio.src to:", track?.src);
+        console.log("But the real URL field is probably:", track?.url);
+
+        audio.src = currentAlbum.tracks[currentTrackIndex].url;
         audio.load();
 
         if (isPlaying) {
-            audio.play().catch(console.error);
+            audio.play().catch((err) => console.error("Play failed:", err));
         }
-    }, [currentAlbum, currentTrackIndex]);
+    }, [currentAlbum, currentTrackIndex, isPlaying]);
 
     useEffect(() => {
         const audio = audioRef.current;
@@ -55,6 +59,9 @@ export function PlayerProvider({ children }) {
     }, [isPlaying]);
 
     const playAlbum = (album) => {
+        console.log("playAlbum called with:", album);
+        console.log("First track URL:", album?.tracks?.[0]?.url);
+
         setCurrentAlbum(album);
         setCurrentTrackIndex(0);
         setIsPlaying(true);
