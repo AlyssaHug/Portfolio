@@ -20,7 +20,8 @@ export default function Music() {
                 <div className='header-text'>
                     <h1 className='music-header'>Pick your Tunes</h1>
                     <p className='header-desc'>
-                        A mix of my top songs from my favourite albums.
+                        A mix of my top songs from my favourite albums by my
+                        favourite artists.
                         <br />
                         Feel free to listen while exploring my site!
                     </p>

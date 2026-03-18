@@ -69,5 +69,45 @@
                 "url": "/SongFiles/thanks.mp3"
             }
         ]
+    },
+    {
+        "id": 5,
+        "artist": "Rainbow Kitten Surprise",
+        "title": "Love Hate Music Box",
+        "cover": "/Music/rks.png",
+        "tracks": [
+            {
+                "name": "Superstar",
+                "url": "/SongFiles/superstar.mp3"
+            },
+            {
+                "name": "Code Blue",
+                "url": "/SongFiles/code.mp3"
+            },
+            {
+                "name": "No Occasion",
+                "url": "/SongFiles/occasion.mp3"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "artist": "Joe P",
+        "title": "Garden State Vampire",
+        "cover": "/Music/joeP.jpg",
+        "tracks": [
+            {
+                "name": "Off My Mind",
+                "url": "/SongFiles/off-my-mind.mp3"
+            },
+            {
+                "name": "Wonder Bread",
+                "url": "/SongFiles/wonder-bread.mp3"
+            },
+            {
+                "name": "Nothing At All",
+                "url": "/SongFiles/nothing.mp3"
+            }
+        ]
     }
 ]
