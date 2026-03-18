@@ -29,5 +29,45 @@
                 "url": "/SongFiles/strawberry-wine.mp3"
             }
         ]
+    },
+    {
+        "id": 3,
+        "artist": "Hayley Williams",
+        "title": "Ego Death at a Bachelorette Party",
+        "cover": "/Music/egoDeath.png",
+        "tracks": [
+            {
+                "name": "I Won't Quit on You",
+                "url": "/SongFiles/i-wont-quit.mp3"
+            },
+            {
+                "name": "Parachute",
+                "url": "/SongFiles/parachute.mp3"
+            },
+            {
+                "name": "Showbiz",
+                "url": "/SongFiles/showbiz.mp3"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "artist": "Half Alive",
+        "title": "Persona",
+        "cover": "/Music/half-alive.jpg",
+        "tracks": [
+            {
+                "name": "Automatic",
+                "url": "/SongFiles/automatic.mp3"
+            },
+            {
+                "name": "People",
+                "url": "/SongFiles/people.mp3"
+            },
+            {
+                "name": "Thank You",
+                "url": "/SongFiles/thanks.mp3"
+            }
+        ]
     }
 ]
