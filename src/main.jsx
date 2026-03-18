@@ -3,11 +3,13 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { PlayerProvider } from "./PlayerContext.jsx";
+import MiniPlayer from "./components/MiniPlayer/MiniPlayer.jsx";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
         <PlayerProvider>
             <App />
+            <MiniPlayer />
         </PlayerProvider>
     </StrictMode>,
 );

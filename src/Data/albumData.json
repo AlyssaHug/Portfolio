@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "artist": "GLASS ANIMALS",
+        "artist": "Glass Animals",
         "title": "How to Be a Human Being",
         "cover": "/Music/glass-animals.png",
         "tracks": [
@@ -11,6 +11,23 @@
                 "url": "/SongFiles/other-side-of-paradise.mp3"
             },
             { "name": "Agnes", "url": "/SongFiles/agnes.mp3" }
+        ]
+    },
+    {
+        "id": 2,
+        "artist": "Noah Kahan",
+        "title": "Stick Season",
+        "cover": "/Music/Stick-season.jpg",
+        "tracks": [
+            { "name": "All My Love", "url": "/SongFiles/all-my-love.mp3" },
+            {
+                "name": "Everywhere Everything",
+                "url": "/SongFiles/everywhere.mp3"
+            },
+            {
+                "name": "Strawberry Wine",
+                "url": "/SongFiles/strawberry-wine.mp3"
+            }
         ]
     }
 ]

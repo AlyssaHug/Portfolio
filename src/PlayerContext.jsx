@@ -36,8 +36,6 @@ export function PlayerProvider({ children }) {
         if (!audio || !currentAlbum) return;
 
         const track = currentAlbum.tracks[currentTrackIndex];
-        console.log("Setting audio.src to:", track?.src);
-        console.log("But the real URL field is probably:", track?.url);
 
         audio.src = currentAlbum.tracks[currentTrackIndex].url;
         audio.load();
@@ -59,8 +57,11 @@ export function PlayerProvider({ children }) {
     }, [isPlaying]);
 
     const playAlbum = (album) => {
-        console.log("playAlbum called with:", album);
-        console.log("First track URL:", album?.tracks?.[0]?.url);
+        const audio = audioRef.current;
+        if (!audio) return;
+
+        audio.pause();
+        audio.currentTime = 0;
 
         setCurrentAlbum(album);
         setCurrentTrackIndex(0);
@@ -73,6 +74,24 @@ export function PlayerProvider({ children }) {
         const nextIndex = (currentTrackIndex + 1) % currentAlbum.tracks.length;
         setCurrentTrackIndex(nextIndex);
     };
+    const togglePlay = () => {
+        const audio = audioRef.current;
+        if (!audio || !currentAlbum) return;
+
+        if (isPlaying) {
+            audio.pause();
+            setIsPlaying(false);
+        } else {
+            audio
+                .play()
+                .then(() => {
+                    setIsPlaying(true);
+                })
+                .catch((err) => {
+                    console.error("Resume failed:", err);
+                });
+        }
+    };
 
     return (
         <PlayerContext.Provider
@@ -83,6 +102,7 @@ export function PlayerProvider({ children }) {
                 playAlbum,
                 pause,
                 next,
+                togglePlay,
             }}>
             {children}
         </PlayerContext.Provider>

@@ -96,16 +96,16 @@ export default function NavBar() {
                         onClick={closeMenu}>
                         About
                     </NavLink>
-                    {/* <NavLink
-                        to='/Gallery'
+                    <NavLink
+                        to='/Music'
                         className={({ isActive }) =>
                             isActive
                                 ? "nav-link active mobile-link"
                                 : "nav-link mobile-link"
                         }
                         onClick={closeMenu}>
-                        Gallery
-                    </NavLink> */}
+                        Music
+                    </NavLink>
 
                     <a
                         href='mailto:alyssathuggins@gmail.com'
