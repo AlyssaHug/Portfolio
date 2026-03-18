@@ -1,22 +1,22 @@
 .mini-player {
     position: fixed;
     bottom: 16px;
-    right: 16px; /* or left: 50%; transform: translateX(-50%); for center */
+    right: 16px;
     z-index: 1000;
 
     display: flex;
     align-items: center;
     gap: 12px;
 
-    background: rgba(15, 15, 15, 0.92);
+    background: rgba(15, 15, 15, 0.8);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid #333;
     border-radius: 12px;
-    padding: 10px 14px;
+    padding: 8px 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-
-    max-width: 320px;
+    font-family: var(--font-family-body);
+    max-width: 36vw;
 }
 
 .mini-cover {
@@ -41,11 +41,22 @@
 }
 
 .mini-album-info {
-    font-size: 12px;
+    font-size: 11px;
     color: #aaa;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+}
+.mini-album-info p {
+    position: relative;
+    animation: scrollText 10s linear infinite;
+}
+@keyframes scrollText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .mini-controls {

@@ -31,7 +31,7 @@
 .modal-body {
     padding: 1rem;
 }
-
+/*=====Modal text conent=====*/
 .modal-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -81,7 +81,7 @@
     color: #71717a;
     font-size: 0.875rem;
 }
-
+/*=====Button styles======*/
 .play-button {
     width: 100%;
     background: #67e8f9;
@@ -111,6 +111,7 @@
     font-size: 0.75rem;
     margin-top: 1.5rem;
 }
+/*======Tablet Styles======*/
 @media screen and (min-width: 700px) {
     .modal-content {
         flex-direction: row;
@@ -133,7 +134,7 @@
         padding: 0.8rem 0;
     }
 }
-
+/* ======Desktop Styles====== */
 @media screen and (min-width: 1100px) {
     .modal-art img {
         width: 28vw;

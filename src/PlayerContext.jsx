@@ -16,6 +16,7 @@ export function PlayerProvider({ children }) {
 
     const audioRef = useRef(null);
 
+    //------Audio set up------
     useEffect(() => {
         const audio = new Audio();
         audioRef.current = audio;
@@ -33,20 +34,19 @@ export function PlayerProvider({ children }) {
             audio.removeEventListener("ended", handleEnded);
         };
     }, []);
-
+    //------Track source loading------
     useEffect(() => {
         const audio = audioRef.current;
         if (!audio || !currentAlbum) return;
 
         const track = currentAlbum.tracks[currentTrackIndex];
 
-        // Only change source when track changes
         if (audio.src !== track.url) {
             audio.src = track.url;
-            audio.load(); // ✅ OK here because track actually changed
+            audio.load();
         }
     }, [currentAlbum, currentTrackIndex]);
-
+    //------Playback state handling------
     useEffect(() => {
         const audio = audioRef.current;
         if (!audio) return;
@@ -57,7 +57,7 @@ export function PlayerProvider({ children }) {
             audio.pause();
         }
     }, [isPlaying]);
-
+    //------Starts new album------
     const playAlbum = (album) => {
         const audio = audioRef.current;
         if (!audio) return;
@@ -69,7 +69,7 @@ export function PlayerProvider({ children }) {
         setCurrentTrackIndex(0);
         setIsPlaying(true);
     };
-
+    //------Handling audio play/pause------
     const pause = () => setIsPlaying(false);
     const next = () => {
         if (!currentAlbum) return;

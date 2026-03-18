@@ -1,5 +1,5 @@
 import "./MiniPlayer.css";
-import { usePlayer } from "../../PlayerContext"; // adjust path
+import { usePlayer } from "../../PlayerContext";
 
 export default function MiniPlayer() {
     const {
@@ -8,7 +8,7 @@ export default function MiniPlayer() {
         isPlaying,
         pause,
         next,
-        togglePlay, // ← now you can destructure it here
+        togglePlay,
     } = usePlayer();
 
     if (!currentAlbum) return null;
@@ -26,7 +26,9 @@ export default function MiniPlayer() {
             <div className='mini-info'>
                 <div className='mini-track-name'>{currentTrack.name}</div>
                 <div className='mini-album-info'>
-                    {currentAlbum.artist} – {currentAlbum.title}
+                    <p>
+                        {currentAlbum.artist} – {currentAlbum.title}
+                    </p>
                 </div>
             </div>
 

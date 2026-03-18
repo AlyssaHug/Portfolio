@@ -16,7 +16,7 @@ export default function AlbumModal({ album, onClose }) {
         };
 
         window.addEventListener("keydown", handleEsc);
-
+        //------Loads songs from data + song duration------
         const loadDurations = async () => {
             const durations = {};
             console.log(
@@ -49,7 +49,7 @@ export default function AlbumModal({ album, onClose }) {
     }, [album, onClose]);
 
     if (!album) return null;
-
+    //------Formats duration------
     const formatDuration = (seconds) => {
         if (!seconds || seconds === 0) return "—:--";
         const min = Math.floor(seconds / 60);
@@ -78,6 +78,7 @@ export default function AlbumModal({ album, onClose }) {
                     </div>
 
                     <div className='tracklist'>
+                        {/* Maps each album */}
                         {album.tracks.map((track, i) => (
                             <div
                                 key={i}
