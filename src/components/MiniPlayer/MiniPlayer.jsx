@@ -37,7 +37,7 @@ export default function MiniPlayer() {
                     onClick={togglePlay}
                     className='control-btn pause-play'
                     title={isPlaying ? "Pause" : "Resume"}>
-                    {isPlaying ? "⏸" : "▶"}
+                    {isPlaying ? "||" : "▶"}
                 </button>
             </div>
         </div>
