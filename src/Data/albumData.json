@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "artist": "Glass Animals",
+        "title": "How to Be a Human Being",
+        "cover": "/Music/glass-animals.png",
+        "tracks": [
+            { "name": "Youth", "url": "/SongFiles/youth.mp3" },
+            {
+                "name": "The Other Side of Paradise",
+                "url": "/SongFiles/other-side-of-paradise.mp3"
+            },
+            { "name": "Agnes", "url": "/SongFiles/agnes.mp3" }
+        ]
+    },
+    {
+        "id": 2,
+        "artist": "Noah Kahan",
+        "title": "Stick Season",
+        "cover": "/Music/Stick-season.jpg",
+        "tracks": [
+            { "name": "All My Love", "url": "/SongFiles/all-my-love.mp3" },
+            {
+                "name": "Everywhere Everything",
+                "url": "/SongFiles/everywhere.mp3"
+            },
+            {
+                "name": "Strawberry Wine",
+                "url": "/SongFiles/strawberry-wine.mp3"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "artist": "Hayley Williams",
+        "title": "Ego Death at a Bachelorette Party",
+        "cover": "/Music/egoDeath.png",
+        "tracks": [
+            {
+                "name": "I Won't Quit on You",
+                "url": "/SongFiles/i-wont-quit.mp3"
+            },
+            {
+                "name": "Parachute",
+                "url": "/SongFiles/parachute.mp3"
+            },
+            {
+                "name": "Showbiz",
+                "url": "/SongFiles/showbiz.mp3"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "artist": "Half Alive",
+        "title": "Persona",
+        "cover": "/Music/half-alive.jpg",
+        "tracks": [
+            {
+                "name": "Automatic",
+                "url": "/SongFiles/automatic.mp3"
+            },
+            {
+                "name": "People",
+                "url": "/SongFiles/people.mp3"
+            },
+            {
+                "name": "Thank You",
+                "url": "/SongFiles/thanks.mp3"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "artist": "Rainbow Kitten Surprise",
+        "title": "Love Hate Music Box",
+        "cover": "/Music/rks.png",
+        "tracks": [
+            {
+                "name": "Superstar",
+                "url": "/SongFiles/superstar.mp3"
+            },
+            {
+                "name": "Code Blue",
+                "url": "/SongFiles/code.mp3"
+            },
+            {
+                "name": "No Occasion",
+                "url": "/SongFiles/occasion.mp3"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "artist": "Joe P",
+        "title": "Garden State Vampire",
+        "cover": "/Music/joeP.jpg",
+        "tracks": [
+            {
+                "name": "Off My Mind",
+                "url": "/SongFiles/off-my-mind.mp3"
+            },
+            {
+                "name": "Wonder Bread",
+                "url": "/SongFiles/wonder-bread.mp3"
+            },
+            {
+                "name": "Nothing At All",
+                "url": "/SongFiles/nothing.mp3"
+            }
+        ]
+    }
+]

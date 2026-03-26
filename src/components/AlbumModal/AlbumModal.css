@@ -1,0 +1,142 @@
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    position: fixed;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+    background: #0f0f0f;
+    border-radius: 1.5rem;
+}
+
+.modal-art img {
+    width: 40vw;
+    margin: 1rem auto 0;
+    object-fit: cover;
+}
+
+.modal-body {
+    padding: 1rem;
+}
+/*=====Modal text conent=====*/
+.modal-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.modal-artist {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-family: var(--font-family-display);
+}
+
+.modal-album-title {
+    color: #a1a1aa;
+    font-size: 0.8rem;
+}
+
+.tracklist {
+    margin-bottom: 2.5rem;
+    font-family: var(--font-family-body);
+    font-size: 0.8rem;
+}
+
+.track-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.track-number {
+    color: #71717a;
+    width: 1.5rem;
+    text-align: right;
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.track-name {
+    flex: 1;
+}
+
+.track-duration {
+    color: #71717a;
+    font-size: 0.875rem;
+}
+/*=====Button styles======*/
+.play-button {
+    width: 100%;
+    background: #67e8f9;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition:
+        background 0.2s,
+        transform 0.1s;
+}
+
+.play-button:hover {
+    background: #22d3ee;
+}
+
+.play-button:active {
+    transform: scale(0.985);
+}
+
+.close-hint {
+    text-align: center;
+    color: #71717a;
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+}
+/*======Tablet Styles======*/
+@media screen and (min-width: 700px) {
+    .modal-content {
+        flex-direction: row;
+        max-width: 700px;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    .modal-art img {
+        margin: 1rem;
+    }
+    .modal-artist {
+        font-size: 2rem;
+    }
+    .modal-album-title {
+        font-size: 1rem;
+    }
+    .play-button {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.8rem 0;
+    }
+}
+/* ======Desktop Styles====== */
+@media screen and (min-width: 1100px) {
+    .modal-art img {
+        width: 28vw;
+    }
+}
