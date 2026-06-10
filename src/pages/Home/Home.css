@@ -38,15 +38,13 @@
 
 .name-logo {
     width: 20%;
+    color:var(--black);
 }
 .last-name,
 .last-line {
     margin-left: 4rem;
 }
-.main {
-    background-color: #e6f6f9;
-    color: #070a0d;
-}
+
 .intro {
     padding: 4rem 1rem;
     font-family: var(--font-family-display);
@@ -75,49 +73,26 @@
     margin-bottom: 4rem;
 }
 
-.contact-section {
-    background-color: #090d12;
-    color: #ecedf5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-}
-.contact-background {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-}
 
-.contact-background .dither-container {
-    position: absolute !important;
-    inset: 0;
-}
 .contact-content {
-    position: relative;
-    z-index: 2;
     pointer-events: none;
     text-align: center;
     padding: 4rem 1rem;
+    background-color:var(--secondary);
 }
 .contact-header {
     font-family: var(--font-family-display);
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     display: flex;
     pointer-events: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 1.5rem auto;
+    margin: 1.5rem 0.5rem;
 }
-.first-line {
-    margin-right: 12rem;
-}
-.last-line {
-    margin-left: 3rem;
-}
+
 .contact-btn {
     color: #a9abd1;
     font-family: var(--font-family-display);
@@ -148,14 +123,7 @@
         margin: auto 4rem;
     }
     .contact-header {
-        font-size: 5rem;
-    }
-
-    .first-line {
-        margin-right: 20rem;
-    }
-    .last-line {
-        margin-left: 8rem;
+        font-size: 4rem;
     }
 }
 
@@ -181,13 +149,7 @@
     }
 
     .contact-header {
-        font-size: 8rem;
-    }
-    .first-line {
-        margin-right: 32rem;
-    }
-    .last-line {
-        margin-left: 10rem;
+        font-size: 6rem;
     }
     .contact-btn {
         font-size: 32px;

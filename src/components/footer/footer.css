@@ -1,5 +1,5 @@
 footer {
-    background-color: #070a0d;
+    background-color: var(--secondary);
     padding: 0.8rem;
     width: 100%;
     margin-left: -0.8rem;
@@ -21,7 +21,7 @@ footer {
 }
 .line {
     height: 2px;
-    background-color: #44499c;
+    background-color: var(--secondary-400);
     margin: auto 1rem;
 }
 .social-btns {
@@ -29,9 +29,9 @@ footer {
     text-align: left;
 }
 .social-btn {
-    color: #a9abd1;
+    color: var(--secondary-500);
     background: none;
-    border: 2px solid #44499c;
+    border: 2px solid var(--secondary-400);
     border-radius: 0.5rem;
     padding: 2px 10px;
     font-family: var(--font-family-display);
@@ -41,8 +41,8 @@ footer {
     transition: all 0.2s ease-out;
 }
 .social-btn:hover {
-    color: #44499c;
-    background-color: #a9abd1;
+    color: var(--inactive);
+    background-color: var(--secondary-500);
     border: none;
 }
 a {

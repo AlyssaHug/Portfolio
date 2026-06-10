@@ -21,7 +21,7 @@ export default function Home() {
                     <div className='header'>
                         <div className='first-name-container'>
                             <img
-                                src='/LogoWhite.svg'
+                                src='/Logo.svg'
                                 alt='Logo of the letter A'
                                 className='name-logo'
                                 loading='eager'
@@ -52,12 +52,11 @@ export default function Home() {
             </div>
             <div className='main'>
                 <p className='intro'>
-                    Hi, I'm Alyssa! A detailed designer with a passion for
-                    creating digital products that feel alive
+                    Digital designer and front-end developer creating products with personality and polish.
                 </p>
                 <div className='feature-section'>
                     <div className='section-text'>
-                        <h2 className='section-title'>Highlights</h2>
+                        
                         <Button
                             link='/Portfolio'
                             text='View all Projects'
@@ -82,23 +81,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='contact-section'>
-                    <div className='contact-background'>
-                        <Dither
-                            waveColor={[0.0, 0.3909, 0.4811]}
-                            disableAnimation={false}
-                            enableMouseInteraction
-                            mouseRadius={0.2}
-                            colorNum={10}
-                            waveAmplitude={0.3}
-                            waveFrequency={3}
-                            waveSpeed={0.05}
-                        />
-                    </div>
                     <div className='contact-content'>
                         <div className='contact-header'>
-                            <span className='first-line'>Feel like</span>
-
-                            <span className='last-line'>Collaborating?</span>
+                            <span>Let's build<br/>something together!</span>
                         </div>
                         <a
                             className='contact-btn'

@@ -1,7 +1,7 @@
 import "./Button.css";
 import { Link } from "react-router-dom";
 
-export default function Button({ text, link }) {
+export function Button({ text, link }) {
     return (
         <div className='view-all-wrapper'>
             <Link
