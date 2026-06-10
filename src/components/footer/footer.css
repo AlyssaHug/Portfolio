@@ -41,7 +41,7 @@ footer {
     transition: all 0.2s ease-out;
 }
 .social-btn:hover {
-    color: var(--inactive);
+    color: var(--secondary);
     background-color: var(--secondary-500);
     border: none;
 }
