@@ -69,9 +69,7 @@ export default function Tandem() {
                     {/* desktop table of contents */}
                     <aside className='desktop-content-container'>
                         <div className='desktop-links'>
-                            <h3 className='contents-desktop-header'>
-                                Contents
-                            </h3>
+                            
                             <nav className='case-links'>
                                 <a
                                     href='#overview'
@@ -264,6 +262,12 @@ export default function Tandem() {
                                 </p>
                             </div>
                         </div>
+                        
+                    </header>
+
+                    <div className='project-content case-content'>
+                    <div className="case-dark">
+
                         {/* My Role */}
                         <section
                             className='case-role'
@@ -284,13 +288,10 @@ export default function Tandem() {
                                 our profile.
                             </p>
                         </section>
-                    </header>
-
-                    <div className='project-content case-content'>
                         {/* The Issue */}
                         <section
                             id='issue'
-                            className='case-section'>
+                            className='case-role'>
                             <h2 className='case-title'>The Issue</h2>
                             <p className='case-desc'>
                                 Daycares can be difficult to get into, with long
@@ -316,6 +317,7 @@ export default function Tandem() {
                                 </div>
                             </div>
                         </section>
+                    </div>
                         {/* The Idea */}
                         <section
                             id='idea'
@@ -622,7 +624,7 @@ export default function Tandem() {
                             <div className='title-container'>
                                 <h2 className='case-title'>Development</h2>
                                 <CodeButton
-                                    text='View Report'
+                                    text='View Source Code'
                                     href='https://github.com/IDSP-TRADECARE/Tandem'
                                 />
                             </div>
@@ -743,7 +745,7 @@ export default function Tandem() {
                     {/* Check it out! */}
                     <section
                         id='test'
-                        className='case-test'>
+                        className='case-test case-dark'>
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna try it yourself?</h3>

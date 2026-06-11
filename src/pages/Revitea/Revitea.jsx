@@ -117,7 +117,7 @@ export default function Revitea() {
                     </p>
                     <div className='revitea-styles'>
                         <div className='palette-grid'>
-                            <div className='palette'>
+                            
                                 <div
                                     className='color-swatch'
                                     style={{ backgroundColor: "#F2E8CF" }}>
@@ -128,8 +128,8 @@ export default function Revitea() {
                                     style={{ backgroundColor: "#386641" }}>
                                     #386641
                                 </div>
-                            </div>
-                            <div className='palette'>
+                            
+                            
                                 <div
                                     className='color-swatch'
                                     style={{ backgroundColor: "#F1DADD" }}>
@@ -140,8 +140,8 @@ export default function Revitea() {
                                     style={{ backgroundColor: "#CE6876" }}>
                                     #CE6876
                                 </div>
-                            </div>
-                            <div className='palette'>
+                         
+                           
                                 <div
                                     className='color-swatch'
                                     style={{ backgroundColor: "#CADEE5" }}>
@@ -152,8 +152,8 @@ export default function Revitea() {
                                     style={{ backgroundColor: "#426996" }}>
                                     #426996
                                 </div>
-                            </div>
-                            <div className='palette'>
+                           
+                        
                                 <div
                                     className='color-swatch'
                                     style={{ backgroundColor: "#D2C8E8" }}>
@@ -164,7 +164,7 @@ export default function Revitea() {
                                     style={{ backgroundColor: "#816EAF" }}>
                                     #816EAF
                                 </div>
-                            </div>
+                           
                         </div>
                         <div className='revitea-fonts'>
                             <img
@@ -185,11 +185,7 @@ export default function Revitea() {
                         </div>
                     </div>
                     <div className='revitea-creations'>
-                        <img
-                            src='/Revitea/Name Variation.png'
-                            alt='Name variations'
-                            className='variation'
-                        />
+                        
                         <img
                             src='/Revitea/strawberry.svg'
                             alt='Strawberry can art'
@@ -208,9 +204,10 @@ export default function Revitea() {
                         />
                     </div>
                 </section>
+                <div className="project-dark project-iteration">
                 <section
                     id='iterations'
-                    className='main-section'>
+                    className='main-section '>
                     <h2 className='section-title'>Iterations</h2>
                     <p className='section-desc'>
                         Combining the visuals carried through energy drinks vs.
@@ -225,6 +222,9 @@ export default function Revitea() {
                         ensure the best one suited was picked.
                     </p>
                     <div className='iteration-images'>
+                        <div className="iterate-img">
+                            <p className="design-stage">Initial Design</p>
+
                         <img
                             src='/Revitea/initial.svg'
                             alt='Initial mockup of label'
@@ -232,7 +232,10 @@ export default function Revitea() {
                             loading='lazy'
                             decoding='async'
                         />
-                        <p className='eq'>=</p>
+                        </div>
+                        <div className="iterate-img">
+                            <p className="design-stage">Re-Design</p>
+
                         <img
                             src='/Revitea/attempt.svg'
                             alt='Second version of label'
@@ -240,7 +243,10 @@ export default function Revitea() {
                             loading='lazy'
                             decoding='async'
                         />
-                        <p className='eq'>=</p>
+                        </div>
+                         <div className="iterate-img">
+                            <p className="design-stage">Final Design</p>
+
                         <img
                             src='/Revitea/finalLabel.svg'
                             alt='Final label design'
@@ -248,8 +254,10 @@ export default function Revitea() {
                             loading='lazy'
                             decoding='async'
                         />
+                        </div>
                     </div>
                 </section>
+                </div>
                 <section
                     id='final'
                     className='main-section'>
@@ -287,12 +295,15 @@ export default function Revitea() {
                     </div>
                 </section>
             </div>
+            <div className="project-dark">
+
             <section
                 id='models'
                 className='main-section'>
                 <h2 className='section-title'>Check it out!</h2>
                 <Cans />
             </section>
+            </div>
         </>
     );
 }

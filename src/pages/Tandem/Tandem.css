@@ -9,7 +9,8 @@
     font-size: 12px;
 }
 .case-role {
-    margin-top: 2rem;
+     padding-bottom: 4rem;
+        margin:0;
 }
 .section-subheader {
     font-family: var(--font-family-display);
@@ -51,8 +52,7 @@
     max-width: 85vw;
 }
 .case-dark {
-    background-color: #090d12;
-    color: #ecedf5;
+    background-color: var(--secondary);
     padding: 3rem 2rem 0.1rem;
     margin: 0 auto 3rem;
 }
@@ -67,12 +67,12 @@
     cursor: pointer;
     padding: 0;
     margin: 0;
+    background:none;
 
-    background-color: #101820;
 }
 .menu-btn-container {
     padding: 0.8rem;
-    background-color: #101820;
+    background-color: var(--secondary-100);
     position: fixed;
     top: 5.5rem;
     left: 0.8rem;
@@ -83,7 +83,7 @@
 .mobile-menu-btn span {
     width: 100%;
     height: 3px;
-    background-color: #8285bd;
+    background-color: var(--secondary-300);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -105,7 +105,7 @@
     position: fixed;
     top: 12%;
     left: 0;
-    background-color: #101820;
+    background-color: var(--secondary-100);
     border-radius: 0 20px 20px 0;
 
     z-index: 990;
@@ -130,20 +130,20 @@
 }
 
 .case-link {
-    color: #8285bd;
+    color: var(--secondary-200);
     transition: all 0.25s ease;
     font-size: 18px;
     margin-right: 1rem;
     padding-left: 0.5rem;
 }
 .case-link:hover {
-    color: #54c5d7;
+    color: var(--logo-500);
 }
 .case-link.active {
-    color: #c5c7e0;
+    color: var(--secondary-500);
     font-weight: bold;
     border-radius: 8px;
-    border-left: 2px solid #54c5d7;
+    border-left: 2px solid var(--secondary-500);
 }
 .contents-desktop-header {
     margin: 1rem 0 0 1.5rem;
@@ -156,7 +156,7 @@
     gap: 16px;
 }
 .issue-stat {
-    color: #ecedf5;
+    color: var(--primary);
     padding: 0.5rem;
     border-radius: 24px;
 }
@@ -172,10 +172,10 @@
     text-wrap: nowrap;
 }
 .left-stat {
-    background-color: #00788a;
+    background-color: var(--secondary-400);
 }
 .right-stat {
-    background-color: #30346f;
+    background-color: var(--secondary-900);
 }
 /*===The Idea===*/
 
@@ -251,6 +251,9 @@
     font-family: var(--font-family-display);
     font-size: 16px;
 }
+.case-test {
+    margin-bottom:0;
+}
 /*===visible mobile menu and hide desktop menu===*/
 @media screen and (max-width: 699px) {
     .desktop-content-container {
@@ -268,9 +271,7 @@
         width: 90%;
         line-height: 140%;
     }
-    .role-desc {
-        margin-bottom: 2rem;
-    }
+   
     .case-flex {
         display: grid;
         grid-template-columns: 180px 1fr;
@@ -306,7 +307,6 @@
     .case-links {
         display: block;
         padding: 0.5rem 0 0.5rem 0;
-        background-color: #101820;
         border-radius: 24px;
         font-family: var(--font-family-display);
     }
@@ -314,6 +314,7 @@
     .case-link {
         display: block;
         padding: 0.5rem 0.5rem;
+        font-size: 1.3rem;
     }
 
     .menu-btn-container {
@@ -341,7 +342,6 @@
         gap: 16px;
     }
     .issue-stat {
-        color: #ecedf5;
         padding: 0.5rem;
         border-radius: 24px;
     }
@@ -384,7 +384,7 @@
     }
     /*===Check it out!===*/
     .case-test {
-        margin: 2rem 0 auto 0;
+        margin: 2rem 0 0;
     }
 }
 @media screen and (min-width: 800px) {
@@ -449,7 +449,6 @@
         width: 80vw;
         padding-left: 26vw;
         left: -20vw;
-        background-color: #e6f6f9;
     }
     .case-dark {
         width: 70vw;
@@ -475,13 +474,18 @@
     .case-desc {
         width: 76%;
     }
+    .case-role{
+
+        padding-bottom: 4rem;
+        padding-top:2rem;
+        margin:0;
+    }
     /*===Issue Styles===*/
     .issue-stats {
         gap: 10rem;
         margin-right: 2rem;
     }
     .issue-stat {
-        color: #ecedf5;
         padding: 0.5rem;
         border-radius: 24px;
     }
@@ -540,7 +544,7 @@
     /*===Check it out!===*/
     .case-test {
         display: flex;
-        margin: 3rem auto 3rem 8vw;
+        margin: 3rem auto 0 8vw;
         gap: 8rem;
     }
 
@@ -548,4 +552,14 @@
         font-size: 24px;
         padding: 2rem 0 1rem 0;
     }
+}
+@media screen and (min-width:1600px){
+    .case-dark {
+        width: 76vw;
+        left: -28vw;
+    }
+    .case-dark {
+        padding-right:70vw;
+    }
+
 }

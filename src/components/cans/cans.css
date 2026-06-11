@@ -5,9 +5,9 @@
     flex-wrap: nowrap;
     gap: 0;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 0;
     max-width: 1400px;
-    padding: 0 1rem;
+    padding: 0 10vw;
 }
 /*=====Mobile size for can models====*/
 @media screen and (max-width: 799px) {
