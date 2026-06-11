@@ -1,12 +1,11 @@
 .nav-logo {
-    width: 32px;
+    width: 28px;
     padding-left: 8px;
 }
 .link-img {
     display: flex;
     align-items: center;
-    color: #54c5d7;
-    font-size: 16px;
+    color: var(--logo-color);
     font-family: var(--font-family-display);
 }
 .nav-name {
@@ -43,7 +42,6 @@
 }
 
 .nav-item {
-    color: #ecedf5;
     padding: 4px 12px;
     border-radius: 8px;
     font-family: var(--font-family-display);
@@ -132,7 +130,7 @@ text-align:right;
     padding: 1.2rem 2rem;
     width: 75%;
     text-align: center;
-    color: var(--black);
+    color: var(--secondary-500);
 }
 .email-btn {
     transition: all 0.2s ease-out;

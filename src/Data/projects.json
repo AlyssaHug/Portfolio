@@ -4,7 +4,7 @@
         "title": "Tandem",
         "categories": ["Front-end", "UI/UX Design"],
         "image": "Tandem/Preview.png",
-        "description": "An app to help tradesparent find childcare that matches their work schedule.",
+        "description": "Scheduling app for childcare - UI/UX & coded prototype",
         "slug": "tandem"
     },
     {
@@ -12,7 +12,7 @@
         "title": "Paramore E-Magazine",
         "categories": ["Front-end", "Web Design", "UI/UX Design"],
         "image": "/EMagazine/Preview.png",
-        "description": "An e-magazine covering the band, Paramore, and their journey through the years.",
+        "description": "Editorial site design - Web design & code interface",
         "slug": "paramore"
     },
     {
@@ -20,7 +20,7 @@
         "title": "Bandit Breakout",
         "categories": ["Front-end", "Web Design", "UI/UX Design"],
         "image": "Bandit/Preview.png",
-        "description": "A multiplayer online board game with a western theme.",
+        "description": "Multiplayer board game - UI/UX, web design & coded promotional site",
         "slug": "bandit"
     },
     {
@@ -28,7 +28,7 @@
         "title": "Revitea+",
         "categories": ["Graphic Design"],
         "image": "/Revitea/Preview.png",
-        "description": "Clean matcha-based energy.",
+        "description": "Line of natural energy drinks - Graphic & product design",
         "slug": "revitea"
     },
     {
@@ -36,7 +36,7 @@
         "title": "Poster Series",
         "categories": ["Graphic Design"],
         "image": "/Posters/Preview.png",
-        "description": "A series of posters inspired by retro computer interfaces and Hayley Williams 3rd solo album.",
+        "description": "Set of retro-themed posters - Graphic design",
         "slug": "posters"
     },
     {
@@ -44,7 +44,7 @@
         "title": "MoolahMate",
         "categories": ["Front-end", "UI/UX Design"],
         "image": "/MoolahMate/Preview.png",
-        "description": "A gamified budgeting app to help students manage their finances.",
+        "description": "A gamified budgeting app - UI/UX & front-end",
         "slug": "moolahmate"
     }
 ]

@@ -1,7 +1,8 @@
 .title {
-    font-size: 16vw;
-    text-align: center;
-    margin: 5rem 4rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    text-align:center;
 }
 
 .about-header {
@@ -9,41 +10,56 @@
     font-size: 2rem;
 }
 .about-content {
-    padding: 2rem;
+    padding: 4rem 2rem 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 .about-desc {
-    font-size: 12px;
+    font-size: 0.8rem;
     line-height: 140%;
 }
 .about-image {
     border-radius: 1rem;
+    margin: 0 2rem 3rem;
 }
-.quote {
-    margin: 0;
-    padding: 2rem;
+.education{
+    font-size:2rem;
+    margin:3rem auto 1rem;
+    
+}
+.diploma {
+    font-family: var(--font-family-display);
+    font-size: 1.4rem;
+    font-weight:600;
+    margin:0 auto 0.2rem;
+}
+.school{
+    font-size:0.8rem;
+    font-style: italic;
+    margin:0;
 }
 @media screen and (min-width: 700px) {
-    .title {
-        font-size: 14vw;
-        margin: 6rem 4rem;
-    }
+
     .about-content {
-        flex-direction: row-reverse;
+        flex-direction: row;
         gap: 1rem;
         justify-content: center;
     }
     .about-image {
         flex: 1;
-        height: 30vw;
+        height: 35vw;
+        margin:0;
     }
 
     .about-header {
         font-size: 2.5rem;
     }
     .about-desc {
+         margin-top:0.3rem;
         font-size: 14px;
+    }
+    .education{
+        margin:1rem 0 0.2rem;
     }
 }
 @media screen and (min-width: 1100px) {
@@ -51,11 +67,12 @@
         padding-top: 6rem;
         display: flex;
         justify-content: center;
-        margin: auto 12rem;
+        margin: auto 12vw;
     }
     .title {
-        font-size: 12vw;
-        margin: 8rem 4rem;
+       font-size: 6rem;
+        margin-top: 8rem;
+        margin-bottom: 5rem;
     }
     .about-text {
         justify-content: left;
@@ -67,6 +84,18 @@
         line-height: 160%;
     }
     .about-image {
-        height: 24vw;
+        height: 30vw;
+        margin-left:8vw;
+    }
+    .education{
+        margin-top:3rem;
+        font-size:2.2rem;
+    }
+    .diploma {
+        font-size:1.6rem;
+        margin:1.3rem 0 0.3rem;
+    }
+    .school {
+        font-size:1rem;
     }
 }

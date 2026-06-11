@@ -1,6 +1,7 @@
 import Dither from "../../components/Dither/Dither";
 import ScrollText from "../../components/ScrollText/ScrollText";
 import "./About.css";
+import Grainient from "../../components/Granient/Grainient";
 
 export default function About() {
     return (
@@ -15,16 +16,28 @@ export default function About() {
                         width: "100%",
                         position: "relative",
                     }}>
-                    <Dither
-                        waveColor={[0.0, 0.3909, 0.4811]}
-                        disableAnimation={false}
-                        enableMouseInteraction
-                        mouseRadius={0.2}
-                        colorNum={10}
-                        waveAmplitude={0.3}
-                        waveFrequency={3}
-                        waveSpeed={0.05}
-                    />
+                   <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+  <Grainient
+    color1="#E7EFFC"
+    color2="#8AB2BD"
+    color3="#E7EFFC"
+    timeSpeed={1}
+    warpStrength={0.6}
+    warpFrequency={7}
+    warpSpeed={2}
+    warpAmplitude={5}
+    blendSoftness={0.2}
+    rotationAmount={500}
+    noiseScale={2}
+    grainAmount={0.1}
+    grainScale={1}
+    grainAnimated={false}
+    contrast={1.4}
+    gamma={1}
+    saturation={0.8}
+    zoom={1}
+  />
+</div>
                 </div>
             </div>
             <div className='main main-about'>
@@ -42,6 +55,9 @@ export default function About() {
                             music, or grabbing another coffee. I love breathing
                             life into every project I take on.
                         </p>
+                        <h1 className="education">Education</h1>
+                        <p className="diploma">Digital Design & Development Diploma</p>
+                        <p className="school">British Columbia Institute of Technology - June 2026</p>
                     </div>
                     <img
                         className='about-image'
@@ -57,23 +73,9 @@ export default function About() {
                     speed={20}
                 />
                 <div className='contact-section'>
-                    <div className='contact-background'>
-                        <Dither
-                            waveColor={[0.0, 0.3909, 0.4811]}
-                            disableAnimation={false}
-                            enableMouseInteraction
-                            mouseRadius={0.2}
-                            colorNum={10}
-                            waveAmplitude={0.3}
-                            waveFrequency={3}
-                            waveSpeed={0.05}
-                        />
-                    </div>
                     <div className='contact-content'>
                         <div className='contact-header'>
-                            <span className='first-line'>Feel like</span>
-
-                            <span className='last-line'>Collaborating?</span>
+                            <span>Let's build<br/>something together!</span>
                         </div>
                         <a
                             className='contact-btn'

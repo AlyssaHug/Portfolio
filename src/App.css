@@ -7,13 +7,18 @@
         "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         sans-serif;
     --black: #202326;
+    --white: #FCFDFF;
     --secondary-black: #242B32;
     --primary: #E7EFFC;
     --secondary: #D5E4F6;
     --secondary-200:#8AB2BD;
+    --secondary-300: #548F9F;
     --secondary-400: #33798C;
     --secondary-500: #00586F;
+    --secondary-600: #009AB1;
+    --secondary-700: #004752;
     --logo-color: #54C5D7;
+    --logo-500: #00A9C3;
 
 }
 html {
