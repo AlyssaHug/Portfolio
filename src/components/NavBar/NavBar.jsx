@@ -43,14 +43,14 @@ export default function NavBar() {
                         onClick={closeMenu}>
                         About
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         to='/Music'
                         className={({ isActive }) =>
                             isActive ? "nav-link active" : "nav-link"
                         }
                         onClick={closeMenu}>
                         Music
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink
                     to='/Contact'
                         className={({ isActive }) =>
@@ -103,7 +103,7 @@ export default function NavBar() {
                         onClick={closeMenu}>
                         About
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         to='/Music'
                         className={({ isActive }) =>
                             isActive
@@ -112,7 +112,7 @@ export default function NavBar() {
                         }
                         onClick={closeMenu}>
                         Music
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink
                     to='/Contact'
                         className={({ isActive }) =>

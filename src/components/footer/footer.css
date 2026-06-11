@@ -43,7 +43,7 @@ footer {
 .social-btn:hover {
     color: var(--secondary);
     background-color: var(--secondary-500);
-    border: none;
+    border: 2px solid var(--secondary-500);
 }
 a {
     text-decoration: none;

@@ -3,7 +3,7 @@
     overflow: hidden;
     padding: 0.5rem 0;
     font-family: var(--font-family-display);
-    margin: 0.5rem 0 2rem;
+    margin: 1rem 0 3rem;
 }
 
 /* === HORIZONTAL === */
@@ -44,7 +44,7 @@
 
 /* Text styling (you can override per page with className) */
 .track span {
-    color: #8285bd;
+    color: var(--secondary-300);
     font-size: 1.2rem;
     font-weight: bold;
     margin-left: 1.2rem;
@@ -62,12 +62,12 @@
     top: 0;
     bottom: 0;
     width: 150px;
-    background: linear-gradient(to right, #e6f6f9, transparent);
+    background: linear-gradient(to right, var(--primary), transparent);
 }
 .fadeRight {
     right: 0;
     top: 0;
     bottom: 0;
     width: 150px;
-    background: linear-gradient(to left, #e6f6f9, transparent);
+    background: linear-gradient(to left, var(--primary), transparent);
 }

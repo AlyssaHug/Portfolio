@@ -25,8 +25,11 @@ export default function Footer() {
                     target='_blank'>
                     <button className='social-btn'>Resume</button>
                 </a>
-                {/* <button className='social-btn'>Email</button> */}
-                <a
+<a
+                            className='social-btn'
+                            href='mailto:alyssathuggins@gmail.com'>
+                            Email
+                        </a>                <a
                     href='https://www.linkedin.com/in/alyssa-huggins/'
                     rel='noopener noreferrer'
                     target='_blank'>
