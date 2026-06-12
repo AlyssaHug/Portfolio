@@ -87,22 +87,22 @@
 .category-tag.ui-ux-design {
     background: var(--secondary-600);
     border-color: var(--secondary-600);
-    color:var(--perm-white);
+    color:var(--secondary-50);
 }
 .category-tag.front-end {
     background: var(--secondary-300);
     border-color: var(--secondary-300);
-    color:var(--perm-white);
+    color:var(--secondary-50);
 }
 .category-tag.graphic-design {
     background: var(--logo-500);
     border-color: var(--logo-500);
-    color:var(--perm-white);
+    color:var(--secondary-50);
 }
 .category-tag.web-design {
     background: var(--secondary-700);
     border-color: var(--secondary-700);
-    color:var(--perm-white);
+    color:var(--secondary-50);
 }
 /* ===HomePage big card=== */
 .big-card{

@@ -46,10 +46,14 @@
     padding-bottom: 1rem;
     color:var(--black);
 }
+.try-btn{
+    margin:0.5rem auto auto 0;
+}
+
 .case-section,
 .case-test {
-    padding: 0 1.5rem 1rem;
-    margin: 0 1rem 1rem;
+    padding: 2rem 1.5rem 1rem;
+    margin: 1rem 1rem 1rem;
     max-width: 85vw;
 }
 .case-dark {
@@ -189,7 +193,7 @@
 
 /*===Design Process===*/
 .process-styles{
-    margin-top:3vw;
+    margin-top:3rem;
 }
 .userflow-img {
     width: 80vw;
@@ -214,7 +218,7 @@
 .iteration-initial,
 .iteration-testing,
 .iteration-final {
-    padding: 0 1.5rem 1rem;
+    padding: 1rem 1.5rem 1rem;
     margin: 0 1rem;
 }
 .lofi-img,
@@ -254,7 +258,7 @@
 .showcase-images {
     display: flex;
     flex-direction:column;
-    gap: 1rem;
+    gap: 0rem;
   
 }
 
@@ -414,6 +418,7 @@
     /*===Promotion===*/
     .showcase-images{
         flex-direction:row;
+        gap:1rem;
     }
     .showcase-img{
         width:32vw;

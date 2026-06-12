@@ -187,7 +187,7 @@ export default function Moolahmate() {
                     </div>
                    
                 </section>
-                <div className="project-dark section-creation">
+                <div className="project-dark ">
 
                 <section
                     id='iterations'

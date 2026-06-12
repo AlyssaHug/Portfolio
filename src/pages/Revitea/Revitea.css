@@ -82,8 +82,8 @@ h2,
     padding-top:1rem
 }
 .main-section {
-    padding: 0 1.5rem;
-    margin: 2rem auto 0;
+    padding: 1rem 1.5rem 1rem;
+    margin: 1rem auto 0;
     max-width: 85vw;
 }
 .section-title {
@@ -243,6 +243,11 @@ h2,
     .section-bannerImg {
         padding-bottom: 2rem;
     }
+    .main-section {
+    padding: 1rem 1.5rem 2rem;
+    margin: 1rem auto 0;
+    max-width: 85vw;
+}
     /*===Creation styles===*/
     .palette-grid {
         display: flex;
@@ -250,7 +255,7 @@ h2,
     }
     .color-swatch {
         width: 64px;
-        height: 140px;
+        height: 120px;
         font-size:0.8rem;
         display: flex;
         align-items: flex-end;
@@ -266,6 +271,7 @@ h2,
     .revitea-styles {
         margin: 0 auto;
         flex-direction:row;
+        gap:0;
     }
     .revitea-creations{
         margin-top:3rem;
@@ -346,6 +352,7 @@ h2,
         font-size:1rem;
         padding: 0 0 0.5rem;
         width:7vw;
+        height:140px;
     }
     
    

@@ -246,6 +246,13 @@ export default function Paramore() {
                                 <p>UI/UX Designer, Front-end Developer</p>
                             </div>
                         </div>
+                        <div className="try-btn">
+
+                            <CodeButton
+                                text='Visit the site!'
+                                href='https://paramore-emagazine.vercel.app/'
+                            />
+                            </div>
                     </header>
 
                     <div className='project-content case-content'>

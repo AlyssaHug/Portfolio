@@ -18,7 +18,6 @@
 
 .code-btn {
     padding: 0.3rem 0.6rem;
-    margin:0.5rem;
     height: fit-content;
     font-family: var(--font-family-body);
     border: 3px solid var(--secondary-200);
@@ -36,20 +35,23 @@
     border: 3px solid var(--secondary-200);
     transform: scale(1.05);
 }
-
+@media screen and (min-width:700px){
+    .code-btn {
+        font-size:1rem;
+        
+    }
+}
 @media screen and (min-width: 1100px) {
     .view-all-btn {
         font-size: 24px;
         border-radius: 24px;
         padding: auto 1.5rem;
-            border: 3px solid var(--secondary-200);
 
     }
 
     .code-btn {
-        font-size:1rem;
+        font-size:1.2rem;
         padding:0.5rem 1rem;
-        border: 3px solid var(--secondary-200);
        
     }
 }

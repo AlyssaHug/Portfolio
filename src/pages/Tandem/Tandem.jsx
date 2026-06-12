@@ -263,6 +263,13 @@ export default function Tandem() {
                             </div>
                         </div>
                         
+                            <div className="try-btn">
+
+                                <CodeButton
+                                text='Try the app!'
+                                href='https://www.tandem-app.com/sign-in?redirect_url=https%3A%2F%2Fwww.tandem-app.com%2F'
+                            />
+                            </div>
                     </header>
 
                     <div className='project-content case-content'>

@@ -128,7 +128,8 @@
     }
     .poster-fonts {
         grid-template-columns:1fr;
-        gap: 1rem;
+        gap: 0;
+        margin-left:2rem;
     }
     
     /*===Final Images===*/
@@ -148,6 +149,9 @@
     width:16rem;
    }
 
+   .poster-fonts{
+    gap:1rem;
+   }
    
    .poster-swatch{
     height:200px;
