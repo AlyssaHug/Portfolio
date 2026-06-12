@@ -126,37 +126,37 @@ export default function Posters() {
                         I decided I wanted to base it around her newest album,
                         wanting to reference some lyrics from its songs.
                     </p>
-                    <div className='styles'>
-                        <div className='palettes'>
-                            <div className='palette'>
+                    <div className='revitea-styles'>
+                        <div className='palette'>
+                           
                                 <div
-                                    className='color-swatch swatch2'
+                                    className='poster-swatch swatch2'
                                     style={{ backgroundColor: "#243DBD" }}>
                                     #243DBD
                                 </div>
                                 <div
-                                    className='color-swatch'
+                                    className='poster-swatch '
                                     style={{ backgroundColor: "#ABABAB" }}>
                                     #ABABAB
                                 </div>
 
                                 <div
-                                    className='color-swatch'
+                                    className='poster-swatch '
                                     style={{ backgroundColor: "#FFBE22" }}>
                                     #FFBE22
                                 </div>
                                 <div
-                                    className='color-swatch'
+                                    className='poster-swatch '
                                     style={{ backgroundColor: "#599FFF" }}>
                                     #599FFF
                                 </div>
 
                                 <div
-                                    className='color-swatch'
+                                    className='poster-swatch '
                                     style={{ backgroundColor: "#FFB9B9" }}>
                                     #FFB9B9
                                 </div>
-                            </div>
+                            
                         </div>
                         <div className='poster-fonts'>
                             <img
@@ -168,51 +168,34 @@ export default function Posters() {
                             />
 
                             <img
-                                className='poster-font support'
-                                src='/Posters/Supporting.svg'
+                                className='poster-font'
+                                src='/Posters/Harlow.svg'
+                                alt='Harlow Solid Italic - Blue poster supporting font'
+                                loading='lazy'
+                                decoding='async'
+                            />
+
+                            <img
+                                className='poster-font'
+                                src='/Posters/Freestyle.svg'
+                                alt='Lyric font samples'
+                                loading='lazy'
+                                decoding='async'
+                            />
+
+                            <img
+                                className='poster-font'
+                                src='/Posters/Script.svg'
                                 alt='Lyric font samples'
                                 loading='lazy'
                                 decoding='async'
                             />
                         </div>
                     </div>
-                    <div className='creation-images'>
-                        <img
-                            src='/Posters/swatches.png'
-                            alt='Asset of color menu'
-                            className='swatch-menu'
-                        />
-                        <div className='square-row'>
-                            <img
-                                src='/Posters/window.png'
-                                alt='Interface option for window size'
-                                className='square'
-                            />
-
-                            <img
-                                src='/Posters/eraser.png'
-                                alt='Interface option for eraser tool'
-                                className='square'
-                            />
-                            <img
-                                src='/Posters/pencil.png'
-                                alt='Interface option for pencil tool'
-                                className='square'
-                            />
-                            <img
-                                src='/Posters/select.png'
-                                alt='Interface option for selection tool'
-                                className='square'
-                            />
-                            <img
-                                src='/Posters/brush.png'
-                                alt='Interface option for the paint brush tool'
-                                className='square'
-                            />
-                        </div>
-                    </div>
+                    
                 </section>
-                <section
+            <div className="project-dark project-iteration">
+               <section
                     id='iterations'
                     className='main-section'>
                     <h2 className='section-title'>Iterations</h2>
@@ -227,23 +210,31 @@ export default function Posters() {
                         poster.
                     </p>
                     <div className='iteration-images'>
+                         <div className="iterate-img">
+                            <p className="design-stage">Initial Design</p>
+
                         <img
                             src='/Posters/initial.png'
                             alt='Initial mockup of poster'
-                            className='process-img'
+                            className='label-img'
                             loading='lazy'
                             decoding='async'
                         />
-                        <p className='eq'>=</p>
+                        </div>
+                         <div className="iterate-img">
+                            <p className="design-stage">Final Design</p>
+
                         <img
                             src='/Posters/ver01.png'
                             alt='New version of the poster'
-                            className='process-img'
+                            className='label-img'
                             loading='lazy'
                             decoding='async'
                         />
+                        </div>
                     </div>
                 </section>
+                </div>
                 <section
                     id='final'
                     className='main-section'>
@@ -259,21 +250,21 @@ export default function Posters() {
                     <div className='img-container'>
                         <img
                             src='/Posters/ver01.png'
-                            alt='Final version of Strawberry flavour'
+                            alt='Final version of Showbiz-based poster with yellow accents.'
                             className='final-poster'
                             loading='lazy'
                             decoding='async'
                         />
                         <img
                             src='/Posters/ver02.png'
-                            alt='Final version of Blueberry flavour'
+                            alt='Final version of Glum-based poster with blue accents.'
                             className='final-poster'
                             loading='lazy'
                             decoding='async'
                         />
                         <img
                             src='/Posters/ver03.png'
-                            alt='Final version of Lavender flavour'
+                            alt='Final version of Dream girl in shibuya-based poster with pink accents.'
                             className='final-poster'
                             loading='lazy'
                             decoding='async'
@@ -281,6 +272,8 @@ export default function Posters() {
                     </div>
                 </section>
             </div>
+            <div className="project-dark">
+
             <section
                 id='models'
                 className='main-section'>
@@ -299,7 +292,7 @@ export default function Posters() {
                                     className={`poster-card ${isActive ? "active" : ""}`}
                                     style={{
                                         "--rotate": `${rotations[index]}deg`, // safe & simple
-                                        "--tx": `${(index - (posters.length - 1) / 2) * 320}px`,
+                                        "--tx": `${(index - (posters.length - 1) / 2) * 250}px`,
                                         "--ty": `0px`,
                                         zIndex,
                                     }}
@@ -319,6 +312,7 @@ export default function Posters() {
                     </div>
                 </div>
             </section>
+            </div>
         </>
     );
 }

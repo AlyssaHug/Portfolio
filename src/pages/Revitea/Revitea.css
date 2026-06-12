@@ -183,7 +183,7 @@ h2,
     height: 0;
 }
 .label-img {
-    width: 95%;
+    width: 64vw;
 
     padding: 0;
 }
@@ -191,16 +191,11 @@ h2,
 
 /*=====Final product=====*/
 .final-img {
-    width: 80%;
+    width: 80vw;
     border-radius: 24px;
     margin: 0.5rem 0.5rem 2rem;
 }
-.img-container {
-    display: flex;
 
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
 
 /*=====Mobile size for can models====*/
 @media screen and (max-width: 799px) {
@@ -210,7 +205,6 @@ h2,
     }
 }
 
-/*=====Swatch sizing for better visibility=====*/
 
 /*=====Tablet Query=====*/
 @media screen and (min-width: 800px) {
@@ -277,6 +271,7 @@ h2,
         margin-bottom: 4rem;
         gap:1rem;
        
+       
     }
 
     .label-img {
@@ -284,11 +279,18 @@ h2,
     }
 
     /*=====Final product=====*/
+   
     .final-img {
-        width: 50%;
-
+    width: 50%;
+    border-radius: 24px;
         margin: 0.5rem 1rem 5rem 0;
-    }
+}
+.img-container {
+    display: flex;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
 }
 
 /*=====Desktop Query=====*/

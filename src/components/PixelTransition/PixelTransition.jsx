@@ -47,53 +47,7 @@ export default function PixelTransition({
         }
     }, [gridSize, pixelColor]);
 
-    const animatePixels = (activate) => {
-        setIsActive(activate);
-
-        const pixelGridEl = pixelGridRef.current;
-        const activeEl = activeRef.current;
-        if (!pixelGridEl || !activeEl) return;
-
-        const pixels = pixelGridEl.querySelectorAll(
-            ".pixelated-image-card__pixel",
-        );
-        if (!pixels.length) return;
-
-        gsap.killTweensOf(pixels);
-        if (delayedCallRef.current) {
-            delayedCallRef.current.kill();
-        }
-
-        gsap.set(pixels, { display: "none" });
-
-        const totalPixels = pixels.length;
-        const staggerDuration = animationStepDuration / totalPixels;
-
-        gsap.to(pixels, {
-            display: "block",
-            duration: 0,
-            stagger: {
-                each: staggerDuration,
-                from: "random",
-            },
-        });
-
-        delayedCallRef.current = gsap.delayedCall(animationStepDuration, () => {
-            activeEl.style.display = activate ? "block" : "none";
-            activeEl.style.pointerEvents = activate ? "none" : "";
-        });
-
-        gsap.to(pixels, {
-            display: "none",
-            duration: 0,
-            delay: animationStepDuration,
-            stagger: {
-                each: staggerDuration,
-                from: "random",
-            },
-        });
-    };
-
+   
     const handleEnter = () => {
         if (!isActive) animatePixels(true);
     };
