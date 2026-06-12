@@ -68,9 +68,7 @@ export default function Bandit() {
                     {/* desktop table of contents */}
                     <aside className='desktop-content-container'>
                         <div className='desktop-links'>
-                            <h3 className='contents-desktop-header'>
-                                Contents
-                            </h3>
+                            
                             <nav className='case-links'>
                                 <a
                                     href='#overview'
@@ -149,7 +147,6 @@ export default function Bandit() {
                     {/* Mobile Menu Dropdown */}
                     <div className={`mobile-casemenu ${isOpen ? "open" : ""}`}>
                         <ul className='mobile-link'>
-                            <p className='contents-header'>Contents</p>
                             <li>
                                 <a
                                     href='#overview'
@@ -251,7 +248,13 @@ export default function Bandit() {
                                 </p>
                             </div>
                         </div>
-                        {/* My Role */}
+                      
+                    </header>
+
+                    <div className='project-content case-content'>
+                        <div className="case-dark">
+
+                          {/* My Role */}
                         <section
                             className='case-role'
                             id='role'>
@@ -270,9 +273,6 @@ export default function Bandit() {
                                 landing page.
                             </p>
                         </section>
-                    </header>
-
-                    <div className='project-content case-content'>
                         {/* The Issue */}
                         <section
                             id='issue'
@@ -302,6 +302,7 @@ export default function Bandit() {
                                 </div>
                             </div>
                         </section>
+                        </div>
                         {/* The Idea */}
                         <section
                             id='idea'
@@ -395,18 +396,18 @@ export default function Bandit() {
                                     The fonts were chosen to be readable, while
                                     also blending in with the game style.
                                 </p>
-                                <div className='styles case-styles'>
+                                <div className='revitea-styles'>
                                     <div className='palettes'>
-                                        <div className='palette case-palette'>
+                                        <div className='palette'>
                                             <div
-                                                className='color-swatch swatch2'
+                                                className='case-swatch swatch2'
                                                 style={{
                                                     backgroundColor: "#401911",
                                                 }}>
                                                 #401911
                                             </div>
                                             <div
-                                                className='color-swatch swatch2'
+                                                className='case-swatch swatch2'
                                                 style={{
                                                     backgroundColor: "#008F0E",
                                                 }}>
@@ -414,14 +415,14 @@ export default function Bandit() {
                                             </div>
 
                                             <div
-                                                className='color-swatch swatch2'
+                                                className='case-swatch swatch2'
                                                 style={{
                                                     backgroundColor: "#D75B1D",
                                                 }}>
                                                 #D75B1D
                                             </div>
                                             <div
-                                                className='color-swatch'
+                                                className='case-swatch'
                                                 style={{
                                                     backgroundColor: "#88D0E7",
                                                 }}>
@@ -429,7 +430,7 @@ export default function Bandit() {
                                             </div>
 
                                             <div
-                                                className='color-swatch'
+                                                className='case-swatch'
                                                 style={{
                                                     backgroundColor: "#F0E5BC",
                                                 }}>
@@ -445,7 +446,7 @@ export default function Bandit() {
                                         />
 
                                         <img
-                                            className='revitea-font case-font case-support'
+                                            className='revitea-font case-font'
                                             src='/Bandit/wellfleet.svg'
                                             alt='Wellfleet - body font sample'
                                         />
@@ -613,7 +614,7 @@ export default function Bandit() {
                     {/* Check it out! */}
                     <section
                         id='test'
-                        className='case-test case-desktop'>
+                        className='case-test case-desktop case-dark'>
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna learn more?</h3>

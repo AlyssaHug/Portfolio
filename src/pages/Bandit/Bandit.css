@@ -1,15 +1,12 @@
 .lofi-board {
     display: flex;
     gap: 1rem;
-    width: 72vw;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+   
+  
 }
-.lofi-board::-webkit-scrollbar {
-    height: 0;
-}
+
 .lofi-bandit {
-    width: 60vw;
+    width: 36vw;
 }
 .bandit-final {
     width: 64vw;
@@ -19,25 +16,25 @@
 
 .showcase-bandit {
     width: 40vh;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     border-radius: 1rem;
 }
 @media screen and (min-width: 700px) {
     .lofi-bandit {
-        width: 40vw;
+        width: 32vw;
     }
     .lofi-board {
         width: 64vw;
     }
     .showcase-bandit {
-        width: 50vh;
+        width: 32vh;
     }
 }
 @media screen and (min-width: 1100px) {
     .lofi-bandit {
-        width: 30vw;
+        width: 32vw;
     }
     .showcase-bandit {
-        width: 64vh;
+        width: 50vh;
     }
 }
