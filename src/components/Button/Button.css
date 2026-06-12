@@ -2,7 +2,7 @@
     color: var(--secondary-200);
     font-family: var(--font-family-display);
     font-size: 16px;
-    padding: 0.3rem 0.6rem;
+    padding: 0.rem 0.6rem;
     border: 3px solid var(--secondary-200);
     border-radius: 16px;
     cursor: pointer;
@@ -17,7 +17,8 @@
 }
 
 .code-btn {
-    padding: 0.4rem 0.6rem;
+    padding: 0.3rem 0.6rem;
+    margin:0.5rem;
     height: fit-content;
     font-family: var(--font-family-body);
     border: 3px solid var(--secondary-200);

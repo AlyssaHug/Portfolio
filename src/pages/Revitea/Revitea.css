@@ -107,9 +107,10 @@ h2,
     justify-content: center;
     width:60px;
     height:80px;
+    color: #202326;
 }
 .swatch2 {
-    color: var(--primary);
+    color: #E7EFFC;
 }
 
 
@@ -118,7 +119,9 @@ h2,
 .revitea-font {
     text-align: center;
     width: 7rem;
+    color:var(--black);
 }
+
 .revitea-fonts {
     display: flex;
     flex-direction: row;
@@ -142,7 +145,7 @@ h2,
     flex-direction: row;
     justify-content:space-between;
     gap: 1rem;
-    margin: 0.8rem 2rem 4rem;
+    margin: 1.5rem 2rem 4rem;
 }
 
 
@@ -264,6 +267,9 @@ h2,
         margin: 0 auto;
         flex-direction:row;
     }
+    .revitea-creations{
+        margin-top:3rem;
+    }
     /*=====iteration section=====*/
     .iteration-images {
         flex-direction:row;
@@ -339,6 +345,7 @@ h2,
     .color-swatch {
         font-size:1rem;
         padding: 0 0 0.5rem;
+        width:7vw;
     }
     
    
@@ -353,7 +360,7 @@ h2,
         gap: 2rem;
     }
     .revitea-creations {
-        margin: 1.5rem auto 6rem;
+        margin: 5rem auto 6rem;
         gap: 2rem;
     }
     /*=====iteration section=====*/

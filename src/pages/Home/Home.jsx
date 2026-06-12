@@ -1,7 +1,6 @@
 import "./Home.css";
 import ProjectCard from "../../components/ProjectCard/card";
 import projects from "../../Data/projects.json";
-import Dither from "../../components/Dither/Dither";
 import Button from "../../components/Button/Button";
 import Grainient from "../../components/Granient/Grainient";
 

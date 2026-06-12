@@ -1,4 +1,3 @@
-import Dither from "../../components/Dither/Dither";
 import ScrollText from "../../components/ScrollText/ScrollText";
 import "./About.css";
 import Grainient from "../../components/Granient/Grainient";

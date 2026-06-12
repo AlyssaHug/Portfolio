@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App.jsx";
 import { PlayerProvider } from "./PlayerContext.jsx";
 import MiniPlayer from "./components/MiniPlayer/MiniPlayer.jsx";
+import { ThemeProvider } from './context/ThemeContext';
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <PlayerProvider>
-            <App />
-            <MiniPlayer />
-        </PlayerProvider>
+        <ThemeProvider>
+            <PlayerProvider>
+                <App />
+                <MiniPlayer />
+            </PlayerProvider>
+        </ThemeProvider>
     </StrictMode>,
 );

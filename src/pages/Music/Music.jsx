@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import albumData from "../../Data/albumData.json";
 import { usePlayer } from "../../PlayerContext";
 import AlbumModal from "../../components/AlbumModal/AlbumModal"; // adjust path as needed
-import Dither from "../../components/Dither/Dither";
+import Grainient from "../../components/Granient/Grainient";
 
 export default function Music() {
     const [albums, setAlbums] = useState([]);
@@ -32,16 +32,28 @@ export default function Music() {
                         width: "100%",
                         position: "relative",
                     }}>
-                    <Dither
-                        waveColor={[0.0, 0.3909, 0.4811]}
-                        disableAnimation={false}
-                        enableMouseInteraction
-                        mouseRadius={0.2}
-                        colorNum={10}
-                        waveAmplitude={0.3}
-                        waveFrequency={3}
-                        waveSpeed={0.05}
-                    />
+                   <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+  <Grainient
+    color1="#E7EFFC"
+    color2="#8AB2BD"
+    color3="#E7EFFC"
+    timeSpeed={1}
+    warpStrength={0.6}
+    warpFrequency={7}
+    warpSpeed={2}
+    warpAmplitude={5}
+    blendSoftness={0.2}
+    rotationAmount={500}
+    noiseScale={2}
+    grainAmount={0.1}
+    grainScale={1}
+    grainAnimated={false}
+    contrast={1.4}
+    gamma={1}
+    saturation={0.8}
+    zoom={1}
+  />
+</div>
                 </div>
             </div>
             <div className='music-content'>

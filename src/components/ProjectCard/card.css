@@ -42,6 +42,7 @@
 }
 .project-text {
     margin-left: 1.2rem;
+   
 }
 
 .item-info {
@@ -64,6 +65,7 @@
 }
 
 .category-tag {
+    color:var(--perm-white);
     padding: 0.3rem 0.5rem;
     font-size: 1rem;
     font-weight: bold;
@@ -81,16 +83,20 @@
 .category-tag.ui-ux-design {
     background: var(--secondary-600);
     border-color: var(--secondary-600);
+    color:var(--perm-white);
 }
 .category-tag.front-end {
     background: var(--secondary-300);
     border-color: var(--secondary-300);
+    color:var(--perm-white);
 }
 .category-tag.graphic-design {
     background: var(--logo-500);
     border-color: var(--logo-500);
+    color:var(--perm-white);
 }
 .category-tag.web-design {
     background: var(--secondary-700);
     border-color: var(--secondary-700);
+    color:var(--perm-white);
 }

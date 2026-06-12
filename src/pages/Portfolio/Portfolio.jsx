@@ -2,7 +2,6 @@ import "./Portfolio.css";
 import { useState } from "react";
 import projects from "../../Data/projects.json";
 import ProjectCard from "../../components/ProjectCard/card";
-import Dither from "../../components/Dither/Dither";
 import Grainient from "../../components/Granient/Grainient";
 
 

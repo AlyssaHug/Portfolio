@@ -18,6 +18,10 @@
     align-items: flex-end;
     justify-content: center;
     height:80px;
+    color: #202326;
+}
+.poster-swatch-2{
+    color: #E7EFFC;
 }
 .poster-fonts{
     display:grid;

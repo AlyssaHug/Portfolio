@@ -1,6 +1,7 @@
 .nav-logo {
     width: 28px;
     padding-left: 8px;
+    transition: all 0.3s ease;
 }
 .link-img {
     display: flex;
@@ -133,6 +134,25 @@ text-align:right;
     text-align: center;
     color: var(--secondary-500);
 }
+
+/*===Dark mode toggle===*/
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+  
+}
+
+.theme-toggle:hover, .nav-logo:hover {
+    transform: scale(1.1);
+}
+
+
+
 
 @media screen and (max-width: 699px) {
     /* adjust breakpoint to taste */

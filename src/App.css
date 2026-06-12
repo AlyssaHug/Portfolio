@@ -9,6 +9,7 @@
 
     /*=====Colors=====*/
     --black: #202326;
+    --perm-white: #E7EFFC;
     --white: #FCFDFF;
     --secondary-black: #242B32;
     --primary: #E7EFFC;
@@ -25,13 +26,23 @@
     --logo-500: #00A9C3;
 
 }
+.dark{
+    --white: #23313E;
+    --black: #E7EFFC;
+    --secondary: #242B32;
+    --primary: #202326;
+    --secondary-500: #B0CBD2;
+    --secondary-200: #33798C;
+}
+
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
-}
-body {
     background-color: var(--primary);
     color: var(--black);
+}
+body {
     overflow-x: hidden;
     margin: 0;
 }
