@@ -107,7 +107,7 @@ export default function Moolahmate() {
                 </section>
                 <section
                     id='creation'
-                    className='main-section'>
+                    className='main-section section-creation'>
                     <h2 className='section-title'>Creation - MoolahMate</h2>
                     <p className='section-desc'>
                         We went with a simplified, straightforward design for
@@ -122,43 +122,43 @@ export default function Moolahmate() {
                         fun element for users to interact with, MoolahMate
                         started to take shape.
                     </p>
-                    <div className='styles'>
-                        <div className='palettes'>
-                            <div className='palette'>
+                    <div className='revitea-styles'>
+                        <div className='palette'>
+                           
                                 <div
-                                    className='color-swatch swatch2'
+                                    className='poster-swatch swatch2'
                                     style={{ backgroundColor: "#274B28" }}>
                                     #274B28
                                 </div>
                                 <div
-                                    className='color-swatch'
+                                    className='poster-swatch'
                                     style={{ backgroundColor: "#83BE6C" }}>
                                     #83BE6C
                                 </div>
 
                                 <div
-                                    className='color-swatch'
+                                    className='poster-swatch'
                                     style={{ backgroundColor: "#F3EDEA" }}>
                                     #F3EDEA
                                 </div>
                                 <div
-                                    className='color-swatch'
+                                    className='poster-swatch'
                                     style={{ backgroundColor: "#B2D4E6" }}>
                                     #B2D4E6
                                 </div>
 
                                 <div
-                                    className='color-swatch swatch2'
+                                    className='poster-swatch swatch2'
                                     style={{ backgroundColor: "#15243C" }}>
                                     #15243C
                                 </div>
-                            </div>
+                           
                         </div>
                         <div className='revitea-fonts'>
                             <img
                                 loading='lazy'
                                 decoding='async'
-                                className='revitea-font quicksand'
+                                className='revitea-font'
                                 src='/MoolahMate/quicksand.svg'
                                 alt='Quicksand - Main font sample'
                             />
@@ -166,49 +166,19 @@ export default function Moolahmate() {
                             <img
                                 loading='lazy'
                                 decoding='async'
-                                className='revitea-font support'
+                                className='revitea-font'
                                 src='/MoolahMate/libre.svg'
                                 alt='Libre Franklin - body font sample'
                             />
                         </div>
                     </div>
-                    <div className='moo-creations'>
-                        <img
-                            src='/MoolahMate/Calendar.svg'
-                            alt='Calendar from the expense page'
-                            className='variation calendar'
-                            loading='lazy'
-                            decoding='async'
-                        />
-                        <div className='nav-svg'>
-                            <img
-                                src='/MoolahMate/nav-light.svg'
-                                alt='Default navbar'
-                                className='nav'
-                                loading='lazy'
-                                decoding='async'
-                            />
-
-                            <img
-                                src='/MoolahMate/nav-dark.svg'
-                                alt='Navbar in dark mode'
-                                className='nav'
-                                loading='lazy'
-                                decoding='async'
-                            />
-                        </div>
-                        <img
-                            src='/MoolahMate/moomoo.svg'
-                            alt='Cow mascot with a coin on its back'
-                            className='variation moomoo'
-                            loading='lazy'
-                            decoding='async'
-                        />
-                    </div>
+                   
                 </section>
+                <div className="project-dark section-creation">
+
                 <section
                     id='iterations'
-                    className='section-dark'>
+                    className='main-section'>
                     <h2 className='section-title'>Iterations</h2>
                     <p className='section-desc'>
                         Originally, with everything we planned to include in our
@@ -225,11 +195,11 @@ export default function Moolahmate() {
                         for everyone to follow helped support better
                         communication and understanding.
                     </p>
-                    <div className='iteration-images'>
+                    <div className='iteration-images moo-iterations'>
                         <div className='process-img-container'>
                             <p className='caption'>Initial Mockup</p>
                             <img
-                                src='/MoolahMate/Initial.png'
+                                src='/MoolahMate/initial.png'
                                 alt='Initial mockup of goals page'
                                 className='process-img-moo'
                                 loading='lazy'
@@ -268,6 +238,7 @@ export default function Moolahmate() {
                         </div>
                     </div>
                 </section>
+                </div>
                 <section
                     id='coding'
                     className='main-section'>
@@ -310,28 +281,23 @@ export default function Moolahmate() {
                             <img
                                 src='/MoolahMate/opening.png'
                                 alt='Start page for Moolahmate, with options to sign-in or sign-up'
-                                className='final-poster'
+                                className='final-screen'
                                 loading='lazy'
                                 decoding='async'
                             />
                             <img
                                 src='/MoolahMate/goal-recs.png'
                                 alt='Recommended goal screen, with 2 options based on recent purchases'
-                                className='final-poster'
+                                className='final-screen'
                                 loading='lazy'
                                 decoding='async'
                             />
-                            <img
-                                src='/MoolahMate/moo-page.png'
-                                alt='The MooMoo page, with options to interact with MooMoo'
-                                className='final-poster'
-                                loading='lazy'
-                                decoding='async'
-                            />
+             
                         </div>
                     </div>
                 </section>
             </div>
+            <div className="project-dark section-creation">
             <section
                 id='models'
                 className='main-section test-section'>
@@ -346,6 +312,7 @@ export default function Moolahmate() {
                         type='video/mp4'></source>
                 </video>
             </section>
+            </div>
         </>
     );
 }
