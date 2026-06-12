@@ -13,6 +13,8 @@
         "categories": ["Front-end", "Web Design", "UI/UX Design"],
         "image": "/EMagazine/Preview.png",
         "description": "Editorial site design - Web design & code interface",
+        "descFirst": "A digital magazine covering the band, Paramore. The magazine covers the band members, the timeline of the band and how they grew, and where the members are today.",
+        "descSecond": "In this project, I designed our wireframes and iterated on them, fully developed the band and future sections, and helped block in content for the homepage and endscreen.",
         "slug": "paramore"
     },
     {
