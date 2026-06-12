@@ -69,9 +69,7 @@ export default function Paramore() {
                     {/* desktop table of contents */}
                     <aside className='desktop-content-container'>
                         <div className='desktop-links'>
-                            <h3 className='contents-desktop-header'>
-                                Contents
-                            </h3>
+                            
                             <nav className='case-links'>
                                 <a
                                     href='#overview'
@@ -150,7 +148,6 @@ export default function Paramore() {
                     {/* Mobile Menu Dropdown */}
                     <div className={`mobile-casemenu ${isOpen ? "open" : ""}`}>
                         <ul className='mobile-link'>
-                            <p className='contents-header'>Contents</p>
                             <li>
                                 <a
                                     href='#overview'
@@ -249,9 +246,14 @@ export default function Paramore() {
                                 <p>UI/UX Designer, Front-end Developer</p>
                             </div>
                         </div>
+                    </header>
+
+                    <div className='project-content case-content'>
+                      <div className="case-dark">
+
                         {/* My Role */}
                         <section
-                            className='case-role'
+                            className='case-section'
                             id='role'>
                             <h2 className='case-title'>My Role</h2>
                             <p className='role-desc'>
@@ -268,9 +270,6 @@ export default function Paramore() {
                                 conducting code reviews with my teammate.
                             </p>
                         </section>
-                    </header>
-
-                    <div className='project-content case-content'>
                         {/* The Challenge*/}
                         <section
                             id='challenge'
@@ -286,6 +285,7 @@ export default function Paramore() {
                                 pressure affect my work ethic or quality.
                             </p>
                         </section>
+                      </div>
                         {/* The Idea */}
                         <section
                             id='idea'
@@ -388,18 +388,18 @@ export default function Paramore() {
                                     wanting to match the aesthetic, but also
                                     have legibility.
                                 </p>
-                                <div className='styles case-styles'>
+                                <div className='revitea-styles'>
                                     <div className='palettes'>
-                                        <div className='palette case-palette'>
+                                        <div className='palette'>
                                             <div
-                                                className='color-swatch swatch2'
+                                                className='case-swatch swatch2'
                                                 style={{
                                                     backgroundColor: "#1A1A1A",
                                                 }}>
-                                                #1A1A
+                                                #1A1A1A
                                             </div>
                                             <div
-                                                className='color-swatch swatch2'
+                                                className='case-swatch swatch2'
                                                 style={{
                                                     backgroundColor: "#222526",
                                                 }}>
@@ -407,14 +407,14 @@ export default function Paramore() {
                                             </div>
 
                                             <div
-                                                className='color-swatch swatch2'
+                                                className='case-swatch swatch2'
                                                 style={{
                                                     backgroundColor: "#353A3E",
                                                 }}>
                                                 #353A3E
                                             </div>
                                             <div
-                                                className='color-swatch'
+                                                className='case-swatch'
                                                 style={{
                                                     backgroundColor: "#BFBFBF",
                                                 }}>
@@ -422,7 +422,7 @@ export default function Paramore() {
                                             </div>
 
                                             <div
-                                                className='color-swatch'
+                                                className='case-swatch'
                                                 style={{
                                                     backgroundColor: "#E0E0E0",
                                                 }}>
@@ -440,7 +440,7 @@ export default function Paramore() {
                                         />
 
                                         <img
-                                            className='revitea-font case-font case-support'
+                                            className='revitea-font case-font'
                                             src='/EMagazine/Noto.svg'
                                             alt='Noto Sans - body font sample'
                                             loading='lazy'
@@ -655,7 +655,7 @@ export default function Paramore() {
                     {/* Check it out! */}
                     <section
                         id='test'
-                        className='case-test case-desktop'>
+                        className='case-test case-desktop case-dark'>
                         <div className='test-text'>
                             <h2 className='case-title'>Check it out!</h2>
                             <h3 className='test-cta'>Wanna try it yourself?</h3>
@@ -674,7 +674,7 @@ export default function Paramore() {
                                 type='video/mp4'></source>
                         </video>
                     </section>
-                </div>
+                    </div>
             </div>
         </>
     );

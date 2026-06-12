@@ -187,12 +187,21 @@
 }
 
 /*===Design Process===*/
-
+.process-styles{
+    margin-top:3vw;
+}
 .userflow-img {
     width: 80vw;
 }
+.case-swatch{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width:80px;
+    height:80px;
+}
 .case-font {
-    width: 10vw;
+    width: 30vw;
 }
 /*===Iterations===*/
 .iteration-initial,
@@ -226,24 +235,28 @@
     width: 35%;
 }
 /*===Promotion===*/
+.material-images{
+    display:flex;
+    gap:1rem;
 
-.material-images,
+}
+.film-img{
+    display:none;
+}
+
 .showcase-images {
     display: flex;
+    flex-direction:column;
     gap: 1rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  
 }
-.material-images::-webkit-scrollbar,
-.showcase-images::-webkit-scrollbar {
-    height: 0;
-}
+
 .material-img {
-    height: 30vh;
+    height:18vh;
     margin-bottom: 3rem;
 }
 .showcase-img {
-    height: 30vh;
+    width:80vw;
     margin-bottom: 3rem;
 }
 /*===Check it out!===*/
@@ -363,8 +376,17 @@
     .case-palette div {
         height: 100%;
     }
+    .case-swatch{
+        width: 60px;
+        height: 100px;
+        font-size:0.8rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 0.1rem 0.3rem;
+    }
     .case-font {
-        width: 12vw;
+        width: 16vw;
     }
     /*===Iterations===*/
     .iteration-initial,
@@ -381,6 +403,17 @@
     .iteration-caption {
         font-size: 12px;
         margin-bottom: 0.3rem;
+    }
+    /*===Promotion===*/
+    .showcase-images{
+        flex-direction:row;
+    }
+    .showcase-img{
+        width:32vw;
+    }
+
+    .film-img {
+        display:block;
     }
     /*===Check it out!===*/
     .case-test {
@@ -506,7 +539,7 @@
         width: 56vw;
     }
     .case-font {
-        width: 13vw;
+        width: 20vw;
     }
     .case-support {
         width: 10vw;
@@ -514,6 +547,12 @@
     .process-styles {
         margin-top: 3rem;
         margin-bottom: 3rem;
+    }
+    .case-swatch{
+        width: 6vw;
+        height: 16vh;
+        font-size:1rem;
+        
     }
     /*===Iterations===*/
     .lofi-comparison {
@@ -536,11 +575,9 @@
         gap: 2rem;
     }
     .material-img {
-        height: 40vh;
+        height:30vh;
     }
-    .showcase-img {
-        height: 38vh;
-    }
+    
     /*===Check it out!===*/
     .case-test {
         display: flex;

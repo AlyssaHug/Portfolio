@@ -27,23 +27,18 @@
     margin: 2rem 0;
 }
 @media screen and (min-width: 700px) {
-    .mock-img {
-        width: 50vw;
+     .mock-img {
+        width: 34vw;
     }
     .band-mock {
-        width: 65vw;
+        width: 70vw;
     }
     .demo-desktop {
         width: 60vw;
     }
 }
 @media screen and (min-width: 1100px) {
-    .mock-img {
-        width: 34vw;
-    }
-    .band-mock {
-        width: 70vw;
-    }
+    
     .case-desktop {
         gap: 2rem;
         margin-left: 5rem;

@@ -412,18 +412,18 @@ export default function Tandem() {
                                     app. We also opted for simple and clear, yet
                                     effective fonts for easier readability.
                                 </p>
-                                <div className='styles case-styles'>
+                                <div className='revitea-styles case-styles'>
                                     <div className='palettes'>
-                                        <div className='palette case-palette'>
+                                        <div className='palette'>
                                             <div
-                                                className='color-swatch swatch2'
+                                                className='case-swatch swatch2'
                                                 style={{
                                                     backgroundColor: "#00001b",
                                                 }}>
                                                 #00001B
                                             </div>
                                             <div
-                                                className='color-swatch swatch2'
+                                                className='case-swatch swatch2'
                                                 style={{
                                                     backgroundColor: "#3373cc",
                                                 }}>
@@ -431,14 +431,14 @@ export default function Tandem() {
                                             </div>
 
                                             <div
-                                                className='color-swatch'
+                                                className='case-swatch'
                                                 style={{
                                                     backgroundColor: "#68D5FF",
                                                 }}>
                                                 #68D5FF
                                             </div>
                                             <div
-                                                className='color-swatch'
+                                                className='case-swatch'
                                                 style={{
                                                     backgroundColor: "#92F189",
                                                 }}>
@@ -446,7 +446,7 @@ export default function Tandem() {
                                             </div>
 
                                             <div
-                                                className='color-swatch'
+                                                className='case-swatch'
                                                 style={{
                                                     backgroundColor: "#FFFFFF",
                                                 }}>
@@ -464,7 +464,7 @@ export default function Tandem() {
                                         />
 
                                         <img
-                                            className='revitea-font case-font case-support'
+                                            className='revitea-font case-font'
                                             src='/Tandem/omnes.svg'
                                             alt='Omnes - body font sample'
                                             loading='lazy'
@@ -670,7 +670,7 @@ export default function Tandem() {
                                         loading='lazy'
                                         decoding='async'
                                         alt='A photo from when we were filming our promotional video'
-                                        className='material-img'
+                                        className='material-img film-img'
                                     />
 
                                     <img
