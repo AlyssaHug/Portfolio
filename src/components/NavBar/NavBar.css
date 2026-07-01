@@ -107,7 +107,7 @@ text-align:right;
 .mobile-menu {
     display: none;
     position: absolute;
-    width: 20%;
+    width: 22vw;
     top: 75%;
     right:0;
     background-color: var(--secondary);

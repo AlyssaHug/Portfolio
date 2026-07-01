@@ -17,10 +17,10 @@
 }
 
 .code-btn {
-    padding: 0.3rem 0.6rem;
+    padding: 0.2rem 0.6rem;
     height: fit-content;
     font-family: var(--font-family-body);
-    border: 3px solid var(--secondary-200);
+    border: 2px solid var(--secondary-200);
     font-size: 12px;
     color: var(--secondary-200);
     font-weight: bold;

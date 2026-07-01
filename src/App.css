@@ -15,6 +15,7 @@
     --primary: #E7EFFC;
     --secondary: #D5E4F6;
     --secondary-50: #E6EEF1;
+    --secondary-150:rgb(212, 225, 239);
     --secondary-100:#B0CBD2;
     --secondary-200:#8AB2BD;
     --secondary-300: #548F9F;
@@ -34,6 +35,8 @@
     --primary: #202326;
     --secondary-500: #B0CBD2;
     --secondary-200: #33798C;
+    --secondary-150: #242B32;
+    --secondary-300: #00586F;
 }
 
 
@@ -42,6 +45,7 @@ html {
     scroll-padding-top: 5rem;
     background-color: var(--primary);
     color: var(--black);
+    overflow-x: hidden;
 }
 body {
     overflow-x: hidden;

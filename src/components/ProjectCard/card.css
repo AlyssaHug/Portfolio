@@ -2,7 +2,7 @@
     font-family: var(--font-family-display);
     background-color: var(--white);
     height: 500px;
-    width: 380px;
+    width: 90vw;
     font-size: 24px;
     display: block;
     position: relative;
@@ -19,9 +19,8 @@
 }
 
 .project-img {
-    width: 342px;
-    height: 348px;
-    margin: 1.2rem 1.2rem 0 1.2rem;
+    width: 82vw;
+    margin: 1.2rem 1rem 0 1rem;
     transition: transform 0.45s ease;
 }
 
@@ -71,7 +70,7 @@
 .category-tag {
     color:var(--perm-white);
     padding: 0.3rem 0.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     border-radius: 50px;
     color: var(--primary);
@@ -108,7 +107,7 @@
 .big-card{
     background-color: var(--white);
     height: 720px;
-    width: 80vw;
+    width: 90vw;
     font-size: 24px;
     display: block;
     position: relative;
@@ -121,17 +120,19 @@
     height:100%;
 }
 .bigCard-text{
-margin-right:1.5rem;
+    margin-right:1.5rem;
     margin-left:1.5rem;
 }
 .bigCard-desc{
     font-family:var(--font-family-body);
     color:var(--black);
+    margin-top:1.5rem;
     font-size:0.9rem;
 }
 
 .bigCard-img {
-    margin: 1.5rem;
+    margin: 1rem;
+    width:82vw;
     transition: transform 0.45s ease;
 }
 @media screen and (min-width:700px){

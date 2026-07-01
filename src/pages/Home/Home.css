@@ -23,7 +23,7 @@
 }
 .header {
     margin: 5rem auto 5rem;
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 75%;
 }
 
@@ -38,17 +38,18 @@
 
 .name-logo {
     width: 16%;
+    margin-left:0;
     color:var(--black);
 }
 
 .first-name{
-    margin-left:0;
+    margin-left:-0.2rem;
     padding-left:0;
 }
 
 .last-name,
 .last-line {
-    margin-left: 10rem;
+    margin-left: 7rem;
 }
 
 .intro {

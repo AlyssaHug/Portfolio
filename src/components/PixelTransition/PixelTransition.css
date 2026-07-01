@@ -1,6 +1,6 @@
 .pixelated-image-card {
     border-radius: 8px;
-    width: 380px;
+    width: 90vw;
     height: 500px;
     max-width: 100%;
     position: relative;
@@ -37,7 +37,7 @@
 
 .custom-pixel-card-big {
     border-radius: 8px;
-    width: 80vw;;
+    width: 90vw;;
     height: 720px;
     position: relative;
     overflow: hidden;
