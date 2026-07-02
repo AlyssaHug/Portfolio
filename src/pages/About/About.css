@@ -21,6 +21,8 @@
 .about-image {
     border-radius: 1rem;
     margin: 0 1rem 3rem;
+    height:100vw;
+    width:80vw;
 }
 .education{
     font-size:2rem;
