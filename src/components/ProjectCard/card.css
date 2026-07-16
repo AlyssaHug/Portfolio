@@ -12,6 +12,7 @@
 }
 
 .project-card-link {
+    max-width:24rem;
     text-decoration: none;
     color: inherit;
     display: block;
@@ -19,8 +20,7 @@
 }
 
 .project-img {
-    width: 82vw;
-    margin: 1.2rem 1rem 0 1rem;
+    margin: 1.2rem 1.2rem 0;
     transition: transform 0.45s ease;
 }
 
